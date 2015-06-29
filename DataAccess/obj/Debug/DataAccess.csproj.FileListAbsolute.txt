@@ -9,3 +9,8 @@ E:\TinhThanh\Project Myself\RangSuNoOne\DataAccess\bin\Debug\DataAccess.pdb
 E:\TinhThanh\Project Myself\RangSuNoOne\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
 E:\TinhThanh\Project Myself\RangSuNoOne\DataAccess\obj\Debug\DataAccess.dll
 E:\TinhThanh\Project Myself\RangSuNoOne\DataAccess\obj\Debug\DataAccess.pdb
+E:\TinhThanh\Project Myself\BenhVienNamBinhThuan\DataAccess\bin\Debug\DataAccess.dll
+E:\TinhThanh\Project Myself\BenhVienNamBinhThuan\DataAccess\bin\Debug\DataAccess.pdb
+E:\TinhThanh\Project Myself\BenhVienNamBinhThuan\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+E:\TinhThanh\Project Myself\BenhVienNamBinhThuan\DataAccess\obj\Debug\DataAccess.dll
+E:\TinhThanh\Project Myself\BenhVienNamBinhThuan\DataAccess\obj\Debug\DataAccess.pdb

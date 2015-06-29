@@ -22,12 +22,12 @@ public partial class UserControl_MenuTop : System.Web.UI.UserControl
         sb.Append("<li > <a href=\"/trang-chu.html\">TRANG CHỦ</a></li>");
         foreach (TheLoai item in menuItems)
         {
-           
+
             List<TheLoai> childItems = TheLoai.LayTheoIDParent(item.ID.ToString());
             if (childItems.Count > 0)
             {
                 sb.Append("<li class=\"has-sub\" >");
-                sb.Append("<a href=" + item.DuongDan_Vn + ">" + item.TieuDe_Vn + "</a>");                
+                sb.Append("<a href=" + item.DuongDan_Vn + ">" + item.TieuDe_Vn + "</a>");
                 BuildMenusItem(ref sb, childItems);
             }
             else

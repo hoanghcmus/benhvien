@@ -24,6 +24,9 @@ public partial class View_Site : System.Web.UI.MasterPage
                 rptBaiVietGioiThieu.DataSource = listBaiViet;
                 rptBaiVietGioiThieu.DataBind();
             }
+
+            rptProduct.DataSource = TheLoai.LayTheoIDParent("23");
+            rptProduct.DataBind();
         }
     }
 
@@ -33,7 +36,7 @@ public partial class View_Site : System.Web.UI.MasterPage
         switch (column)
         {
             case "xemthem":
-                return "<a href=\"/bai-viet/bai-viet-gioi-thieu-" + baiviet.ID.ToString() + ".html\">Xem thêm ...</a>";
+                return "<a href=\"/1/bai-viet/bai-viet-gioi-thieu-" + baiviet.ID.ToString() + ".html\">Xem thêm ...</a>";
             default: return "";
         }
     }

@@ -132,11 +132,13 @@ html[xmlns] .slides {
 
     .flex-direction-nav .flex-prev {
         left: 0px;
+        display: none;
     }
 
     .flex-direction-nav .flex-next {
         right: 0px;
         text-align: right;
+        display: none;
     }
 
 .flexslider:hover .flex-prev {
@@ -200,9 +202,9 @@ html[xmlns] .slides {
     -moz-border-radius: 20px;
     -o-border-radius: 20px;
     border-radius: 20px;
-   -webkit-box-shadow: 2px 2px 2px 0px rgba(167,171,162,1);
--moz-box-shadow: 2px 2px 2px 0px rgba(167,171,162,1);
-box-shadow: 2px 2px 2px 0px rgba(167,171,162,1);
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(167,171,162,1);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(167,171,162,1);
+    box-shadow: 2px 2px 2px 0px rgba(167,171,162,1);
 }
 
     .flex-control-paging li a:hover {

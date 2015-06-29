@@ -111,6 +111,15 @@ namespace DataAccess.Classes
                 return 0;
             }
         }
+        public static List<TheLoai> TheLoai_GetByCategoryAndParentID(string idLoaiMenu, int parentID)
+        {
+            try
+            {
+                return CBO.FillCollection<TheLoai>(DataProvider.Instance.ExecuteReader("TheLoai_GetByCategoryAndParentID", ConvertType.ToInt32(idLoaiMenu), parentID));
+            }
+            catch
+            { return null; }
+        }
         public static TheLoai LayTheoID(string id)
         {
             try
@@ -199,6 +208,15 @@ namespace DataAccess.Classes
             try
             {
                 return CBO.FillCollection<TheLoai>(DataProvider.Instance.ExecuteReader("TheLoai_LayTheoLoaiMenuVaParentIsNull", ConvertType.ToInt32(idLoaiMenu)));
+            }
+            catch
+            { return null; }
+        }
+        public static List<TheLoai> COUNT_ON_THELOAI(int menuItemID)
+        {
+            try
+            {
+                return CBO.FillCollection<TheLoai>(DataProvider.Instance.ExecuteReader("COUNT_ON_THELOAI", menuItemID));
             }
             catch
             { return null; }

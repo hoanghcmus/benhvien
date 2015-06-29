@@ -5,13 +5,15 @@
 <%@ Register Src="../UserControl/UC_ShowPhoto.ascx" TagName="UC_ShowPhoto" TagPrefix="uc2" %>
 
 <%@ Register Src="../UserControl/UC_Search.ascx" TagName="UC_Search" TagPrefix="uc3" %>
+<%@ Register Src="~/UserControl/UC_MenuNgang.ascx" TagPrefix="uc1" TagName="UC_MenuNgang" %>
+
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Răng sứ no 1</title>
-    <link rel="Shurtcut Icon" href="/Design/tooth.png" type="image/x-icon" />
+    <title>Bệnh viện Nam Bình Thuận</title>
+    <link rel="Shurtcut Icon" href="/Design/cross.ico" type="image/x-icon" />
 
     <link rel="stylesheet" type="text/css" href="/Styles/CSS/Default/Default.Desktop.css" />
     <link rel="stylesheet" type="text/css" href="/Styles/CSS/Default/Album.Desktop.css" />
@@ -48,9 +50,9 @@
                     <div class="header-wrapper">
                         <div class="header-top-nav">
                             <ul>
-                                <li><a href="/bai-viet/bang-gia-dich-vu-15.html">Bảng giá </a></li>
+                                <li><a href="/lien-he.html">Liên hệ </a></li>
                                 <li><a href="/hoi-dap.html">Hỏi-đáp </a></li>
-                                <li><a href="/bai-viet/bang-gia-dich-vu-16.html">Khuyến mãi </a></li>
+                                <li><a href="/trang-chu.html">Đăng nhập </a></li>
                             </ul>
                         </div>
 
@@ -79,8 +81,8 @@
         </div>
         <div class="vertical-nav">
             <div class="vertical-nav-wapper">
-
-                <uc1:UC_MenuTop ID="UC_MenuTop1" runat="server" />
+                <%-- Usercontrol Menu ngang --%>
+                <uc1:UC_MenuNgang runat="server" ID="UC_MenuNgang" />
             </div>
         </div>
         <div class="horizontal-slideshow">
@@ -88,10 +90,33 @@
             <%-- Usercontrol Slideshow --%>
             <uc2:UC_ShowPhoto ID="UC_ShowPhoto1" runat="server" />
 
+            <div class="popular-info">
+                <asp:Repeater runat="server" ID="rptProduct">
+                    <ItemTemplate>
+                        <div class="info-block">
+                            <div class="info-figure">
+                                <a href="<%#Eval("DuongDan_Vn") %>">
+                                    <img src="<%#Eval("HinhAnh") %>" alt="<%#Eval("TieuDe_Vn") %>" class="img" />
+                                </a>
+                            </div>
+                            <div class="info-title">
+                                <h1><a href="<%#Eval("DuongDan_Vn") %>"><%#Eval("TieuDe_Vn") %></a></h1>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
+
+
+        </div>
+
+        <div class="sep">
         </div>
 
         <div class="body">
             <div class="body-wrapper">
+                <div class="body-left"></div>
+                <div class="body-right"></div>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
                 </asp:ContentPlaceHolder>
 
@@ -102,7 +127,7 @@
 
                 <div class="footer-block">
                     <div class="logo-white">
-                        <img src="../Design/logo_white.png" alt="Logo White" />
+                        <img src="/Design/logo_white.png" alt="Logo White" class="img" />
                     </div>
                 </div>
                 <div class="footer-block">
