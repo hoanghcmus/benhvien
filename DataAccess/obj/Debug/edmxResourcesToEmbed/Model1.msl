@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="RangSuNoOneModel1StoreContainer" CdmEntityContainer="RangSuNoOneEntities1">
+    <EntitySetMapping Name="BaiViets">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.BaiViet">
+        <MappingFragment StoreEntitySet="BaiViet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+          <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DangNhaps">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.DangNhap">
+        <MappingFragment StoreEntitySet="DangNhap">
+          <ScalarProperty Name="IDDangNhap" ColumnName="IDDangNhap" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="DiaChiIP" ColumnName="DiaChiIP" />
+          <ScalarProperty Name="HanhDong" ColumnName="HanhDong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoiDaps">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.HoiDap">
+        <MappingFragment StoreEntitySet="HoiDap">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="NoiDungHoi" ColumnName="NoiDungHoi" />
+          <ScalarProperty Name="NoiDungDap" ColumnName="NoiDungDap" />
+          <ScalarProperty Name="NgayGui" ColumnName="NgayGui" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoTroes">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.HoTro">
+        <MappingFragment StoreEntitySet="HoTro">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImageAndClips">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.ImageAndClip">
+        <MappingFragment StoreEntitySet="ImageAndClips">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten_Vn" ColumnName="Ten_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="ImgOrClip" ColumnName="ImgOrClip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LienHes">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.LienHe">
+        <MappingFragment StoreEntitySet="LienHe">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="NgayGui" ColumnName="NgayGui" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TheLoai" ColumnName="TheLoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoaiMenus">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.LoaiMenu">
+        <MappingFragment StoreEntitySet="LoaiMenu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TenLoai" ColumnName="TenLoai" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modules">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.Module">
+        <MappingFragment StoreEntitySet="Module">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TenLoai" ColumnName="TenLoai" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NguoiDungs">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.NguoiDung">
+        <MappingFragment StoreEntitySet="NguoiDung">
+          <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+          <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhomNguoiDungs">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.NhomNguoiDung">
+        <MappingFragment StoreEntitySet="NhomNguoiDung">
+          <ScalarProperty Name="IDNhom" ColumnName="IDNhom" />
+          <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+          <ScalarProperty Name="QuyenHan" ColumnName="QuyenHan" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhanNhoms">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.PhanNhom">
+        <MappingFragment StoreEntitySet="PhanNhom">
+          <ScalarProperty Name="IDPhanNhom" ColumnName="IDPhanNhom" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SlideShows">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.SlideShow">
+        <MappingFragment StoreEntitySet="SlideShow">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="Mota" ColumnName="Mota" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TheLoais">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.TheLoai">
+        <MappingFragment StoreEntitySet="TheLoai">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ThongKeTruyCaps">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.ThongKeTruyCap">
+        <MappingFragment StoreEntitySet="ThongKeTruyCap">
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="LuotTruyCap" ColumnName="LuotTruyCap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ThongTinNguoiDungs">
+      <EntityTypeMapping TypeName="RangSuNoOneModel1.ThongTinNguoiDung">
+        <MappingFragment StoreEntitySet="ThongTinNguoiDung">
+          <ScalarProperty Name="IDTTND" ColumnName="IDTTND" />
+          <ScalarProperty Name="TenNguoiDung" ColumnName="TenNguoiDung" />
+          <ScalarProperty Name="ChucVu" ColumnName="ChucVu" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="SoDT" ColumnName="SoDT" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_NoiDung_TheLoai" TypeName="RangSuNoOneModel1.FK_NoiDung_TheLoai" StoreEntitySet="BaiViet">
+      <EndProperty Name="TheLoai">
+        <ScalarProperty Name="ID" ColumnName="IDTheLoai" />
+      </EndProperty>
+      <EndProperty Name="BaiViet">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="IDTheLoai" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_DangNhap_NguoiDung" TypeName="RangSuNoOneModel1.FK_DangNhap_NguoiDung" StoreEntitySet="DangNhap">
+      <EndProperty Name="NguoiDung">
+        <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+      </EndProperty>
+      <EndProperty Name="DangNhap">
+        <ScalarProperty Name="IDDangNhap" ColumnName="IDDangNhap" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="IDNguoiDung" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_ImageAndClips_TheLoai" TypeName="RangSuNoOneModel1.FK_ImageAndClips_TheLoai" StoreEntitySet="ImageAndClips">
+      <EndProperty Name="TheLoai">
+        <ScalarProperty Name="ID" ColumnName="IDTheLoai" />
+      </EndProperty>
+      <EndProperty Name="ImageAndClips">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TheLoai_LoaiMenu" TypeName="RangSuNoOneModel1.FK_TheLoai_LoaiMenu" StoreEntitySet="TheLoai">
+      <EndProperty Name="LoaiMenu">
+        <ScalarProperty Name="ID" ColumnName="IDLoaiMenu" />
+      </EndProperty>
+      <EndProperty Name="TheLoai">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="IDLoaiMenu" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TheLoai_Module" TypeName="RangSuNoOneModel1.FK_TheLoai_Module" StoreEntitySet="TheLoai">
+      <EndProperty Name="Module">
+        <ScalarProperty Name="ID" ColumnName="IDModule" />
+      </EndProperty>
+      <EndProperty Name="TheLoai">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="IDModule" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_PhanNhom_NguoiDung" TypeName="RangSuNoOneModel1.FK_PhanNhom_NguoiDung" StoreEntitySet="PhanNhom">
+      <EndProperty Name="NguoiDung">
+        <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+      </EndProperty>
+      <EndProperty Name="PhanNhom">
+        <ScalarProperty Name="IDPhanNhom" ColumnName="IDPhanNhom" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="IDNguoiDung" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_ThongTinNguoiDung_NguoiDung" TypeName="RangSuNoOneModel1.FK_ThongTinNguoiDung_NguoiDung" StoreEntitySet="ThongTinNguoiDung">
+      <EndProperty Name="NguoiDung">
+        <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+      </EndProperty>
+      <EndProperty Name="ThongTinNguoiDung">
+        <ScalarProperty Name="IDTTND" ColumnName="IDTTND" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="IDNguoiDung" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_PhanNhom_NhomNguoiDung" TypeName="RangSuNoOneModel1.FK_PhanNhom_NhomNguoiDung" StoreEntitySet="PhanNhom">
+      <EndProperty Name="NhomNguoiDung">
+        <ScalarProperty Name="IDNhom" ColumnName="IDNhom" />
+      </EndProperty>
+      <EndProperty Name="PhanNhom">
+        <ScalarProperty Name="IDPhanNhom" ColumnName="IDPhanNhom" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="IDNhom" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TheLoai_TheLoai" TypeName="RangSuNoOneModel1.FK_TheLoai_TheLoai" StoreEntitySet="TheLoai">
+      <EndProperty Name="TheLoai">
+        <ScalarProperty Name="ID" ColumnName="IDParent" />
+      </EndProperty>
+      <EndProperty Name="TheLoai1">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition IsNull="false" ColumnName="IDParent" />
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="BaiViet_Dem" FunctionName="RangSuNoOneModel1.Store.BaiViet_Dem" />
+    <FunctionImportMapping FunctionImportName="BaiViet_DemTheoModule" FunctionName="RangSuNoOneModel1.Store.BaiViet_DemTheoModule" />
+    <FunctionImportMapping FunctionImportName="BaiViet_DemTheoTheLoai" FunctionName="RangSuNoOneModel1.Store.BaiViet_DemTheoTheLoai" />
+    <FunctionImportMapping FunctionImportName="BaiViet_DemTheoTrangThai" FunctionName="RangSuNoOneModel1.Store.BaiViet_DemTheoTrangThai" />
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTatCa" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTatCa" />
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTop30" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTop30">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTop30_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+          <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoID" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+          <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+          <ScalarProperty Name="TenTheLoai_Vn" ColumnName="TenTheLoai_Vn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoIDParentTop2" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoIDParentTop2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoIDParentTop2_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+          <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoIDParentTop5" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoIDParentTop5">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoIDParentTop5_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+          <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoIDParentTop6" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoIDParentTop6">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoIDParentTop6_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+          <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoIDParentTop8" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoIDParentTop8">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoIDParentTop8_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+          <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoIDTheLoai" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoIDTheLoai">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoIDTheLoai_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+          <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+          <ScalarProperty Name="TenTheLoai_Vn" ColumnName="TenTheLoai_Vn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoIDTheLoaiTop10" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoIDTheLoaiTop10">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoIDTheLoaiTop10_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+          <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoIDTheLoaiTop6" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoIDTheLoaiTop6">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoIDTheLoaiTop6_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+          <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoLoaiMenuVaTrangThai" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoLoaiMenuVaTrangThai" />
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoModule" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoModule" />
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoModuleTop5" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoModuleTop5">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoModuleTop5_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+          <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoParent" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoParent" />
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoParentNoPaging" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoParentNoPaging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoParentNoPaging_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+          <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoTheLoai" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoTheLoai" />
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoTheLoaiVaTrangThai" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoTheLoaiVaTrangThai" />
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoTrangThai" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoTrangThai" />
+    <FunctionImportMapping FunctionImportName="BaiViet_LayTheoTrangThaiVaModule" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoTrangThaiVaModule" />
+    <FunctionImportMapping FunctionImportName="BaiViet_Sua" FunctionName="RangSuNoOneModel1.Store.BaiViet_Sua" />
+    <FunctionImportMapping FunctionImportName="BaiViet_SuaLuotXem" FunctionName="RangSuNoOneModel1.Store.BaiViet_SuaLuotXem" />
+    <FunctionImportMapping FunctionImportName="BaiViet_SuaLuotXemTangLen1" FunctionName="RangSuNoOneModel1.Store.BaiViet_SuaLuotXemTangLen1" />
+    <FunctionImportMapping FunctionImportName="BaiViet_SuaThongBao" FunctionName="RangSuNoOneModel1.Store.BaiViet_SuaThongBao" />
+    <FunctionImportMapping FunctionImportName="BaiViet_SuaTrangChu" FunctionName="RangSuNoOneModel1.Store.BaiViet_SuaTrangChu" />
+    <FunctionImportMapping FunctionImportName="BaiViet_SuaTrangThai" FunctionName="RangSuNoOneModel1.Store.BaiViet_SuaTrangThai" />
+    <FunctionImportMapping FunctionImportName="BaiViet_TimKiem" FunctionName="RangSuNoOneModel1.Store.BaiViet_TimKiem" />
+    <FunctionImportMapping FunctionImportName="BaiViet_TimTheoModule" FunctionName="RangSuNoOneModel1.Store.BaiViet_TimTheoModule" />
+    <FunctionImportMapping FunctionImportName="BaiViet_TimTheoTheLoai" FunctionName="RangSuNoOneModel1.Store.BaiViet_TimTheoTheLoai" />
+    <FunctionImportMapping FunctionImportName="BaiViet_Them" FunctionName="RangSuNoOneModel1.Store.BaiViet_Them" />
+    <FunctionImportMapping FunctionImportName="BaiViet_ThemThongBao" FunctionName="RangSuNoOneModel1.Store.BaiViet_ThemThongBao" />
+    <FunctionImportMapping FunctionImportName="BaiViet_Xoa" FunctionName="RangSuNoOneModel1.Store.BaiViet_Xoa" />
+    <FunctionImportMapping FunctionImportName="DangNhap_Dem" FunctionName="RangSuNoOneModel1.Store.DangNhap_Dem" />
+    <FunctionImportMapping FunctionImportName="DangNhap_LayTatCa" FunctionName="RangSuNoOneModel1.Store.DangNhap_LayTatCa" />
+    <FunctionImportMapping FunctionImportName="DangNhap_LayTheoIDNguoiDung" FunctionName="RangSuNoOneModel1.Store.DangNhap_LayTheoIDNguoiDung" />
+    <FunctionImportMapping FunctionImportName="DangNhap_SuaHanhDong" FunctionName="RangSuNoOneModel1.Store.DangNhap_SuaHanhDong" />
+    <FunctionImportMapping FunctionImportName="DangNhap_Them" FunctionName="RangSuNoOneModel1.Store.DangNhap_Them" />
+    <FunctionImportMapping FunctionImportName="DangNhap_Xoa" FunctionName="RangSuNoOneModel1.Store.DangNhap_Xoa" />
+    <FunctionImportMapping FunctionImportName="HoiDap_CapNhatHoiDap" FunctionName="RangSuNoOneModel1.Store.HoiDap_CapNhatHoiDap" />
+    <FunctionImportMapping FunctionImportName="HoiDap_DemTheoTrangThai" FunctionName="RangSuNoOneModel1.Store.HoiDap_DemTheoTrangThai" />
+    <FunctionImportMapping FunctionImportName="HoiDap_LayTatCaTheoTrangThai" FunctionName="RangSuNoOneModel1.Store.HoiDap_LayTatCaTheoTrangThai">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.HoiDap_LayTatCaTheoTrangThai_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="NoiDungHoi" ColumnName="NoiDungHoi" />
+          <ScalarProperty Name="NoiDungDap" ColumnName="NoiDungDap" />
+          <ScalarProperty Name="NgayGui" ColumnName="NgayGui" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="HoiDap_LayTheoID" FunctionName="RangSuNoOneModel1.Store.HoiDap_LayTheoID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.HoiDap_LayTheoID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="NoiDungHoi" ColumnName="NoiDungHoi" />
+          <ScalarProperty Name="NoiDungDap" ColumnName="NoiDungDap" />
+          <ScalarProperty Name="NgayGui" ColumnName="NgayGui" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="HoiDap_LayTheoTrangThai" FunctionName="RangSuNoOneModel1.Store.HoiDap_LayTheoTrangThai" />
+    <FunctionImportMapping FunctionImportName="HoiDap_LayTheoTrangThaiVaTheLoai" FunctionName="RangSuNoOneModel1.Store.HoiDap_LayTheoTrangThaiVaTheLoai" />
+    <FunctionImportMapping FunctionImportName="HoiDap_Them" FunctionName="RangSuNoOneModel1.Store.HoiDap_Them" />
+    <FunctionImportMapping FunctionImportName="HoTro_Dem" FunctionName="RangSuNoOneModel1.Store.HoTro_Dem" />
+    <FunctionImportMapping FunctionImportName="HoTro_LayTatCa" FunctionName="RangSuNoOneModel1.Store.HoTro_LayTatCa">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.HoTro_LayTatCa_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="HoTro_Sua" FunctionName="RangSuNoOneModel1.Store.HoTro_Sua" />
+    <FunctionImportMapping FunctionImportName="HoTro_Them" FunctionName="RangSuNoOneModel1.Store.HoTro_Them" />
+    <FunctionImportMapping FunctionImportName="HoTro_Xoa" FunctionName="RangSuNoOneModel1.Store.HoTro_Xoa" />
+    <FunctionImportMapping FunctionImportName="ImageAndClips_DemTheLoai" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_DemTheLoai" />
+    <FunctionImportMapping FunctionImportName="ImageAndClips_LayTheoID" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_LayTheoID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.ImageAndClips_LayTheoID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten_Vn" ColumnName="Ten_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="ImgOrClip" ColumnName="ImgOrClip" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+          <ScalarProperty Name="TenTheLoai_Vn" ColumnName="TenTheLoai_Vn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ImageAndClips_LayTheoSoLuong" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_LayTheoSoLuong">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.ImageAndClips_LayTheoSoLuong_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten_Vn" ColumnName="Ten_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="ImgOrClip" ColumnName="ImgOrClip" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+          <ScalarProperty Name="row" ColumnName="row" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ImageAndClips_LayTheoTheLoai" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_LayTheoTheLoai" />
+    <FunctionImportMapping FunctionImportName="ImageAndClips_LayTheoTheLoaiNoPaging" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_LayTheoTheLoaiNoPaging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.ImageAndClips_LayTheoTheLoaiNoPaging_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten_Vn" ColumnName="Ten_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="ImgOrClip" ColumnName="ImgOrClip" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+          <ScalarProperty Name="TenTheLoai_Vn" ColumnName="TenTheLoai_Vn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ImageAndClips_Sua" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_Sua" />
+    <FunctionImportMapping FunctionImportName="ImageAndClips_SuaLuotXem" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_SuaLuotXem" />
+    <FunctionImportMapping FunctionImportName="ImageAndClips_TimKiem" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_TimKiem" />
+    <FunctionImportMapping FunctionImportName="ImageAndClips_Top1" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_Top1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.ImageAndClips_Top1_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten_Vn" ColumnName="Ten_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="ImgOrClip" ColumnName="ImgOrClip" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ImageAndClips_Top4" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_Top4">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.ImageAndClips_Top4_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten_Vn" ColumnName="Ten_Vn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="ImgOrClip" ColumnName="ImgOrClip" />
+          <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ImageAndClips_Them" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_Them" />
+    <FunctionImportMapping FunctionImportName="ImageAndClips_Xoa" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_Xoa" />
+    <FunctionImportMapping FunctionImportName="LienHe_Dem" FunctionName="RangSuNoOneModel1.Store.LienHe_Dem" />
+    <FunctionImportMapping FunctionImportName="LienHe_DemTheoTheLoai" FunctionName="RangSuNoOneModel1.Store.LienHe_DemTheoTheLoai" />
+    <FunctionImportMapping FunctionImportName="LienHe_DemTheoTrangThaiVaTheLoai" FunctionName="RangSuNoOneModel1.Store.LienHe_DemTheoTrangThaiVaTheLoai" />
+    <FunctionImportMapping FunctionImportName="LienHe_LayTatCa" FunctionName="RangSuNoOneModel1.Store.LienHe_LayTatCa" />
+    <FunctionImportMapping FunctionImportName="LienHe_LayTheoID" FunctionName="RangSuNoOneModel1.Store.LienHe_LayTheoID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.LienHe_LayTheoID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="NgayGui" ColumnName="NgayGui" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="TheLoai" ColumnName="TheLoai" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LienHe_LayTheoTheLoai" FunctionName="RangSuNoOneModel1.Store.LienHe_LayTheoTheLoai" />
+    <FunctionImportMapping FunctionImportName="LienHe_LayTheoTrangThai" FunctionName="RangSuNoOneModel1.Store.LienHe_LayTheoTrangThai" />
+    <FunctionImportMapping FunctionImportName="LienHe_LayTheoTrangThaiVaTheLoai" FunctionName="RangSuNoOneModel1.Store.LienHe_LayTheoTrangThaiVaTheLoai" />
+    <FunctionImportMapping FunctionImportName="LienHe_SuaTrangThai" FunctionName="RangSuNoOneModel1.Store.LienHe_SuaTrangThai" />
+    <FunctionImportMapping FunctionImportName="LienHe_Them" FunctionName="RangSuNoOneModel1.Store.LienHe_Them" />
+    <FunctionImportMapping FunctionImportName="LienHe_Xoa" FunctionName="RangSuNoOneModel1.Store.LienHe_Xoa" />
+    <FunctionImportMapping FunctionImportName="LoaiMenu_LayTatCa" FunctionName="RangSuNoOneModel1.Store.LoaiMenu_LayTatCa">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.LoaiMenu_LayTatCa_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TenLoai" ColumnName="TenLoai" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Module_LayTatCa" FunctionName="RangSuNoOneModel1.Store.Module_LayTatCa">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.Module_LayTatCa_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TenLoai" ColumnName="TenLoai" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="NguoiDung_Dem" FunctionName="RangSuNoOneModel1.Store.NguoiDung_Dem" />
+    <FunctionImportMapping FunctionImportName="NguoiDung_DemTenDangNhap" FunctionName="RangSuNoOneModel1.Store.NguoiDung_DemTenDangNhap" />
+    <FunctionImportMapping FunctionImportName="NguoiDung_KiemTraDangNhap" FunctionName="RangSuNoOneModel1.Store.NguoiDung_KiemTraDangNhap">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.NguoiDung_KiemTraDangNhap_Result">
+          <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+          <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="NguoiDung_KiemTraMatKhau" FunctionName="RangSuNoOneModel1.Store.NguoiDung_KiemTraMatKhau">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.NguoiDung_KiemTraMatKhau_Result">
+          <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+          <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="NguoiDung_LayTatCa" FunctionName="RangSuNoOneModel1.Store.NguoiDung_LayTatCa">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.NguoiDung_LayTatCa_Result">
+          <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+          <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+          <ScalarProperty Name="TenNguoiDung" ColumnName="TenNguoiDung" />
+          <ScalarProperty Name="ChucVu" ColumnName="ChucVu" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="SoDT" ColumnName="SoDT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="NguoiDung_LayThongTinDangNhap" FunctionName="RangSuNoOneModel1.Store.NguoiDung_LayThongTinDangNhap">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.NguoiDung_LayThongTinDangNhap_Result">
+          <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+          <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+          <ScalarProperty Name="TenNguoiDung" ColumnName="TenNguoiDung" />
+          <ScalarProperty Name="ChucVu" ColumnName="ChucVu" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="SoDT" ColumnName="SoDT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="NguoiDung_SuaMatKhau" FunctionName="RangSuNoOneModel1.Store.NguoiDung_SuaMatKhau" />
+    <FunctionImportMapping FunctionImportName="NguoiDung_Them" FunctionName="RangSuNoOneModel1.Store.NguoiDung_Them" />
+    <FunctionImportMapping FunctionImportName="NguoiDung_Xoa" FunctionName="RangSuNoOneModel1.Store.NguoiDung_Xoa" />
+    <FunctionImportMapping FunctionImportName="NhomNguoiDung_Dem" FunctionName="RangSuNoOneModel1.Store.NhomNguoiDung_Dem" />
+    <FunctionImportMapping FunctionImportName="NhomNguoiDung_LayTatCa" FunctionName="RangSuNoOneModel1.Store.NhomNguoiDung_LayTatCa">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.NhomNguoiDung_LayTatCa_Result">
+          <ScalarProperty Name="IDNhom" ColumnName="IDNhom" />
+          <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+          <ScalarProperty Name="QuyenHan" ColumnName="QuyenHan" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Product_Add" FunctionName="RangSuNoOneModel1.Store.Product_Add" />
+    <FunctionImportMapping FunctionImportName="Product_Count" FunctionName="RangSuNoOneModel1.Store.Product_Count" />
+    <FunctionImportMapping FunctionImportName="Product_CountOnPromo" FunctionName="RangSuNoOneModel1.Store.Product_CountOnPromo" />
+    <FunctionImportMapping FunctionImportName="Product_Delete" FunctionName="RangSuNoOneModel1.Store.Product_Delete" />
+    <FunctionImportMapping FunctionImportName="Product_InMenu" FunctionName="RangSuNoOneModel1.Store.Product_InMenu" />
+    <FunctionImportMapping FunctionImportName="Product_LayTheoIDTheLoaiTop8" FunctionName="RangSuNoOneModel1.Store.Product_LayTheoIDTheLoaiTop8" />
+    <FunctionImportMapping FunctionImportName="Product_OnPromo" FunctionName="RangSuNoOneModel1.Store.Product_OnPromo" />
+    <FunctionImportMapping FunctionImportName="Product_OnPromoTop10" FunctionName="RangSuNoOneModel1.Store.Product_OnPromoTop10" />
+    <FunctionImportMapping FunctionImportName="Product_Paging" FunctionName="RangSuNoOneModel1.Store.Product_Paging" />
+    <FunctionImportMapping FunctionImportName="Product_Search" FunctionName="RangSuNoOneModel1.Store.Product_Search" />
+    <FunctionImportMapping FunctionImportName="Product_SearchInMenu" FunctionName="RangSuNoOneModel1.Store.Product_SearchInMenu" />
+    <FunctionImportMapping FunctionImportName="Product_Single" FunctionName="RangSuNoOneModel1.Store.Product_Single" />
+    <FunctionImportMapping FunctionImportName="Product_Update" FunctionName="RangSuNoOneModel1.Store.Product_Update" />
+    <FunctionImportMapping FunctionImportName="Product_UpdatePromo" FunctionName="RangSuNoOneModel1.Store.Product_UpdatePromo" />
+    <FunctionImportMapping FunctionImportName="PhanNhom_Dem" FunctionName="RangSuNoOneModel1.Store.PhanNhom_Dem" />
+    <FunctionImportMapping FunctionImportName="PhanNhom_DemTheoNhom" FunctionName="RangSuNoOneModel1.Store.PhanNhom_DemTheoNhom" />
+    <FunctionImportMapping FunctionImportName="PhanNhom_LayTatCa" FunctionName="RangSuNoOneModel1.Store.PhanNhom_LayTatCa">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.PhanNhom_LayTatCa_Result">
+          <ScalarProperty Name="IDPhanNhom" ColumnName="IDPhanNhom" />
+          <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+          <ScalarProperty Name="IDNhom" ColumnName="IDNhom" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+          <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+          <ScalarProperty Name="QuyenHan" ColumnName="QuyenHan" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PhanNhom_LayTheoIDNguoiDung" FunctionName="RangSuNoOneModel1.Store.PhanNhom_LayTheoIDNguoiDung">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.PhanNhom_LayTheoIDNguoiDung_Result">
+          <ScalarProperty Name="IDPhanNhom" ColumnName="IDPhanNhom" />
+          <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+          <ScalarProperty Name="IDNhom" ColumnName="IDNhom" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+          <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+          <ScalarProperty Name="QuyenHan" ColumnName="QuyenHan" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PhanNhom_LayTheoIDNhom" FunctionName="RangSuNoOneModel1.Store.PhanNhom_LayTheoIDNhom">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.PhanNhom_LayTheoIDNhom_Result">
+          <ScalarProperty Name="IDPhanNhom" ColumnName="IDPhanNhom" />
+          <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+          <ScalarProperty Name="IDNhom" ColumnName="IDNhom" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+          <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+          <ScalarProperty Name="QuyenHan" ColumnName="QuyenHan" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PhanNhom_Them" FunctionName="RangSuNoOneModel1.Store.PhanNhom_Them" />
+    <FunctionImportMapping FunctionImportName="PhanNhom_Xoa" FunctionName="RangSuNoOneModel1.Store.PhanNhom_Xoa" />
+    <FunctionImportMapping FunctionImportName="SlideShow_Dem" FunctionName="RangSuNoOneModel1.Store.SlideShow_Dem" />
+    <FunctionImportMapping FunctionImportName="SlideShow_LayTatCa" FunctionName="RangSuNoOneModel1.Store.SlideShow_LayTatCa">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.SlideShow_LayTatCa_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="Mota" ColumnName="Mota" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SlideShow_LayTheoHienThi" FunctionName="RangSuNoOneModel1.Store.SlideShow_LayTheoHienThi">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.SlideShow_LayTheoHienThi_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="Mota" ColumnName="Mota" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SlideShow_LayTheoID" FunctionName="RangSuNoOneModel1.Store.SlideShow_LayTheoID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.SlideShow_LayTheoID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="Mota" ColumnName="Mota" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SlideShow_Sua" FunctionName="RangSuNoOneModel1.Store.SlideShow_Sua" />
+    <FunctionImportMapping FunctionImportName="SlideShow_Them" FunctionName="RangSuNoOneModel1.Store.SlideShow_Them" />
+    <FunctionImportMapping FunctionImportName="SlideShow_Xoa" FunctionName="RangSuNoOneModel1.Store.SlideShow_Xoa" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="RangSuNoOneModel1.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="RangSuNoOneModel1.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="RangSuNoOneModel1.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="RangSuNoOneModel1.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="RangSuNoOneModel1.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="RangSuNoOneModel1.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="RangSuNoOneModel1.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="TimKiem_BaiViet_Va_HoiDap" FunctionName="RangSuNoOneModel1.Store.TimKiem_BaiViet_Va_HoiDap" />
+    <FunctionImportMapping FunctionImportName="TheLoai_DemTheoLoaiMenu" FunctionName="RangSuNoOneModel1.Store.TheLoai_DemTheoLoaiMenu" />
+    <FunctionImportMapping FunctionImportName="TheLoai_LayTatCa" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTatCa">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTatCa_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+          <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+          <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+          <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+          <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+          <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TheLoai_LayTheoID" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+          <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+          <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+          <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+          <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+          <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TheLoai_LayTheoIDParent" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoIDParent">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoIDParent_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+          <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+          <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+          <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+          <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+          <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TheLoai_LayTheoLoaiMenu" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoLoaiMenu">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoLoaiMenu_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+          <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+          <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+          <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+          <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+          <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TheLoai_LayTheoLoaiMenuVaParentIsNull" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoLoaiMenuVaParentIsNull">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoLoaiMenuVaParentIsNull_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+          <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+          <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+          <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+          <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+          <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TheLoai_LayTheoLoaiMenuVaParentNoNull" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoLoaiMenuVaParentNoNull">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoLoaiMenuVaParentNoNull_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+          <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+          <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+          <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+          <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+          <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TheLoai_LayTheoModule" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoModule">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoModule_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+          <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+          <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+          <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+          <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+          <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TheLoai_LayTheoModuleVaParentIsNull" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoModuleVaParentIsNull">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoModuleVaParentIsNull_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+          <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+          <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+          <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TheLoai_LayTheoModuleVaParentNoNull" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoModuleVaParentNoNull">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoModuleVaParentNoNull_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+          <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+          <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+          <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+          <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+          <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+          <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TheLoai_SuaFooter" FunctionName="RangSuNoOneModel1.Store.TheLoai_SuaFooter" />
+    <FunctionImportMapping FunctionImportName="TheLoai_SuaNoParent" FunctionName="RangSuNoOneModel1.Store.TheLoai_SuaNoParent" />
+    <FunctionImportMapping FunctionImportName="TheLoai_SuaYesParent" FunctionName="RangSuNoOneModel1.Store.TheLoai_SuaYesParent" />
+    <FunctionImportMapping FunctionImportName="TheLoai_ThemNoIDParent" FunctionName="RangSuNoOneModel1.Store.TheLoai_ThemNoIDParent" />
+    <FunctionImportMapping FunctionImportName="TheLoai_ThemYesIDParent" FunctionName="RangSuNoOneModel1.Store.TheLoai_ThemYesIDParent" />
+    <FunctionImportMapping FunctionImportName="TheLoai_Xoa" FunctionName="RangSuNoOneModel1.Store.TheLoai_Xoa" />
+    <FunctionImportMapping FunctionImportName="ThongKeTruyCap_Start" FunctionName="RangSuNoOneModel1.Store.ThongKeTruyCap_Start" />
+    <FunctionImportMapping FunctionImportName="ThongTinNguoiDung_LayTheoIDTTND" FunctionName="RangSuNoOneModel1.Store.ThongTinNguoiDung_LayTheoIDTTND">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RangSuNoOneModel1.ThongTinNguoiDung_LayTheoIDTTND_Result">
+          <ScalarProperty Name="IDTTND" ColumnName="IDTTND" />
+          <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+          <ScalarProperty Name="TenNguoiDung" ColumnName="TenNguoiDung" />
+          <ScalarProperty Name="ChucVu" ColumnName="ChucVu" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="SoDT" ColumnName="SoDT" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ThongTinNguoiDung_Sua" FunctionName="RangSuNoOneModel1.Store.ThongTinNguoiDung_Sua" />
+    <FunctionImportMapping FunctionImportName="ThongTinNguoiDung_Them" FunctionName="RangSuNoOneModel1.Store.ThongTinNguoiDung_Them" />
+  </EntityContainerMapping>
+</Mapping>

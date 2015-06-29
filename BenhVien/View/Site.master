@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="View_Site" %>
+
+<%@ Register Src="../UserControl/UC_MenuTop.ascx" TagName="UC_MenuTop" TagPrefix="uc1" %>
+
+<%@ Register Src="../UserControl/UC_ShowPhoto.ascx" TagName="UC_ShowPhoto" TagPrefix="uc2" %>
+
+<%@ Register Src="../UserControl/UC_Search.ascx" TagName="UC_Search" TagPrefix="uc3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Răng sứ no 1</title>
+    <link rel="Shurtcut Icon" href="/Design/tooth.png" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/Styles/CSS/Default/Default.Desktop.css" />
+    <link rel="stylesheet" type="text/css" href="/Styles/CSS/Default/Album.Desktop.css" />
+    <link rel="stylesheet" type="text/css" href="/Styles/CSS/Default/Module.Desktop.css" />
+    <link type="text/css" href="/Styles/flexslider/css/flexslider.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/Styles/JS/jquery-10.2.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("input.tim-kiem").click(function () {
+                if ($('.search-box').val() == '') {
+                    alert("vui lòng nhập nội dung tìm kiếm");
+                    return false;
+                }
+            });
+
+        });
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+        <div class="wrapper">
+
+            <div class="header">
+                <img src="/Design/banner.png" alt="Banner here" class="img" />
+                <div class="header-container">
+                    <div class="header-wrapper">
+                        <div class="header-top-nav">
+                            <ul>
+                                <li><a href="/bai-viet/bang-gia-dich-vu-15.html">Bảng giá </a></li>
+                                <li><a href="/hoi-dap.html">Hỏi-đáp </a></li>
+                                <li><a href="/bai-viet/bang-gia-dich-vu-16.html">Khuyến mãi </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="header-logo">
+                            <a href="/trang-chu.html" class="link">
+                                <img src="/Design/logo.png" alt="Logo here" class="img" /></a>
+                        </div>
+
+                        <div class="header-title">
+                            <a href="/trang-chu.html" class="link">
+                                <img src="/Design/webname.png" alt="Title here" class="img" /></a>
+                        </div>
+
+                        <div class="header-hotline">
+                            <img src="/Design/hotline.png" alt="Hotline here" />
+                        </div>
+
+                        <%-- User Control Search --%>
+                        <uc3:UC_Search ID="UC_Search1" runat="server" />
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vertical-nav">
+            <div class="vertical-nav-wapper">
+
+                <uc1:UC_MenuTop ID="UC_MenuTop1" runat="server" />
+            </div>
+        </div>
+        <div class="horizontal-slideshow">
+
+            <%-- Usercontrol Slideshow --%>
+            <uc2:UC_ShowPhoto ID="UC_ShowPhoto1" runat="server" />
+
+        </div>
+
+        <div class="body">
+            <div class="body-wrapper">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-wrapper">
+
+                <div class="footer-block">
+                    <div class="logo-white">
+                        <img src="../Design/logo_white.png" alt="Logo White" />
+                    </div>
+                </div>
+                <div class="footer-block">
+                    <asp:Repeater ID="rptBaiVietGioiThieu" runat="server" OnItemDataBound="rptBaiVietGioiThieu_ItemDataBound">
+                        <ItemTemplate>
+                            <p class="sumary-art">
+                                <asp:Literal ID="ltBaiVietGioiThieu" runat="server"></asp:Literal>
+                            </p>
+                            <p class="sumary-art read-more">
+                                <%#ShowInfo(Container.DataItem, "xemthem") %>
+                            </p>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+                <div class="footer-block">
+                    <div class="footer-info-left">
+
+                        <%-- Thông tin liên hệ --%>
+                        <asp:Literal ID="ltLienHe" runat="server">
+
+                        </asp:Literal>
+                    </div>
+                    <div class="footer-info-right">
+                        <div class="footer-block align-left bot10 white">
+                            Đang trực tuyến: <b><%=Application["visitors_online"].ToString() %></b>
+                        </div>
+                        <div class="footer-block align-left bot10 white">
+                            Lượt truy cập: <b><%=Application["SoLuotTruyCap"].ToString() %></b>
+                        </div>
+                        <div class="footer-block">
+                            <div class="social-logo">
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <img src="/Design/facebook.png" alt="Facebook Icon here" /></a>
+                            </div>
+                            <div class="social-logo">
+                                <a href="http://www.skype.com/" target="_blank">
+                                    <img src="/Design/twister.png" alt="Facebook Icon here" /></a>
+                            </div>
+                            <div class="social-logo">
+                                <a href="https://www.socialtwist.com/" target="_blank">
+                                    <img src="/Design/skype.png" alt="Facebook Icon here" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    <script type="text/javascript" src="/Styles/flexslider/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="/Styles/flexslider/js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="/Styles/nicescroll/jquery.nicescroll.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("html").niceScroll();
+        });
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="footer" runat="server">
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>

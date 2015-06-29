@@ -1,0 +1,2649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="RangSuNoOneModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <Function Name="BaiViet_Dem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="BaiViet_DemTheoModule" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDModule" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_DemTheoTheLoai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_DemTheoTrangThai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TrangThai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTatCa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTop30" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="BaiViet_LayTheoID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoIDParentTop2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDParent" Type="int" Mode="In" />
+          <Parameter Name="Top" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoIDParentTop5" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDParent" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoIDParentTop6" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDParent" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoIDParentTop8" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDParent" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoIDTheLoai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoIDTheLoaiTop10" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoIDTheLoaiTop6" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoLoaiMenuVaTrangThai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TrangThai" Type="int" Mode="In" />
+          <Parameter Name="LoaiMenu" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoModule" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDModule" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoModuleTop5" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDModule" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoParent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDParent" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoParentNoPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDParent" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoTheLoai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoTheLoaiVaTrangThai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoTrangThai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TrangThai" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_LayTheoTrangThaiVaModule" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDModule" Type="int" Mode="In" />
+          <Parameter Name="TrangThai" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_Sua" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="TieuDe_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="HinhAnh" Type="nvarchar" Mode="In" />
+          <Parameter Name="TomTat_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="ChiTiet_Vn" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="NgayCapNhat" Type="nvarchar" Mode="In" />
+          <Parameter Name="NguoiCapNhat" Type="nvarchar" Mode="In" />
+          <Parameter Name="LuotXem" Type="int" Mode="In" />
+          <Parameter Name="TrangThai" Type="int" Mode="In" />
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_SuaLuotXem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="LuotXem" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_SuaLuotXemTangLen1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_SuaThongBao" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="TieuDe_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="TomTat_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="ChiTiet_Vn" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="NgayCapNhat" Type="nvarchar" Mode="In" />
+          <Parameter Name="NguoiCapNhat" Type="nvarchar" Mode="In" />
+          <Parameter Name="LinkDown" Type="nvarchar" Mode="In" />
+          <Parameter Name="TrangThai" Type="int" Mode="In" />
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_SuaTrangChu" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="TrangChu" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_SuaTrangThai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="TrangThai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_TimKiem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Word" Type="nvarchar" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_TimTheoModule" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDModule" Type="int" Mode="In" />
+          <Parameter Name="Word" Type="nvarchar" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_TimTheoTheLoai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Word" Type="nvarchar" Mode="In" />
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_Them" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="InOut" />
+          <Parameter Name="TieuDe_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="HinhAnh" Type="nvarchar" Mode="In" />
+          <Parameter Name="TomTat_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="ChiTiet_Vn" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="NgayTao" Type="nvarchar" Mode="In" />
+          <Parameter Name="NguoiTao" Type="nvarchar" Mode="In" />
+          <Parameter Name="LuotXem" Type="int" Mode="In" />
+          <Parameter Name="TrangThai" Type="int" Mode="In" />
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_ThemThongBao" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="InOut" />
+          <Parameter Name="TieuDe_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="TomTat_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="ChiTiet_Vn" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="NgayTao" Type="nvarchar" Mode="In" />
+          <Parameter Name="NguoiTao" Type="nvarchar" Mode="In" />
+          <Parameter Name="LinkDown" Type="nvarchar" Mode="In" />
+          <Parameter Name="TrangThai" Type="int" Mode="In" />
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="BaiViet_Xoa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DangNhap_Dem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="DangNhap_LayTatCa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="DangNhapMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DangNhap_LayTheoIDNguoiDung" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDNguoiDung" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="DangNhapMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DangNhap_SuaHanhDong" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDDangNhap" Type="int" Mode="In" />
+          <Parameter Name="IDNguoiDung" Type="int" Mode="In" />
+          <Parameter Name="HanhDong" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="DangNhap_Them" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDDangNhap" Type="int" Mode="InOut" />
+          <Parameter Name="IDNguoiDung" Type="int" Mode="In" />
+          <Parameter Name="ThoiGian" Type="nvarchar" Mode="In" />
+          <Parameter Name="DiaChiIP" Type="nvarchar" Mode="In" />
+          <Parameter Name="HanhDong" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="DangNhap_Xoa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDDangNhap" Type="int" Mode="In" />
+        </Function>
+        <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+        <Function Name="HoiDap_CapNhatHoiDap" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="NoiDungDap" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="HoiDap_DemTheoTrangThai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TrangThai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="HoiDap_LayTatCaTheoTrangThai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TinhTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="HoiDap_LayTheoID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="HoiDap_LayTheoTrangThai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TinhTrang" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="HoiDap_LayTheoTrangThaiVaTheLoai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TinhTrang" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="HoiDap_Them" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="InOut" />
+          <Parameter Name="HoTen" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="DiaChi" Type="nvarchar" Mode="In" />
+          <Parameter Name="TieuDe" Type="nvarchar" Mode="In" />
+          <Parameter Name="NoiDungHoi" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="NoiDungDap" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="NgayGui" Type="datetime" Mode="In" />
+          <Parameter Name="TrangThai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="HoTro_Dem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="HoTro_LayTatCa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="HoTro_Sua" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="Ten" Type="nvarchar" Mode="In" />
+          <Parameter Name="SDT" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="HoTro_Them" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="InOut" />
+          <Parameter Name="Ten" Type="nvarchar" Mode="In" />
+          <Parameter Name="SDT" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="HoTro_Xoa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ImageAndClips_DemTheLoai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ImageAndClips_LayTheoID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ImageAndClips_LayTheoSoLuong" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+          <Parameter Name="start" Type="int" Mode="In" />
+          <Parameter Name="end" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ImageAndClips_LayTheoTheLoai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ImageAndClips_LayTheoTheLoaiNoPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ImageAndClips_Sua" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="InOut" />
+          <Parameter Name="Ten_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="NgayTao" Type="nvarchar" Mode="In" />
+          <Parameter Name="MoTa_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="LuotXem" Type="int" Mode="In" />
+          <Parameter Name="HinhAnh" Type="nvarchar" Mode="In" />
+          <Parameter Name="ImgOrClip" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ImageAndClips_SuaLuotXem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ImageAndClips_TimKiem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+          <Parameter Name="Word" Type="nvarchar" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ImageAndClips_Top1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ImageAndClips_Top4" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ImageAndClips_Them" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="InOut" />
+          <Parameter Name="Ten_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="NgayTao" Type="nvarchar" Mode="In" />
+          <Parameter Name="MoTa_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="LuotXem" Type="int" Mode="In" />
+          <Parameter Name="HinhAnh" Type="nvarchar" Mode="In" />
+          <Parameter Name="ImgOrClip" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ImageAndClips_Xoa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="LienHe_Dem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="LienHe_DemTheoTheLoai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="LienHe_DemTheoTrangThaiVaTheLoai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TrangThai" Type="int" Mode="In" />
+          <Parameter Name="TheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="LienHe_LayTatCa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="LienHe_LayTheoID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="LienHe_LayTheoTheLoai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TheLoai" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="LienHe_LayTheoTrangThai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TinhTrang" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="LienHe_LayTheoTrangThaiVaTheLoai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TinhTrang" Type="int" Mode="In" />
+          <Parameter Name="TheLoai" Type="int" Mode="In" />
+          <Parameter Name="ChieuDai" Type="int" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="LienHe_SuaTrangThai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="TrangThai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="LienHe_Them" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="InOut" />
+          <Parameter Name="HoTen" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="DiaChi" Type="nvarchar" Mode="In" />
+          <Parameter Name="TieuDe" Type="nvarchar" Mode="In" />
+          <Parameter Name="NoiDung" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="NgayGui" Type="datetime" Mode="In" />
+          <Parameter Name="TrangThai" Type="int" Mode="In" />
+          <Parameter Name="TheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="LienHe_Xoa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="LoaiMenu_LayTatCa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Module_LayTatCa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="NguoiDung_Dem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="NguoiDung_DemTenDangNhap" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TenDangNhap" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="NguoiDung_KiemTraDangNhap" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TenDangNhap" Type="nvarchar" Mode="In" />
+          <Parameter Name="MatKhau" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="NguoiDung_KiemTraMatKhau" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDNguoiDung" Type="int" Mode="In" />
+          <Parameter Name="MatKhau" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="NguoiDung_LayTatCa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="NguoiDung_LayThongTinDangNhap" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDNguoiDung" Type="int" Mode="In" />
+        </Function>
+        <Function Name="NguoiDung_SuaMatKhau" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDNguoiDung" Type="int" Mode="In" />
+          <Parameter Name="MatKhau" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="NguoiDung_Them" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDNguoiDung" Type="int" Mode="InOut" />
+          <Parameter Name="TenDangNhap" Type="nvarchar" Mode="In" />
+          <Parameter Name="MatKhau" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="NguoiDung_Xoa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDNguoiDung" Type="int" Mode="In" />
+        </Function>
+        <Function Name="NhomNguoiDung_Dem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="NhomNguoiDung_LayTatCa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Product_Add" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductID" Type="int" Mode="InOut" />
+          <Parameter Name="MenuID" Type="int" Mode="In" />
+          <Parameter Name="Name_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="Description_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="Detail_Vn" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="Price" Type="money" Mode="In" />
+          <Parameter Name="Thumbnail" Type="nvarchar" Mode="In" />
+          <Parameter Name="Image" Type="nvarchar" Mode="In" />
+          <Parameter Name="PromoFront" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="Product_Count" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Product_CountOnPromo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Product_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Product_InMenu" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MenuID" Type="int" Mode="In" />
+          <Parameter Name="DescriptionLength" Type="int" Mode="In" />
+          <Parameter Name="PageNumber" Type="int" Mode="In" />
+          <Parameter Name="ProductsPerPage" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Product_LayTheoIDTheLoaiTop8" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTheLoai" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Product_OnPromo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DescriptionLength" Type="int" Mode="In" />
+          <Parameter Name="PageNumber" Type="int" Mode="In" />
+          <Parameter Name="ProductsPerPage" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Product_OnPromoTop10" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Product_Paging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PageNumber" Type="int" Mode="In" />
+          <Parameter Name="ProductsPerPage" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Product_Search" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Word" Type="nvarchar" Mode="In" />
+          <Parameter Name="DescriptionLength" Type="int" Mode="In" />
+          <Parameter Name="PageNumber" Type="int" Mode="In" />
+          <Parameter Name="ProductsPerPage" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Product_SearchInMenu" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDParent" Type="int" Mode="In" />
+          <Parameter Name="Word" Type="nvarchar" Mode="In" />
+          <Parameter Name="DescriptionLength" Type="int" Mode="In" />
+          <Parameter Name="PageNumber" Type="int" Mode="In" />
+          <Parameter Name="ProductsPerPage" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Product_Single" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Product_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductID" Type="int" Mode="In" />
+          <Parameter Name="MenuID" Type="int" Mode="In" />
+          <Parameter Name="Name_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="Description_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="Detail_Vn" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="Price" Type="money" Mode="In" />
+          <Parameter Name="Thumbnail" Type="nvarchar" Mode="In" />
+          <Parameter Name="Image" Type="nvarchar" Mode="In" />
+          <Parameter Name="PromoFront" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="Product_UpdatePromo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductID" Type="int" Mode="In" />
+          <Parameter Name="PromoFront" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="PhanNhom_Dem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="PhanNhom_DemTheoNhom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDNhom" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="PhanNhom_LayTatCa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="PhanNhom_LayTheoIDNguoiDung" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDNguoiDung" Type="int" Mode="In" />
+        </Function>
+        <Function Name="PhanNhom_LayTheoIDNhom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDNhom" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="PhanNhom_Them" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDPhanNhom" Type="int" Mode="InOut" />
+          <Parameter Name="IDNguoiDung" Type="int" Mode="In" />
+          <Parameter Name="IDNhom" Type="nvarchar" Mode="In" />
+          <Parameter Name="NgayTao" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="PhanNhom_Xoa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDPhanNhom" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SlideShow_Dem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SlideShow_LayTatCa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SlideShow_LayTheoHienThi" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="HienThi" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SlideShow_LayTheoID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SlideShow_Sua" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="TieuDe_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="HinhAnh" Type="nvarchar" Mode="In" />
+          <Parameter Name="Mota" Type="nvarchar" Mode="In" />
+          <Parameter Name="ViTri" Type="int" Mode="In" />
+          <Parameter Name="HienThi" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SlideShow_Them" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="InOut" />
+          <Parameter Name="TieuDe_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="HinhAnh" Type="nvarchar" Mode="In" />
+          <Parameter Name="Mota" Type="nvarchar" Mode="In" />
+          <Parameter Name="ViTri" Type="int" Mode="In" />
+          <Parameter Name="HienThi" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SlideShow_Xoa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="TimKiem_BaiViet_Va_HoiDap" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="tuKhoa" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="SoTrang" Type="int" Mode="In" />
+          <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_DemTheoLoaiMenu" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDLoaiMenu" Type="int" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_LayTatCa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="TheLoai_LayTheoID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_LayTheoIDParent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_LayTheoLoaiMenu" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDLoaiMenu" Type="int" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_LayTheoLoaiMenuVaParentIsNull" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDLoaiMenu" Type="int" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_LayTheoLoaiMenuVaParentNoNull" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDLoaiMenu" Type="int" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_LayTheoModule" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDModule" Type="int" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_LayTheoModuleVaParentIsNull" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDModule" Type="int" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_LayTheoModuleVaParentNoNull" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDModule" Type="int" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_SuaFooter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="Footer" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_SuaNoParent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="TieuDe_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="MoTa_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="HinhAnh" Type="nvarchar" Mode="In" />
+          <Parameter Name="IDLoaiMenu" Type="int" Mode="In" />
+          <Parameter Name="IDModule" Type="int" Mode="In" />
+          <Parameter Name="DuongDan_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="ViTri" Type="int" Mode="In" />
+          <Parameter Name="Footer" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_SuaYesParent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="TieuDe_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="MoTa_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="HinhAnh" Type="nvarchar" Mode="In" />
+          <Parameter Name="IDParent" Type="int" Mode="In" />
+          <Parameter Name="IDLoaiMenu" Type="int" Mode="In" />
+          <Parameter Name="IDModule" Type="int" Mode="In" />
+          <Parameter Name="DuongDan_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="ViTri" Type="int" Mode="In" />
+          <Parameter Name="Footer" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_ThemNoIDParent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="InOut" />
+          <Parameter Name="TieuDe_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="MoTa_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="HinhAnh" Type="nvarchar" Mode="In" />
+          <Parameter Name="IDLoaiMenu" Type="int" Mode="In" />
+          <Parameter Name="IDModule" Type="int" Mode="In" />
+          <Parameter Name="DuongDan_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="ViTri" Type="int" Mode="In" />
+          <Parameter Name="Footer" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_ThemYesIDParent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="InOut" />
+          <Parameter Name="TieuDe_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="MoTa_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="HinhAnh" Type="nvarchar" Mode="In" />
+          <Parameter Name="IDParent" Type="int" Mode="In" />
+          <Parameter Name="IDLoaiMenu" Type="int" Mode="In" />
+          <Parameter Name="IDModule" Type="int" Mode="In" />
+          <Parameter Name="DuongDan_Vn" Type="nvarchar" Mode="In" />
+          <Parameter Name="ViTri" Type="int" Mode="In" />
+          <Parameter Name="Footer" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="TheLoai_Xoa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ThongKeTruyCap_Start" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="ThongTinNguoiDung_LayTheoIDTTND" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDNguoiDung" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ThongTinNguoiDung_Sua" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDNguoiDung" Type="int" Mode="In" />
+          <Parameter Name="TenNguoiDung" Type="nvarchar" Mode="In" />
+          <Parameter Name="ChucVu" Type="nvarchar" Mode="In" />
+          <Parameter Name="DiaChi" Type="nvarchar" Mode="In" />
+          <Parameter Name="NgaySinh" Type="nvarchar" Mode="In" />
+          <Parameter Name="SoDT" Type="nvarchar" Mode="In" />
+          <Parameter Name="NgayCapNhat" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="ThongTinNguoiDung_Them" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDTTND" Type="int" Mode="InOut" />
+          <Parameter Name="IDNguoiDung" Type="int" Mode="In" />
+          <Parameter Name="TenNguoiDung" Type="nvarchar" Mode="In" />
+          <Parameter Name="ChucVu" Type="nvarchar" Mode="In" />
+          <Parameter Name="DiaChi" Type="nvarchar" Mode="In" />
+          <Parameter Name="NgaySinh" Type="nvarchar" Mode="In" />
+          <Parameter Name="SoDT" Type="nvarchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="RangSuNoOneModel1StoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RangSuNoOneModel1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="RangSuNoOneEntities" >
+          <FunctionImport Name="BaiViet_Dem" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="BaiViet_DemTheoModule" ReturnType="Collection(Int32)">
+            <Parameter Name="IDModule" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_DemTheoTheLoai" ReturnType="Collection(Int32)">
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_DemTheoTrangThai" ReturnType="Collection(Int32)">
+            <Parameter Name="TrangThai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTatCa" ReturnType="Collection(Int32)">
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTop30" ReturnType="Collection(RangSuNoOneModel1.BaiViet_LayTop30_Result)" />
+          <FunctionImport Name="BaiViet_LayTheoID" ReturnType="Collection(RangSuNoOneModel1.BaiViet_LayTheoID_Result)">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoIDParentTop2" ReturnType="Collection(RangSuNoOneModel1.BaiViet_LayTheoIDParentTop2_Result)">
+            <Parameter Name="IDParent" Mode="In" Type="Int32" />
+            <Parameter Name="Top" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoIDParentTop5" ReturnType="Collection(RangSuNoOneModel1.BaiViet_LayTheoIDParentTop5_Result)">
+            <Parameter Name="IDParent" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoIDParentTop6" ReturnType="Collection(RangSuNoOneModel1.BaiViet_LayTheoIDParentTop6_Result)">
+            <Parameter Name="IDParent" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoIDParentTop8" ReturnType="Collection(RangSuNoOneModel1.BaiViet_LayTheoIDParentTop8_Result)">
+            <Parameter Name="IDParent" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoIDTheLoai" ReturnType="Collection(RangSuNoOneModel1.BaiViet_LayTheoIDTheLoai_Result)">
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoIDTheLoaiTop10" ReturnType="Collection(RangSuNoOneModel1.BaiViet_LayTheoIDTheLoaiTop10_Result)">
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoIDTheLoaiTop6" ReturnType="Collection(RangSuNoOneModel1.BaiViet_LayTheoIDTheLoaiTop6_Result)">
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoLoaiMenuVaTrangThai" ReturnType="Collection(Int32)">
+            <Parameter Name="TrangThai" Mode="In" Type="Int32" />
+            <Parameter Name="LoaiMenu" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoModule" ReturnType="Collection(Int32)">
+            <Parameter Name="IDModule" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoModuleTop5" ReturnType="Collection(RangSuNoOneModel1.BaiViet_LayTheoModuleTop5_Result)">
+            <Parameter Name="IDModule" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoParent" ReturnType="Collection(Int32)">
+            <Parameter Name="IDParent" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoParentNoPaging" ReturnType="Collection(RangSuNoOneModel1.BaiViet_LayTheoParentNoPaging_Result)">
+            <Parameter Name="IDParent" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoTheLoai" ReturnType="Collection(Int32)">
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoTheLoaiVaTrangThai" ReturnType="Collection(Int32)">
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoTrangThai" ReturnType="Collection(Int32)">
+            <Parameter Name="TrangThai" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_LayTheoTrangThaiVaModule" ReturnType="Collection(Int32)">
+            <Parameter Name="IDModule" Mode="In" Type="Int32" />
+            <Parameter Name="TrangThai" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_Sua">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="TieuDe_Vn" Mode="In" Type="String" />
+            <Parameter Name="HinhAnh" Mode="In" Type="String" />
+            <Parameter Name="TomTat_Vn" Mode="In" Type="String" />
+            <Parameter Name="ChiTiet_Vn" Mode="In" Type="String" />
+            <Parameter Name="NgayCapNhat" Mode="In" Type="String" />
+            <Parameter Name="NguoiCapNhat" Mode="In" Type="String" />
+            <Parameter Name="LuotXem" Mode="In" Type="Int32" />
+            <Parameter Name="TrangThai" Mode="In" Type="Int32" />
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_SuaLuotXem">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="LuotXem" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_SuaLuotXemTangLen1">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_SuaThongBao">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="TieuDe_Vn" Mode="In" Type="String" />
+            <Parameter Name="TomTat_Vn" Mode="In" Type="String" />
+            <Parameter Name="ChiTiet_Vn" Mode="In" Type="String" />
+            <Parameter Name="NgayCapNhat" Mode="In" Type="String" />
+            <Parameter Name="NguoiCapNhat" Mode="In" Type="String" />
+            <Parameter Name="LinkDown" Mode="In" Type="String" />
+            <Parameter Name="TrangThai" Mode="In" Type="Int32" />
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_SuaTrangChu">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="TrangChu" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_SuaTrangThai">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="TrangThai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_TimKiem" ReturnType="Collection(Int32)">
+            <Parameter Name="Word" Mode="In" Type="String" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_TimTheoModule" ReturnType="Collection(Int32)">
+            <Parameter Name="IDModule" Mode="In" Type="Int32" />
+            <Parameter Name="Word" Mode="In" Type="String" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_TimTheoTheLoai" ReturnType="Collection(Int32)">
+            <Parameter Name="Word" Mode="In" Type="String" />
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_Them">
+            <Parameter Name="ID" Mode="InOut" Type="Int32" />
+            <Parameter Name="TieuDe_Vn" Mode="In" Type="String" />
+            <Parameter Name="HinhAnh" Mode="In" Type="String" />
+            <Parameter Name="TomTat_Vn" Mode="In" Type="String" />
+            <Parameter Name="ChiTiet_Vn" Mode="In" Type="String" />
+            <Parameter Name="NgayTao" Mode="In" Type="String" />
+            <Parameter Name="NguoiTao" Mode="In" Type="String" />
+            <Parameter Name="LuotXem" Mode="In" Type="Int32" />
+            <Parameter Name="TrangThai" Mode="In" Type="Int32" />
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_ThemThongBao">
+            <Parameter Name="ID" Mode="InOut" Type="Int32" />
+            <Parameter Name="TieuDe_Vn" Mode="In" Type="String" />
+            <Parameter Name="TomTat_Vn" Mode="In" Type="String" />
+            <Parameter Name="ChiTiet_Vn" Mode="In" Type="String" />
+            <Parameter Name="NgayTao" Mode="In" Type="String" />
+            <Parameter Name="NguoiTao" Mode="In" Type="String" />
+            <Parameter Name="LinkDown" Mode="In" Type="String" />
+            <Parameter Name="TrangThai" Mode="In" Type="Int32" />
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="BaiViet_Xoa">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DangNhap_Dem" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="DangNhap_LayTatCa" ReturnType="Collection(Int32)">
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="DangNhapMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DangNhap_LayTheoIDNguoiDung" ReturnType="Collection(Int32)">
+            <Parameter Name="IDNguoiDung" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="DangNhapMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DangNhap_SuaHanhDong">
+            <Parameter Name="IDDangNhap" Mode="In" Type="Int32" />
+            <Parameter Name="IDNguoiDung" Mode="In" Type="Int32" />
+            <Parameter Name="HanhDong" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="DangNhap_Them">
+            <Parameter Name="IDDangNhap" Mode="InOut" Type="Int32" />
+            <Parameter Name="IDNguoiDung" Mode="In" Type="Int32" />
+            <Parameter Name="ThoiGian" Mode="In" Type="String" />
+            <Parameter Name="DiaChiIP" Mode="In" Type="String" />
+            <Parameter Name="HanhDong" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="DangNhap_Xoa">
+            <Parameter Name="IDDangNhap" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="HoiDap_CapNhatHoiDap">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="NoiDungDap" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="HoiDap_DemTheoTrangThai" ReturnType="Collection(Int32)">
+            <Parameter Name="TrangThai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="HoiDap_LayTatCaTheoTrangThai" ReturnType="Collection(RangSuNoOneModel1.HoiDap_LayTatCaTheoTrangThai_Result)">
+            <Parameter Name="TinhTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="HoiDap_LayTheoID" ReturnType="Collection(RangSuNoOneModel1.HoiDap_LayTheoID_Result)">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="HoiDap_LayTheoTrangThai" ReturnType="Collection(Int32)">
+            <Parameter Name="TinhTrang" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="HoiDap_LayTheoTrangThaiVaTheLoai" ReturnType="Collection(Int32)">
+            <Parameter Name="TinhTrang" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="HoiDap_Them">
+            <Parameter Name="ID" Mode="InOut" Type="Int32" />
+            <Parameter Name="HoTen" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="DiaChi" Mode="In" Type="String" />
+            <Parameter Name="TieuDe" Mode="In" Type="String" />
+            <Parameter Name="NoiDungHoi" Mode="In" Type="String" />
+            <Parameter Name="NoiDungDap" Mode="In" Type="String" />
+            <Parameter Name="NgayGui" Mode="In" Type="DateTime" />
+            <Parameter Name="TrangThai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="HoTro_Dem" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="HoTro_LayTatCa" ReturnType="Collection(RangSuNoOneModel1.HoTro_LayTatCa_Result)" />
+          <FunctionImport Name="HoTro_Sua">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="Ten" Mode="In" Type="String" />
+            <Parameter Name="SDT" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="HoTro_Them">
+            <Parameter Name="ID" Mode="InOut" Type="Int32" />
+            <Parameter Name="Ten" Mode="In" Type="String" />
+            <Parameter Name="SDT" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="HoTro_Xoa">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ImageAndClips_DemTheLoai" ReturnType="Collection(Int32)">
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ImageAndClips_LayTheoID" ReturnType="Collection(RangSuNoOneModel1.ImageAndClips_LayTheoID_Result)">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ImageAndClips_LayTheoSoLuong" ReturnType="Collection(RangSuNoOneModel1.ImageAndClips_LayTheoSoLuong_Result)">
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+            <Parameter Name="start" Mode="In" Type="Int32" />
+            <Parameter Name="end" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ImageAndClips_LayTheoTheLoai" ReturnType="Collection(Int32)">
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ImageAndClips_LayTheoTheLoaiNoPaging" ReturnType="Collection(RangSuNoOneModel1.ImageAndClips_LayTheoTheLoaiNoPaging_Result)">
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ImageAndClips_Sua">
+            <Parameter Name="ID" Mode="InOut" Type="Int32" />
+            <Parameter Name="Ten_Vn" Mode="In" Type="String" />
+            <Parameter Name="NgayTao" Mode="In" Type="String" />
+            <Parameter Name="MoTa_Vn" Mode="In" Type="String" />
+            <Parameter Name="LuotXem" Mode="In" Type="Int32" />
+            <Parameter Name="HinhAnh" Mode="In" Type="String" />
+            <Parameter Name="ImgOrClip" Mode="In" Type="String" />
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ImageAndClips_SuaLuotXem">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ImageAndClips_TimKiem" ReturnType="Collection(Int32)">
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+            <Parameter Name="Word" Mode="In" Type="String" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ImageAndClips_Top1" ReturnType="Collection(RangSuNoOneModel1.ImageAndClips_Top1_Result)">
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ImageAndClips_Top4" ReturnType="Collection(RangSuNoOneModel1.ImageAndClips_Top4_Result)">
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ImageAndClips_Them">
+            <Parameter Name="ID" Mode="InOut" Type="Int32" />
+            <Parameter Name="Ten_Vn" Mode="In" Type="String" />
+            <Parameter Name="NgayTao" Mode="In" Type="String" />
+            <Parameter Name="MoTa_Vn" Mode="In" Type="String" />
+            <Parameter Name="LuotXem" Mode="In" Type="Int32" />
+            <Parameter Name="HinhAnh" Mode="In" Type="String" />
+            <Parameter Name="ImgOrClip" Mode="In" Type="String" />
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ImageAndClips_Xoa">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="LienHe_Dem" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="LienHe_DemTheoTheLoai" ReturnType="Collection(Int32)">
+            <Parameter Name="TheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="LienHe_DemTheoTrangThaiVaTheLoai" ReturnType="Collection(Int32)">
+            <Parameter Name="TrangThai" Mode="In" Type="Int32" />
+            <Parameter Name="TheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="LienHe_LayTatCa" ReturnType="Collection(Int32)">
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="LienHe_LayTheoID" ReturnType="Collection(RangSuNoOneModel1.LienHe_LayTheoID_Result)">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="LienHe_LayTheoTheLoai" ReturnType="Collection(Int32)">
+            <Parameter Name="TheLoai" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="LienHe_LayTheoTrangThai" ReturnType="Collection(Int32)">
+            <Parameter Name="TinhTrang" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="LienHe_LayTheoTrangThaiVaTheLoai" ReturnType="Collection(Int32)">
+            <Parameter Name="TinhTrang" Mode="In" Type="Int32" />
+            <Parameter Name="TheLoai" Mode="In" Type="Int32" />
+            <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="LienHe_SuaTrangThai">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="TrangThai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="LienHe_Them">
+            <Parameter Name="ID" Mode="InOut" Type="Int32" />
+            <Parameter Name="HoTen" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="DiaChi" Mode="In" Type="String" />
+            <Parameter Name="TieuDe" Mode="In" Type="String" />
+            <Parameter Name="NoiDung" Mode="In" Type="String" />
+            <Parameter Name="NgayGui" Mode="In" Type="DateTime" />
+            <Parameter Name="TrangThai" Mode="In" Type="Int32" />
+            <Parameter Name="TheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="LienHe_Xoa">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="LoaiMenu_LayTatCa" ReturnType="Collection(RangSuNoOneModel1.LoaiMenu_LayTatCa_Result)" />
+          <FunctionImport Name="Module_LayTatCa" ReturnType="Collection(RangSuNoOneModel1.Module_LayTatCa_Result)" />
+          <FunctionImport Name="NguoiDung_Dem" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="NguoiDung_DemTenDangNhap" ReturnType="Collection(Int32)">
+            <Parameter Name="TenDangNhap" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="NguoiDung_KiemTraDangNhap" ReturnType="Collection(RangSuNoOneModel1.NguoiDung_KiemTraDangNhap_Result)">
+            <Parameter Name="TenDangNhap" Mode="In" Type="String" />
+            <Parameter Name="MatKhau" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="NguoiDung_KiemTraMatKhau" ReturnType="Collection(RangSuNoOneModel1.NguoiDung_KiemTraMatKhau_Result)">
+            <Parameter Name="IDNguoiDung" Mode="In" Type="Int32" />
+            <Parameter Name="MatKhau" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="NguoiDung_LayTatCa" ReturnType="Collection(RangSuNoOneModel1.NguoiDung_LayTatCa_Result)" />
+          <FunctionImport Name="NguoiDung_LayThongTinDangNhap" ReturnType="Collection(RangSuNoOneModel1.NguoiDung_LayThongTinDangNhap_Result)">
+            <Parameter Name="IDNguoiDung" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="NguoiDung_SuaMatKhau">
+            <Parameter Name="IDNguoiDung" Mode="In" Type="Int32" />
+            <Parameter Name="MatKhau" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="NguoiDung_Them">
+            <Parameter Name="IDNguoiDung" Mode="InOut" Type="Int32" />
+            <Parameter Name="TenDangNhap" Mode="In" Type="String" />
+            <Parameter Name="MatKhau" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="NguoiDung_Xoa">
+            <Parameter Name="IDNguoiDung" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="NhomNguoiDung_Dem" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="NhomNguoiDung_LayTatCa" ReturnType="Collection(RangSuNoOneModel1.NhomNguoiDung_LayTatCa_Result)" />
+          <FunctionImport Name="Product_Add">
+            <Parameter Name="ProductID" Mode="InOut" Type="Int32" />
+            <Parameter Name="MenuID" Mode="In" Type="Int32" />
+            <Parameter Name="Name_Vn" Mode="In" Type="String" />
+            <Parameter Name="Description_Vn" Mode="In" Type="String" />
+            <Parameter Name="Detail_Vn" Mode="In" Type="String" />
+            <Parameter Name="Price" Mode="In" Type="Decimal" />
+            <Parameter Name="Thumbnail" Mode="In" Type="String" />
+            <Parameter Name="Image" Mode="In" Type="String" />
+            <Parameter Name="PromoFront" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="Product_Count" />
+          <FunctionImport Name="Product_CountOnPromo" />
+          <FunctionImport Name="Product_Delete">
+            <Parameter Name="ProductID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Product_InMenu">
+            <Parameter Name="MenuID" Mode="In" Type="Int32" />
+            <Parameter Name="DescriptionLength" Mode="In" Type="Int32" />
+            <Parameter Name="PageNumber" Mode="In" Type="Int32" />
+            <Parameter Name="ProductsPerPage" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Product_LayTheoIDTheLoaiTop8">
+            <Parameter Name="IDTheLoai" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Product_OnPromo">
+            <Parameter Name="DescriptionLength" Mode="In" Type="Int32" />
+            <Parameter Name="PageNumber" Mode="In" Type="Int32" />
+            <Parameter Name="ProductsPerPage" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Product_OnPromoTop10" />
+          <FunctionImport Name="Product_Paging">
+            <Parameter Name="PageNumber" Mode="In" Type="Int32" />
+            <Parameter Name="ProductsPerPage" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Product_Search">
+            <Parameter Name="Word" Mode="In" Type="String" />
+            <Parameter Name="DescriptionLength" Mode="In" Type="Int32" />
+            <Parameter Name="PageNumber" Mode="In" Type="Int32" />
+            <Parameter Name="ProductsPerPage" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Product_SearchInMenu">
+            <Parameter Name="IDParent" Mode="In" Type="Int32" />
+            <Parameter Name="Word" Mode="In" Type="String" />
+            <Parameter Name="DescriptionLength" Mode="In" Type="Int32" />
+            <Parameter Name="PageNumber" Mode="In" Type="Int32" />
+            <Parameter Name="ProductsPerPage" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Product_Single">
+            <Parameter Name="ProductID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Product_Update">
+            <Parameter Name="ProductID" Mode="In" Type="Int32" />
+            <Parameter Name="MenuID" Mode="In" Type="Int32" />
+            <Parameter Name="Name_Vn" Mode="In" Type="String" />
+            <Parameter Name="Description_Vn" Mode="In" Type="String" />
+            <Parameter Name="Detail_Vn" Mode="In" Type="String" />
+            <Parameter Name="Price" Mode="In" Type="Decimal" />
+            <Parameter Name="Thumbnail" Mode="In" Type="String" />
+            <Parameter Name="Image" Mode="In" Type="String" />
+            <Parameter Name="PromoFront" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="Product_UpdatePromo">
+            <Parameter Name="ProductID" Mode="In" Type="Int32" />
+            <Parameter Name="PromoFront" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="PhanNhom_Dem" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="PhanNhom_DemTheoNhom" ReturnType="Collection(Int32)">
+            <Parameter Name="IDNhom" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="PhanNhom_LayTatCa" ReturnType="Collection(RangSuNoOneModel1.PhanNhom_LayTatCa_Result)" />
+          <FunctionImport Name="PhanNhom_LayTheoIDNguoiDung" ReturnType="Collection(RangSuNoOneModel1.PhanNhom_LayTheoIDNguoiDung_Result)">
+            <Parameter Name="IDNguoiDung" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="PhanNhom_LayTheoIDNhom" ReturnType="Collection(RangSuNoOneModel1.PhanNhom_LayTheoIDNhom_Result)">
+            <Parameter Name="IDNhom" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="PhanNhom_Them">
+            <Parameter Name="IDPhanNhom" Mode="InOut" Type="Int32" />
+            <Parameter Name="IDNguoiDung" Mode="In" Type="Int32" />
+            <Parameter Name="IDNhom" Mode="In" Type="String" />
+            <Parameter Name="NgayTao" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="PhanNhom_Xoa">
+            <Parameter Name="IDPhanNhom" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SlideShow_Dem" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="SlideShow_LayTatCa" ReturnType="Collection(RangSuNoOneModel1.SlideShow_LayTatCa_Result)" />
+          <FunctionImport Name="SlideShow_LayTheoHienThi" ReturnType="Collection(RangSuNoOneModel1.SlideShow_LayTheoHienThi_Result)">
+            <Parameter Name="HienThi" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SlideShow_LayTheoID" ReturnType="Collection(RangSuNoOneModel1.SlideShow_LayTheoID_Result)">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SlideShow_Sua">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="TieuDe_Vn" Mode="In" Type="String" />
+            <Parameter Name="HinhAnh" Mode="In" Type="String" />
+            <Parameter Name="Mota" Mode="In" Type="String" />
+            <Parameter Name="ViTri" Mode="In" Type="Int32" />
+            <Parameter Name="HienThi" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SlideShow_Them">
+            <Parameter Name="ID" Mode="InOut" Type="Int32" />
+            <Parameter Name="TieuDe_Vn" Mode="In" Type="String" />
+            <Parameter Name="HinhAnh" Mode="In" Type="String" />
+            <Parameter Name="Mota" Mode="In" Type="String" />
+            <Parameter Name="ViTri" Mode="In" Type="Int32" />
+            <Parameter Name="HienThi" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SlideShow_Xoa">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(RangSuNoOneModel1.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(RangSuNoOneModel1.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_upgraddiagrams" />
+          <FunctionImport Name="TimKiem_BaiViet_Va_HoiDap" ReturnType="Collection(Int32)">
+            <Parameter Name="tuKhoa" Mode="In" Type="String" />
+            <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+            <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_DemTheoLoaiMenu" ReturnType="Collection(Int32)">
+            <Parameter Name="IDLoaiMenu" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_LayTatCa" ReturnType="Collection(RangSuNoOneModel1.TheLoai_LayTatCa_Result)" />
+          <FunctionImport Name="TheLoai_LayTheoID" ReturnType="Collection(RangSuNoOneModel1.TheLoai_LayTheoID_Result)">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_LayTheoIDParent" ReturnType="Collection(RangSuNoOneModel1.TheLoai_LayTheoIDParent_Result)">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_LayTheoLoaiMenu" ReturnType="Collection(RangSuNoOneModel1.TheLoai_LayTheoLoaiMenu_Result)">
+            <Parameter Name="IDLoaiMenu" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_LayTheoLoaiMenuVaParentIsNull" ReturnType="Collection(RangSuNoOneModel1.TheLoai_LayTheoLoaiMenuVaParentIsNull_Result)">
+            <Parameter Name="IDLoaiMenu" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_LayTheoLoaiMenuVaParentNoNull" ReturnType="Collection(RangSuNoOneModel1.TheLoai_LayTheoLoaiMenuVaParentNoNull_Result)">
+            <Parameter Name="IDLoaiMenu" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_LayTheoModule" ReturnType="Collection(RangSuNoOneModel1.TheLoai_LayTheoModule_Result)">
+            <Parameter Name="IDModule" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_LayTheoModuleVaParentIsNull" ReturnType="Collection(RangSuNoOneModel1.TheLoai_LayTheoModuleVaParentIsNull_Result)">
+            <Parameter Name="IDModule" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_LayTheoModuleVaParentNoNull" ReturnType="Collection(RangSuNoOneModel1.TheLoai_LayTheoModuleVaParentNoNull_Result)">
+            <Parameter Name="IDModule" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_SuaFooter">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="Footer" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_SuaNoParent">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="TieuDe_Vn" Mode="In" Type="String" />
+            <Parameter Name="MoTa_Vn" Mode="In" Type="String" />
+            <Parameter Name="HinhAnh" Mode="In" Type="String" />
+            <Parameter Name="IDLoaiMenu" Mode="In" Type="Int32" />
+            <Parameter Name="IDModule" Mode="In" Type="Int32" />
+            <Parameter Name="DuongDan_Vn" Mode="In" Type="String" />
+            <Parameter Name="ViTri" Mode="In" Type="Int32" />
+            <Parameter Name="Footer" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_SuaYesParent">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="TieuDe_Vn" Mode="In" Type="String" />
+            <Parameter Name="MoTa_Vn" Mode="In" Type="String" />
+            <Parameter Name="HinhAnh" Mode="In" Type="String" />
+            <Parameter Name="IDParent" Mode="In" Type="Int32" />
+            <Parameter Name="IDLoaiMenu" Mode="In" Type="Int32" />
+            <Parameter Name="IDModule" Mode="In" Type="Int32" />
+            <Parameter Name="DuongDan_Vn" Mode="In" Type="String" />
+            <Parameter Name="ViTri" Mode="In" Type="Int32" />
+            <Parameter Name="Footer" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_ThemNoIDParent">
+            <Parameter Name="ID" Mode="InOut" Type="Int32" />
+            <Parameter Name="TieuDe_Vn" Mode="In" Type="String" />
+            <Parameter Name="MoTa_Vn" Mode="In" Type="String" />
+            <Parameter Name="HinhAnh" Mode="In" Type="String" />
+            <Parameter Name="IDLoaiMenu" Mode="In" Type="Int32" />
+            <Parameter Name="IDModule" Mode="In" Type="Int32" />
+            <Parameter Name="DuongDan_Vn" Mode="In" Type="String" />
+            <Parameter Name="ViTri" Mode="In" Type="Int32" />
+            <Parameter Name="Footer" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_ThemYesIDParent">
+            <Parameter Name="ID" Mode="InOut" Type="Int32" />
+            <Parameter Name="TieuDe_Vn" Mode="In" Type="String" />
+            <Parameter Name="MoTa_Vn" Mode="In" Type="String" />
+            <Parameter Name="HinhAnh" Mode="In" Type="String" />
+            <Parameter Name="IDParent" Mode="In" Type="Int32" />
+            <Parameter Name="IDLoaiMenu" Mode="In" Type="Int32" />
+            <Parameter Name="IDModule" Mode="In" Type="Int32" />
+            <Parameter Name="DuongDan_Vn" Mode="In" Type="String" />
+            <Parameter Name="ViTri" Mode="In" Type="Int32" />
+            <Parameter Name="Footer" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="TheLoai_Xoa">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ThongKeTruyCap_Start" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="ThongTinNguoiDung_LayTheoIDTTND" ReturnType="Collection(RangSuNoOneModel1.ThongTinNguoiDung_LayTheoIDTTND_Result)">
+            <Parameter Name="IDNguoiDung" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ThongTinNguoiDung_Sua">
+            <Parameter Name="IDNguoiDung" Mode="In" Type="Int32" />
+            <Parameter Name="TenNguoiDung" Mode="In" Type="String" />
+            <Parameter Name="ChucVu" Mode="In" Type="String" />
+            <Parameter Name="DiaChi" Mode="In" Type="String" />
+            <Parameter Name="NgaySinh" Mode="In" Type="String" />
+            <Parameter Name="SoDT" Mode="In" Type="String" />
+            <Parameter Name="NgayCapNhat" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="ThongTinNguoiDung_Them">
+            <Parameter Name="IDTTND" Mode="InOut" Type="Int32" />
+            <Parameter Name="IDNguoiDung" Mode="In" Type="Int32" />
+            <Parameter Name="TenNguoiDung" Mode="In" Type="String" />
+            <Parameter Name="ChucVu" Mode="In" Type="String" />
+            <Parameter Name="DiaChi" Mode="In" Type="String" />
+            <Parameter Name="NgaySinh" Mode="In" Type="String" />
+            <Parameter Name="SoDT" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="BaiViet_LayTop30_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TomTat_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="ChiTiet_Vn" Nullable="true" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiTao" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="NgayCapNhat" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiCapNhat" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="LinkDown" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="Int32" Name="TrangThai" Nullable="true" />
+          <Property Type="Boolean" Name="TrangChu" Nullable="true" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="BaiViet_LayTheoID_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TomTat_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="ChiTiet_Vn" Nullable="true" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiTao" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="NgayCapNhat" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiCapNhat" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="LinkDown" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="Int32" Name="TrangThai" Nullable="true" />
+          <Property Type="Boolean" Name="TrangChu" Nullable="true" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="true" />
+          <Property Type="String" Name="TenTheLoai_Vn" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="BaiViet_LayTheoIDParentTop2_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TomTat_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="ChiTiet_Vn" Nullable="true" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiTao" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="NgayCapNhat" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiCapNhat" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="LinkDown" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="Int32" Name="TrangThai" Nullable="true" />
+          <Property Type="Boolean" Name="TrangChu" Nullable="true" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="BaiViet_LayTheoIDParentTop5_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TomTat_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="ChiTiet_Vn" Nullable="true" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiTao" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="NgayCapNhat" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiCapNhat" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="LinkDown" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="Int32" Name="TrangThai" Nullable="true" />
+          <Property Type="Boolean" Name="TrangChu" Nullable="true" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="BaiViet_LayTheoIDParentTop6_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TomTat_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="ChiTiet_Vn" Nullable="true" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiTao" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="NgayCapNhat" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiCapNhat" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="LinkDown" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="Int32" Name="TrangThai" Nullable="true" />
+          <Property Type="Boolean" Name="TrangChu" Nullable="true" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="BaiViet_LayTheoIDParentTop8_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TomTat_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="ChiTiet_Vn" Nullable="true" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiTao" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="NgayCapNhat" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiCapNhat" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="LinkDown" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="Int32" Name="TrangThai" Nullable="true" />
+          <Property Type="Boolean" Name="TrangChu" Nullable="true" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="BaiViet_LayTheoIDTheLoai_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TomTat_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="ChiTiet_Vn" Nullable="true" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiTao" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="NgayCapNhat" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiCapNhat" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="LinkDown" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="Int32" Name="TrangThai" Nullable="true" />
+          <Property Type="Boolean" Name="TrangChu" Nullable="true" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="true" />
+          <Property Type="String" Name="TenTheLoai_Vn" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="BaiViet_LayTheoIDTheLoaiTop10_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TomTat_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="ChiTiet_Vn" Nullable="true" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiTao" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="NgayCapNhat" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiCapNhat" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="LinkDown" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="Int32" Name="TrangThai" Nullable="true" />
+          <Property Type="Boolean" Name="TrangChu" Nullable="true" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="BaiViet_LayTheoIDTheLoaiTop6_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TomTat_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="ChiTiet_Vn" Nullable="true" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiTao" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="NgayCapNhat" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiCapNhat" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="LinkDown" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="Int32" Name="TrangThai" Nullable="true" />
+          <Property Type="Boolean" Name="TrangChu" Nullable="true" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="BaiViet_LayTheoModuleTop5_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TomTat_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="ChiTiet_Vn" Nullable="true" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiTao" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="NgayCapNhat" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiCapNhat" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="LinkDown" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="Int32" Name="TrangThai" Nullable="true" />
+          <Property Type="Boolean" Name="TrangChu" Nullable="true" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="BaiViet_LayTheoParentNoPaging_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TomTat_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="ChiTiet_Vn" Nullable="true" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiTao" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="NgayCapNhat" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NguoiCapNhat" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="LinkDown" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="Int32" Name="TrangThai" Nullable="true" />
+          <Property Type="Boolean" Name="TrangChu" Nullable="true" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="HoiDap_LayTatCaTheoTrangThai_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="HoTen" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="DiaChi" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="TieuDe" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NoiDungHoi" Nullable="true" />
+          <Property Type="String" Name="NoiDungDap" Nullable="true" />
+          <Property Type="DateTime" Name="NgayGui" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="TrangThai" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="HoiDap_LayTheoID_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="HoTen" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="DiaChi" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="TieuDe" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NoiDungHoi" Nullable="true" />
+          <Property Type="String" Name="NoiDungDap" Nullable="true" />
+          <Property Type="DateTime" Name="NgayGui" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="TrangThai" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="HoTro_LayTatCa_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Ten" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="SDT" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="ImageAndClips_LayTheoID_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Ten_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="2000" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="ImgOrClip" Nullable="false" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="false" />
+          <Property Type="String" Name="TenTheLoai_Vn" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="ImageAndClips_LayTheoSoLuong_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Ten_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="2000" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="ImgOrClip" Nullable="false" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="false" />
+          <Property Type="Int64" Name="row" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="ImageAndClips_LayTheoTheLoaiNoPaging_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Ten_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="2000" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="ImgOrClip" Nullable="false" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="false" />
+          <Property Type="String" Name="TenTheLoai_Vn" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="ImageAndClips_Top1_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Ten_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="2000" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="ImgOrClip" Nullable="false" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="ImageAndClips_Top4_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Ten_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="2000" />
+          <Property Type="Int32" Name="LuotXem" Nullable="true" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="ImgOrClip" Nullable="false" />
+          <Property Type="Int32" Name="IDTheLoai" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="LienHe_LayTheoID_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="HoTen" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="DiaChi" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="TieuDe" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="NoiDung" Nullable="true" />
+          <Property Type="DateTime" Name="NgayGui" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="TrangThai" Nullable="true" />
+          <Property Type="Int32" Name="TheLoai" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="LoaiMenu_LayTatCa_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TenLoai" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="MoTa" Nullable="true" MaxLength="3000" />
+        </ComplexType>
+        <ComplexType Name="Module_LayTatCa_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TenLoai" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="MoTa" Nullable="true" MaxLength="3000" />
+        </ComplexType>
+        <ComplexType Name="NguoiDung_KiemTraDangNhap_Result">
+          <Property Type="Int32" Name="IDNguoiDung" Nullable="false" />
+          <Property Type="String" Name="TenDangNhap" Nullable="true" MaxLength="300" />
+        </ComplexType>
+        <ComplexType Name="NguoiDung_KiemTraMatKhau_Result">
+          <Property Type="Int32" Name="IDNguoiDung" Nullable="false" />
+          <Property Type="String" Name="TenDangNhap" Nullable="true" MaxLength="300" />
+        </ComplexType>
+        <ComplexType Name="NguoiDung_LayTatCa_Result">
+          <Property Type="Int32" Name="IDNguoiDung" Nullable="false" />
+          <Property Type="String" Name="TenDangNhap" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TenNguoiDung" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="ChucVu" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="DiaChi" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="NgaySinh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="SoDT" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="NguoiDung_LayThongTinDangNhap_Result">
+          <Property Type="Int32" Name="IDNguoiDung" Nullable="false" />
+          <Property Type="String" Name="TenDangNhap" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TenNguoiDung" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="ChucVu" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="DiaChi" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="NgaySinh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="SoDT" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="NhomNguoiDung_LayTatCa_Result">
+          <Property Type="String" Name="IDNhom" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="TenNhom" Nullable="true" MaxLength="300" />
+          <Property Type="Int32" Name="QuyenHan" Nullable="true" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="MoTa" Nullable="true" MaxLength="3000" />
+        </ComplexType>
+        <ComplexType Name="PhanNhom_LayTatCa_Result">
+          <Property Type="Int32" Name="IDPhanNhom" Nullable="false" />
+          <Property Type="Int32" Name="IDNguoiDung" Nullable="true" />
+          <Property Type="String" Name="IDNhom" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="TenDangNhap" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TenNhom" Nullable="true" MaxLength="300" />
+          <Property Type="Int32" Name="QuyenHan" Nullable="true" />
+          <Property Type="String" Name="MoTa" Nullable="true" MaxLength="3000" />
+        </ComplexType>
+        <ComplexType Name="PhanNhom_LayTheoIDNguoiDung_Result">
+          <Property Type="Int32" Name="IDPhanNhom" Nullable="false" />
+          <Property Type="Int32" Name="IDNguoiDung" Nullable="true" />
+          <Property Type="String" Name="IDNhom" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="TenDangNhap" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TenNhom" Nullable="true" MaxLength="300" />
+          <Property Type="Int32" Name="QuyenHan" Nullable="true" />
+          <Property Type="String" Name="MoTa" Nullable="true" MaxLength="3000" />
+        </ComplexType>
+        <ComplexType Name="PhanNhom_LayTheoIDNhom_Result">
+          <Property Type="Int32" Name="IDPhanNhom" Nullable="false" />
+          <Property Type="Int32" Name="IDNguoiDung" Nullable="true" />
+          <Property Type="String" Name="IDNhom" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="NgayTao" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="TenDangNhap" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TenNhom" Nullable="true" MaxLength="300" />
+          <Property Type="Int32" Name="QuyenHan" Nullable="true" />
+          <Property Type="String" Name="MoTa" Nullable="true" MaxLength="3000" />
+        </ComplexType>
+        <ComplexType Name="SlideShow_LayTatCa_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="Mota" Nullable="true" MaxLength="3000" />
+          <Property Type="Int32" Name="ViTri" Nullable="true" />
+          <Property Type="Int32" Name="HienThi" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SlideShow_LayTheoHienThi_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="Mota" Nullable="true" MaxLength="3000" />
+          <Property Type="Int32" Name="ViTri" Nullable="true" />
+          <Property Type="Int32" Name="HienThi" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SlideShow_LayTheoID_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="Mota" Nullable="true" MaxLength="3000" />
+          <Property Type="Int32" Name="ViTri" Nullable="true" />
+          <Property Type="Int32" Name="HienThi" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="TheLoai_LayTatCa_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="IDParent" Nullable="true" />
+          <Property Type="Int32" Name="IDLoaiMenu" Nullable="true" />
+          <Property Type="Int32" Name="IDModule" Nullable="true" />
+          <Property Type="String" Name="DuongDan_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="ViTri" Nullable="true" />
+          <Property Type="Boolean" Name="Footer" Nullable="true" />
+          <Property Type="String" Name="TenLoaiMenu" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TenLoaiModule" Nullable="true" MaxLength="300" />
+        </ComplexType>
+        <ComplexType Name="TheLoai_LayTheoID_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="IDParent" Nullable="true" />
+          <Property Type="Int32" Name="IDLoaiMenu" Nullable="true" />
+          <Property Type="Int32" Name="IDModule" Nullable="true" />
+          <Property Type="String" Name="DuongDan_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="ViTri" Nullable="true" />
+          <Property Type="Boolean" Name="Footer" Nullable="true" />
+          <Property Type="String" Name="TenLoaiMenu" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TenLoaiModule" Nullable="true" MaxLength="300" />
+        </ComplexType>
+        <ComplexType Name="TheLoai_LayTheoIDParent_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="IDParent" Nullable="true" />
+          <Property Type="Int32" Name="IDLoaiMenu" Nullable="true" />
+          <Property Type="Int32" Name="IDModule" Nullable="true" />
+          <Property Type="String" Name="DuongDan_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="ViTri" Nullable="true" />
+          <Property Type="Boolean" Name="Footer" Nullable="true" />
+          <Property Type="String" Name="TenLoaiMenu" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TenLoaiModule" Nullable="true" MaxLength="300" />
+        </ComplexType>
+        <ComplexType Name="TheLoai_LayTheoLoaiMenu_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="IDParent" Nullable="true" />
+          <Property Type="Int32" Name="IDLoaiMenu" Nullable="true" />
+          <Property Type="Int32" Name="IDModule" Nullable="true" />
+          <Property Type="String" Name="DuongDan_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="ViTri" Nullable="true" />
+          <Property Type="Boolean" Name="Footer" Nullable="true" />
+          <Property Type="String" Name="TenLoaiMenu" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TenLoaiModule" Nullable="true" MaxLength="300" />
+        </ComplexType>
+        <ComplexType Name="TheLoai_LayTheoLoaiMenuVaParentIsNull_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="IDParent" Nullable="true" />
+          <Property Type="Int32" Name="IDLoaiMenu" Nullable="true" />
+          <Property Type="Int32" Name="IDModule" Nullable="true" />
+          <Property Type="String" Name="DuongDan_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="ViTri" Nullable="true" />
+          <Property Type="Boolean" Name="Footer" Nullable="true" />
+          <Property Type="String" Name="TenLoaiMenu" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TenLoaiModule" Nullable="true" MaxLength="300" />
+        </ComplexType>
+        <ComplexType Name="TheLoai_LayTheoLoaiMenuVaParentNoNull_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="IDParent" Nullable="true" />
+          <Property Type="Int32" Name="IDLoaiMenu" Nullable="true" />
+          <Property Type="Int32" Name="IDModule" Nullable="true" />
+          <Property Type="String" Name="DuongDan_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="ViTri" Nullable="true" />
+          <Property Type="Boolean" Name="Footer" Nullable="true" />
+          <Property Type="String" Name="TenLoaiMenu" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TenLoaiModule" Nullable="true" MaxLength="300" />
+        </ComplexType>
+        <ComplexType Name="TheLoai_LayTheoModule_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="IDParent" Nullable="true" />
+          <Property Type="Int32" Name="IDLoaiMenu" Nullable="true" />
+          <Property Type="Int32" Name="IDModule" Nullable="true" />
+          <Property Type="String" Name="DuongDan_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="ViTri" Nullable="true" />
+          <Property Type="Boolean" Name="Footer" Nullable="true" />
+          <Property Type="String" Name="TenLoaiMenu" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TenLoaiModule" Nullable="true" MaxLength="300" />
+        </ComplexType>
+        <ComplexType Name="TheLoai_LayTheoModuleVaParentIsNull_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="IDParent" Nullable="true" />
+          <Property Type="Int32" Name="IDLoaiMenu" Nullable="true" />
+          <Property Type="Int32" Name="IDModule" Nullable="true" />
+          <Property Type="String" Name="DuongDan_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="ViTri" Nullable="true" />
+          <Property Type="Boolean" Name="Footer" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="TheLoai_LayTheoModuleVaParentNoNull_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="IDParent" Nullable="true" />
+          <Property Type="Int32" Name="IDLoaiMenu" Nullable="true" />
+          <Property Type="Int32" Name="IDModule" Nullable="true" />
+          <Property Type="String" Name="DuongDan_Vn" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="ViTri" Nullable="true" />
+          <Property Type="Boolean" Name="Footer" Nullable="true" />
+          <Property Type="String" Name="TenLoaiMenu" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="TenLoaiModule" Nullable="true" MaxLength="300" />
+        </ComplexType>
+        <ComplexType Name="ThongTinNguoiDung_LayTheoIDTTND_Result">
+          <Property Type="Int32" Name="IDTTND" Nullable="false" />
+          <Property Type="Int32" Name="IDNguoiDung" Nullable="true" />
+          <Property Type="String" Name="TenNguoiDung" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="ChucVu" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="DiaChi" Nullable="true" MaxLength="3000" />
+          <Property Type="String" Name="NgaySinh" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="SoDT" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="NgayCapNhat" Nullable="true" MaxLength="300" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="RangSuNoOneModel1StoreContainer" CdmEntityContainer="RangSuNoOneEntities" >
+          <FunctionImportMapping FunctionImportName="BaiViet_Dem" FunctionName="RangSuNoOneModel1.Store.BaiViet_Dem" />
+          <FunctionImportMapping FunctionImportName="BaiViet_DemTheoModule" FunctionName="RangSuNoOneModel1.Store.BaiViet_DemTheoModule" />
+          <FunctionImportMapping FunctionImportName="BaiViet_DemTheoTheLoai" FunctionName="RangSuNoOneModel1.Store.BaiViet_DemTheoTheLoai" />
+          <FunctionImportMapping FunctionImportName="BaiViet_DemTheoTrangThai" FunctionName="RangSuNoOneModel1.Store.BaiViet_DemTheoTrangThai" />
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTatCa" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTatCa" />
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTop30" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTop30">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTop30_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+                <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+                <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+                <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+                <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoID" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoID_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+                <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+                <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+                <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+                <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+                <ScalarProperty Name="TenTheLoai_Vn" ColumnName="TenTheLoai_Vn" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoIDParentTop2" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoIDParentTop2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoIDParentTop2_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+                <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+                <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+                <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+                <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoIDParentTop5" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoIDParentTop5">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoIDParentTop5_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+                <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+                <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+                <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+                <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoIDParentTop6" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoIDParentTop6">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoIDParentTop6_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+                <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+                <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+                <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+                <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoIDParentTop8" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoIDParentTop8">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoIDParentTop8_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+                <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+                <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+                <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+                <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoIDTheLoai" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoIDTheLoai">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoIDTheLoai_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+                <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+                <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+                <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+                <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+                <ScalarProperty Name="TenTheLoai_Vn" ColumnName="TenTheLoai_Vn" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoIDTheLoaiTop10" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoIDTheLoaiTop10">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoIDTheLoaiTop10_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+                <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+                <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+                <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+                <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoIDTheLoaiTop6" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoIDTheLoaiTop6">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoIDTheLoaiTop6_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+                <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+                <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+                <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+                <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoLoaiMenuVaTrangThai" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoLoaiMenuVaTrangThai" />
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoModule" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoModule" />
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoModuleTop5" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoModuleTop5">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoModuleTop5_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+                <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+                <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+                <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+                <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoParent" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoParent" />
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoParentNoPaging" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoParentNoPaging">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.BaiViet_LayTheoParentNoPaging_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="TomTat_Vn" ColumnName="TomTat_Vn" />
+                <ScalarProperty Name="ChiTiet_Vn" ColumnName="ChiTiet_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+                <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+                <ScalarProperty Name="LinkDown" ColumnName="LinkDown" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+                <ScalarProperty Name="TrangChu" ColumnName="TrangChu" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoTheLoai" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoTheLoai" />
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoTheLoaiVaTrangThai" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoTheLoaiVaTrangThai" />
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoTrangThai" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoTrangThai" />
+          <FunctionImportMapping FunctionImportName="BaiViet_LayTheoTrangThaiVaModule" FunctionName="RangSuNoOneModel1.Store.BaiViet_LayTheoTrangThaiVaModule" />
+          <FunctionImportMapping FunctionImportName="BaiViet_Sua" FunctionName="RangSuNoOneModel1.Store.BaiViet_Sua" />
+          <FunctionImportMapping FunctionImportName="BaiViet_SuaLuotXem" FunctionName="RangSuNoOneModel1.Store.BaiViet_SuaLuotXem" />
+          <FunctionImportMapping FunctionImportName="BaiViet_SuaLuotXemTangLen1" FunctionName="RangSuNoOneModel1.Store.BaiViet_SuaLuotXemTangLen1" />
+          <FunctionImportMapping FunctionImportName="BaiViet_SuaThongBao" FunctionName="RangSuNoOneModel1.Store.BaiViet_SuaThongBao" />
+          <FunctionImportMapping FunctionImportName="BaiViet_SuaTrangChu" FunctionName="RangSuNoOneModel1.Store.BaiViet_SuaTrangChu" />
+          <FunctionImportMapping FunctionImportName="BaiViet_SuaTrangThai" FunctionName="RangSuNoOneModel1.Store.BaiViet_SuaTrangThai" />
+          <FunctionImportMapping FunctionImportName="BaiViet_TimKiem" FunctionName="RangSuNoOneModel1.Store.BaiViet_TimKiem" />
+          <FunctionImportMapping FunctionImportName="BaiViet_TimTheoModule" FunctionName="RangSuNoOneModel1.Store.BaiViet_TimTheoModule" />
+          <FunctionImportMapping FunctionImportName="BaiViet_TimTheoTheLoai" FunctionName="RangSuNoOneModel1.Store.BaiViet_TimTheoTheLoai" />
+          <FunctionImportMapping FunctionImportName="BaiViet_Them" FunctionName="RangSuNoOneModel1.Store.BaiViet_Them" />
+          <FunctionImportMapping FunctionImportName="BaiViet_ThemThongBao" FunctionName="RangSuNoOneModel1.Store.BaiViet_ThemThongBao" />
+          <FunctionImportMapping FunctionImportName="BaiViet_Xoa" FunctionName="RangSuNoOneModel1.Store.BaiViet_Xoa" />
+          <FunctionImportMapping FunctionImportName="DangNhap_Dem" FunctionName="RangSuNoOneModel1.Store.DangNhap_Dem" />
+          <FunctionImportMapping FunctionImportName="DangNhap_LayTatCa" FunctionName="RangSuNoOneModel1.Store.DangNhap_LayTatCa" />
+          <FunctionImportMapping FunctionImportName="DangNhap_LayTheoIDNguoiDung" FunctionName="RangSuNoOneModel1.Store.DangNhap_LayTheoIDNguoiDung" />
+          <FunctionImportMapping FunctionImportName="DangNhap_SuaHanhDong" FunctionName="RangSuNoOneModel1.Store.DangNhap_SuaHanhDong" />
+          <FunctionImportMapping FunctionImportName="DangNhap_Them" FunctionName="RangSuNoOneModel1.Store.DangNhap_Them" />
+          <FunctionImportMapping FunctionImportName="DangNhap_Xoa" FunctionName="RangSuNoOneModel1.Store.DangNhap_Xoa" />
+          <FunctionImportMapping FunctionImportName="HoiDap_CapNhatHoiDap" FunctionName="RangSuNoOneModel1.Store.HoiDap_CapNhatHoiDap" />
+          <FunctionImportMapping FunctionImportName="HoiDap_DemTheoTrangThai" FunctionName="RangSuNoOneModel1.Store.HoiDap_DemTheoTrangThai" />
+          <FunctionImportMapping FunctionImportName="HoiDap_LayTatCaTheoTrangThai" FunctionName="RangSuNoOneModel1.Store.HoiDap_LayTatCaTheoTrangThai">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.HoiDap_LayTatCaTheoTrangThai_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+                <ScalarProperty Name="NoiDungHoi" ColumnName="NoiDungHoi" />
+                <ScalarProperty Name="NoiDungDap" ColumnName="NoiDungDap" />
+                <ScalarProperty Name="NgayGui" ColumnName="NgayGui" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="HoiDap_LayTheoID" FunctionName="RangSuNoOneModel1.Store.HoiDap_LayTheoID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.HoiDap_LayTheoID_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+                <ScalarProperty Name="NoiDungHoi" ColumnName="NoiDungHoi" />
+                <ScalarProperty Name="NoiDungDap" ColumnName="NoiDungDap" />
+                <ScalarProperty Name="NgayGui" ColumnName="NgayGui" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="HoiDap_LayTheoTrangThai" FunctionName="RangSuNoOneModel1.Store.HoiDap_LayTheoTrangThai" />
+          <FunctionImportMapping FunctionImportName="HoiDap_LayTheoTrangThaiVaTheLoai" FunctionName="RangSuNoOneModel1.Store.HoiDap_LayTheoTrangThaiVaTheLoai" />
+          <FunctionImportMapping FunctionImportName="HoiDap_Them" FunctionName="RangSuNoOneModel1.Store.HoiDap_Them" />
+          <FunctionImportMapping FunctionImportName="HoTro_Dem" FunctionName="RangSuNoOneModel1.Store.HoTro_Dem" />
+          <FunctionImportMapping FunctionImportName="HoTro_LayTatCa" FunctionName="RangSuNoOneModel1.Store.HoTro_LayTatCa">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.HoTro_LayTatCa_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Ten" ColumnName="Ten" />
+                <ScalarProperty Name="SDT" ColumnName="SDT" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="HoTro_Sua" FunctionName="RangSuNoOneModel1.Store.HoTro_Sua" />
+          <FunctionImportMapping FunctionImportName="HoTro_Them" FunctionName="RangSuNoOneModel1.Store.HoTro_Them" />
+          <FunctionImportMapping FunctionImportName="HoTro_Xoa" FunctionName="RangSuNoOneModel1.Store.HoTro_Xoa" />
+          <FunctionImportMapping FunctionImportName="ImageAndClips_DemTheLoai" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_DemTheLoai" />
+          <FunctionImportMapping FunctionImportName="ImageAndClips_LayTheoID" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_LayTheoID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.ImageAndClips_LayTheoID_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Ten_Vn" ColumnName="Ten_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="ImgOrClip" ColumnName="ImgOrClip" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+                <ScalarProperty Name="TenTheLoai_Vn" ColumnName="TenTheLoai_Vn" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ImageAndClips_LayTheoSoLuong" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_LayTheoSoLuong">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.ImageAndClips_LayTheoSoLuong_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Ten_Vn" ColumnName="Ten_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="ImgOrClip" ColumnName="ImgOrClip" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+                <ScalarProperty Name="row" ColumnName="row" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ImageAndClips_LayTheoTheLoai" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_LayTheoTheLoai" />
+          <FunctionImportMapping FunctionImportName="ImageAndClips_LayTheoTheLoaiNoPaging" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_LayTheoTheLoaiNoPaging">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.ImageAndClips_LayTheoTheLoaiNoPaging_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Ten_Vn" ColumnName="Ten_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="ImgOrClip" ColumnName="ImgOrClip" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+                <ScalarProperty Name="TenTheLoai_Vn" ColumnName="TenTheLoai_Vn" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ImageAndClips_Sua" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_Sua" />
+          <FunctionImportMapping FunctionImportName="ImageAndClips_SuaLuotXem" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_SuaLuotXem" />
+          <FunctionImportMapping FunctionImportName="ImageAndClips_TimKiem" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_TimKiem" />
+          <FunctionImportMapping FunctionImportName="ImageAndClips_Top1" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_Top1">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.ImageAndClips_Top1_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Ten_Vn" ColumnName="Ten_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="ImgOrClip" ColumnName="ImgOrClip" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ImageAndClips_Top4" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_Top4">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.ImageAndClips_Top4_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Ten_Vn" ColumnName="Ten_Vn" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+                <ScalarProperty Name="LuotXem" ColumnName="LuotXem" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="ImgOrClip" ColumnName="ImgOrClip" />
+                <ScalarProperty Name="IDTheLoai" ColumnName="IDTheLoai" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ImageAndClips_Them" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_Them" />
+          <FunctionImportMapping FunctionImportName="ImageAndClips_Xoa" FunctionName="RangSuNoOneModel1.Store.ImageAndClips_Xoa" />
+          <FunctionImportMapping FunctionImportName="LienHe_Dem" FunctionName="RangSuNoOneModel1.Store.LienHe_Dem" />
+          <FunctionImportMapping FunctionImportName="LienHe_DemTheoTheLoai" FunctionName="RangSuNoOneModel1.Store.LienHe_DemTheoTheLoai" />
+          <FunctionImportMapping FunctionImportName="LienHe_DemTheoTrangThaiVaTheLoai" FunctionName="RangSuNoOneModel1.Store.LienHe_DemTheoTrangThaiVaTheLoai" />
+          <FunctionImportMapping FunctionImportName="LienHe_LayTatCa" FunctionName="RangSuNoOneModel1.Store.LienHe_LayTatCa" />
+          <FunctionImportMapping FunctionImportName="LienHe_LayTheoID" FunctionName="RangSuNoOneModel1.Store.LienHe_LayTheoID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.LienHe_LayTheoID_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+                <ScalarProperty Name="NgayGui" ColumnName="NgayGui" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+                <ScalarProperty Name="TheLoai" ColumnName="TheLoai" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="LienHe_LayTheoTheLoai" FunctionName="RangSuNoOneModel1.Store.LienHe_LayTheoTheLoai" />
+          <FunctionImportMapping FunctionImportName="LienHe_LayTheoTrangThai" FunctionName="RangSuNoOneModel1.Store.LienHe_LayTheoTrangThai" />
+          <FunctionImportMapping FunctionImportName="LienHe_LayTheoTrangThaiVaTheLoai" FunctionName="RangSuNoOneModel1.Store.LienHe_LayTheoTrangThaiVaTheLoai" />
+          <FunctionImportMapping FunctionImportName="LienHe_SuaTrangThai" FunctionName="RangSuNoOneModel1.Store.LienHe_SuaTrangThai" />
+          <FunctionImportMapping FunctionImportName="LienHe_Them" FunctionName="RangSuNoOneModel1.Store.LienHe_Them" />
+          <FunctionImportMapping FunctionImportName="LienHe_Xoa" FunctionName="RangSuNoOneModel1.Store.LienHe_Xoa" />
+          <FunctionImportMapping FunctionImportName="LoaiMenu_LayTatCa" FunctionName="RangSuNoOneModel1.Store.LoaiMenu_LayTatCa">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.LoaiMenu_LayTatCa_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TenLoai" ColumnName="TenLoai" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Module_LayTatCa" FunctionName="RangSuNoOneModel1.Store.Module_LayTatCa">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.Module_LayTatCa_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TenLoai" ColumnName="TenLoai" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="NguoiDung_Dem" FunctionName="RangSuNoOneModel1.Store.NguoiDung_Dem" />
+          <FunctionImportMapping FunctionImportName="NguoiDung_DemTenDangNhap" FunctionName="RangSuNoOneModel1.Store.NguoiDung_DemTenDangNhap" />
+          <FunctionImportMapping FunctionImportName="NguoiDung_KiemTraDangNhap" FunctionName="RangSuNoOneModel1.Store.NguoiDung_KiemTraDangNhap">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.NguoiDung_KiemTraDangNhap_Result">
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+                <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="NguoiDung_KiemTraMatKhau" FunctionName="RangSuNoOneModel1.Store.NguoiDung_KiemTraMatKhau">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.NguoiDung_KiemTraMatKhau_Result">
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+                <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="NguoiDung_LayTatCa" FunctionName="RangSuNoOneModel1.Store.NguoiDung_LayTatCa">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.NguoiDung_LayTatCa_Result">
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+                <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+                <ScalarProperty Name="TenNguoiDung" ColumnName="TenNguoiDung" />
+                <ScalarProperty Name="ChucVu" ColumnName="ChucVu" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+                <ScalarProperty Name="SoDT" ColumnName="SoDT" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="NguoiDung_LayThongTinDangNhap" FunctionName="RangSuNoOneModel1.Store.NguoiDung_LayThongTinDangNhap">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.NguoiDung_LayThongTinDangNhap_Result">
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+                <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+                <ScalarProperty Name="TenNguoiDung" ColumnName="TenNguoiDung" />
+                <ScalarProperty Name="ChucVu" ColumnName="ChucVu" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+                <ScalarProperty Name="SoDT" ColumnName="SoDT" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="NguoiDung_SuaMatKhau" FunctionName="RangSuNoOneModel1.Store.NguoiDung_SuaMatKhau" />
+          <FunctionImportMapping FunctionImportName="NguoiDung_Them" FunctionName="RangSuNoOneModel1.Store.NguoiDung_Them" />
+          <FunctionImportMapping FunctionImportName="NguoiDung_Xoa" FunctionName="RangSuNoOneModel1.Store.NguoiDung_Xoa" />
+          <FunctionImportMapping FunctionImportName="NhomNguoiDung_Dem" FunctionName="RangSuNoOneModel1.Store.NhomNguoiDung_Dem" />
+          <FunctionImportMapping FunctionImportName="NhomNguoiDung_LayTatCa" FunctionName="RangSuNoOneModel1.Store.NhomNguoiDung_LayTatCa">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.NhomNguoiDung_LayTatCa_Result">
+                <ScalarProperty Name="IDNhom" ColumnName="IDNhom" />
+                <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+                <ScalarProperty Name="QuyenHan" ColumnName="QuyenHan" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Product_Add" FunctionName="RangSuNoOneModel1.Store.Product_Add" />
+          <FunctionImportMapping FunctionImportName="Product_Count" FunctionName="RangSuNoOneModel1.Store.Product_Count" />
+          <FunctionImportMapping FunctionImportName="Product_CountOnPromo" FunctionName="RangSuNoOneModel1.Store.Product_CountOnPromo" />
+          <FunctionImportMapping FunctionImportName="Product_Delete" FunctionName="RangSuNoOneModel1.Store.Product_Delete" />
+          <FunctionImportMapping FunctionImportName="Product_InMenu" FunctionName="RangSuNoOneModel1.Store.Product_InMenu" />
+          <FunctionImportMapping FunctionImportName="Product_LayTheoIDTheLoaiTop8" FunctionName="RangSuNoOneModel1.Store.Product_LayTheoIDTheLoaiTop8" />
+          <FunctionImportMapping FunctionImportName="Product_OnPromo" FunctionName="RangSuNoOneModel1.Store.Product_OnPromo" />
+          <FunctionImportMapping FunctionImportName="Product_OnPromoTop10" FunctionName="RangSuNoOneModel1.Store.Product_OnPromoTop10" />
+          <FunctionImportMapping FunctionImportName="Product_Paging" FunctionName="RangSuNoOneModel1.Store.Product_Paging" />
+          <FunctionImportMapping FunctionImportName="Product_Search" FunctionName="RangSuNoOneModel1.Store.Product_Search" />
+          <FunctionImportMapping FunctionImportName="Product_SearchInMenu" FunctionName="RangSuNoOneModel1.Store.Product_SearchInMenu" />
+          <FunctionImportMapping FunctionImportName="Product_Single" FunctionName="RangSuNoOneModel1.Store.Product_Single" />
+          <FunctionImportMapping FunctionImportName="Product_Update" FunctionName="RangSuNoOneModel1.Store.Product_Update" />
+          <FunctionImportMapping FunctionImportName="Product_UpdatePromo" FunctionName="RangSuNoOneModel1.Store.Product_UpdatePromo" />
+          <FunctionImportMapping FunctionImportName="PhanNhom_Dem" FunctionName="RangSuNoOneModel1.Store.PhanNhom_Dem" />
+          <FunctionImportMapping FunctionImportName="PhanNhom_DemTheoNhom" FunctionName="RangSuNoOneModel1.Store.PhanNhom_DemTheoNhom" />
+          <FunctionImportMapping FunctionImportName="PhanNhom_LayTatCa" FunctionName="RangSuNoOneModel1.Store.PhanNhom_LayTatCa">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.PhanNhom_LayTatCa_Result">
+                <ScalarProperty Name="IDPhanNhom" ColumnName="IDPhanNhom" />
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+                <ScalarProperty Name="IDNhom" ColumnName="IDNhom" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+                <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+                <ScalarProperty Name="QuyenHan" ColumnName="QuyenHan" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PhanNhom_LayTheoIDNguoiDung" FunctionName="RangSuNoOneModel1.Store.PhanNhom_LayTheoIDNguoiDung">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.PhanNhom_LayTheoIDNguoiDung_Result">
+                <ScalarProperty Name="IDPhanNhom" ColumnName="IDPhanNhom" />
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+                <ScalarProperty Name="IDNhom" ColumnName="IDNhom" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+                <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+                <ScalarProperty Name="QuyenHan" ColumnName="QuyenHan" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PhanNhom_LayTheoIDNhom" FunctionName="RangSuNoOneModel1.Store.PhanNhom_LayTheoIDNhom">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.PhanNhom_LayTheoIDNhom_Result">
+                <ScalarProperty Name="IDPhanNhom" ColumnName="IDPhanNhom" />
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+                <ScalarProperty Name="IDNhom" ColumnName="IDNhom" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+                <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+                <ScalarProperty Name="QuyenHan" ColumnName="QuyenHan" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PhanNhom_Them" FunctionName="RangSuNoOneModel1.Store.PhanNhom_Them" />
+          <FunctionImportMapping FunctionImportName="PhanNhom_Xoa" FunctionName="RangSuNoOneModel1.Store.PhanNhom_Xoa" />
+          <FunctionImportMapping FunctionImportName="SlideShow_Dem" FunctionName="RangSuNoOneModel1.Store.SlideShow_Dem" />
+          <FunctionImportMapping FunctionImportName="SlideShow_LayTatCa" FunctionName="RangSuNoOneModel1.Store.SlideShow_LayTatCa">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.SlideShow_LayTatCa_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="Mota" ColumnName="Mota" />
+                <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+                <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SlideShow_LayTheoHienThi" FunctionName="RangSuNoOneModel1.Store.SlideShow_LayTheoHienThi">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.SlideShow_LayTheoHienThi_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="Mota" ColumnName="Mota" />
+                <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+                <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SlideShow_LayTheoID" FunctionName="RangSuNoOneModel1.Store.SlideShow_LayTheoID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.SlideShow_LayTheoID_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="Mota" ColumnName="Mota" />
+                <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+                <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SlideShow_Sua" FunctionName="RangSuNoOneModel1.Store.SlideShow_Sua" />
+          <FunctionImportMapping FunctionImportName="SlideShow_Them" FunctionName="RangSuNoOneModel1.Store.SlideShow_Them" />
+          <FunctionImportMapping FunctionImportName="SlideShow_Xoa" FunctionName="RangSuNoOneModel1.Store.SlideShow_Xoa" />
+          <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="RangSuNoOneModel1.Store.sp_alterdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="RangSuNoOneModel1.Store.sp_creatediagram" />
+          <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="RangSuNoOneModel1.Store.sp_dropdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="RangSuNoOneModel1.Store.sp_helpdiagramdefinition">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.sp_helpdiagramdefinition_Result">
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="RangSuNoOneModel1.Store.sp_helpdiagrams">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.sp_helpdiagrams_Result">
+                <ScalarProperty Name="Database" ColumnName="Database" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="RangSuNoOneModel1.Store.sp_renamediagram" />
+          <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="RangSuNoOneModel1.Store.sp_upgraddiagrams" />
+          <FunctionImportMapping FunctionImportName="TimKiem_BaiViet_Va_HoiDap" FunctionName="RangSuNoOneModel1.Store.TimKiem_BaiViet_Va_HoiDap" />
+          <FunctionImportMapping FunctionImportName="TheLoai_DemTheoLoaiMenu" FunctionName="RangSuNoOneModel1.Store.TheLoai_DemTheoLoaiMenu" />
+          <FunctionImportMapping FunctionImportName="TheLoai_LayTatCa" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTatCa">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTatCa_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+                <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+                <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+                <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+                <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+                <ScalarProperty Name="Footer" ColumnName="Footer" />
+                <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+                <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="TheLoai_LayTheoID" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoID_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+                <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+                <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+                <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+                <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+                <ScalarProperty Name="Footer" ColumnName="Footer" />
+                <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+                <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="TheLoai_LayTheoIDParent" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoIDParent">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoIDParent_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+                <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+                <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+                <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+                <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+                <ScalarProperty Name="Footer" ColumnName="Footer" />
+                <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+                <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="TheLoai_LayTheoLoaiMenu" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoLoaiMenu">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoLoaiMenu_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+                <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+                <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+                <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+                <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+                <ScalarProperty Name="Footer" ColumnName="Footer" />
+                <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+                <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="TheLoai_LayTheoLoaiMenuVaParentIsNull" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoLoaiMenuVaParentIsNull">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoLoaiMenuVaParentIsNull_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+                <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+                <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+                <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+                <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+                <ScalarProperty Name="Footer" ColumnName="Footer" />
+                <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+                <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="TheLoai_LayTheoLoaiMenuVaParentNoNull" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoLoaiMenuVaParentNoNull">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoLoaiMenuVaParentNoNull_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+                <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+                <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+                <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+                <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+                <ScalarProperty Name="Footer" ColumnName="Footer" />
+                <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+                <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="TheLoai_LayTheoModule" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoModule">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoModule_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+                <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+                <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+                <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+                <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+                <ScalarProperty Name="Footer" ColumnName="Footer" />
+                <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+                <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="TheLoai_LayTheoModuleVaParentIsNull" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoModuleVaParentIsNull">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoModuleVaParentIsNull_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+                <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+                <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+                <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+                <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+                <ScalarProperty Name="Footer" ColumnName="Footer" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="TheLoai_LayTheoModuleVaParentNoNull" FunctionName="RangSuNoOneModel1.Store.TheLoai_LayTheoModuleVaParentNoNull">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.TheLoai_LayTheoModuleVaParentNoNull_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TieuDe_Vn" ColumnName="TieuDe_Vn" />
+                <ScalarProperty Name="MoTa_Vn" ColumnName="MoTa_Vn" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="IDParent" ColumnName="IDParent" />
+                <ScalarProperty Name="IDLoaiMenu" ColumnName="IDLoaiMenu" />
+                <ScalarProperty Name="IDModule" ColumnName="IDModule" />
+                <ScalarProperty Name="DuongDan_Vn" ColumnName="DuongDan_Vn" />
+                <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+                <ScalarProperty Name="Footer" ColumnName="Footer" />
+                <ScalarProperty Name="TenLoaiMenu" ColumnName="TenLoaiMenu" />
+                <ScalarProperty Name="TenLoaiModule" ColumnName="TenLoaiModule" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="TheLoai_SuaFooter" FunctionName="RangSuNoOneModel1.Store.TheLoai_SuaFooter" />
+          <FunctionImportMapping FunctionImportName="TheLoai_SuaNoParent" FunctionName="RangSuNoOneModel1.Store.TheLoai_SuaNoParent" />
+          <FunctionImportMapping FunctionImportName="TheLoai_SuaYesParent" FunctionName="RangSuNoOneModel1.Store.TheLoai_SuaYesParent" />
+          <FunctionImportMapping FunctionImportName="TheLoai_ThemNoIDParent" FunctionName="RangSuNoOneModel1.Store.TheLoai_ThemNoIDParent" />
+          <FunctionImportMapping FunctionImportName="TheLoai_ThemYesIDParent" FunctionName="RangSuNoOneModel1.Store.TheLoai_ThemYesIDParent" />
+          <FunctionImportMapping FunctionImportName="TheLoai_Xoa" FunctionName="RangSuNoOneModel1.Store.TheLoai_Xoa" />
+          <FunctionImportMapping FunctionImportName="ThongKeTruyCap_Start" FunctionName="RangSuNoOneModel1.Store.ThongKeTruyCap_Start" />
+          <FunctionImportMapping FunctionImportName="ThongTinNguoiDung_LayTheoIDTTND" FunctionName="RangSuNoOneModel1.Store.ThongTinNguoiDung_LayTheoIDTTND">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RangSuNoOneModel1.ThongTinNguoiDung_LayTheoIDTTND_Result">
+                <ScalarProperty Name="IDTTND" ColumnName="IDTTND" />
+                <ScalarProperty Name="IDNguoiDung" ColumnName="IDNguoiDung" />
+                <ScalarProperty Name="TenNguoiDung" ColumnName="TenNguoiDung" />
+                <ScalarProperty Name="ChucVu" ColumnName="ChucVu" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+                <ScalarProperty Name="SoDT" ColumnName="SoDT" />
+                <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ThongTinNguoiDung_Sua" FunctionName="RangSuNoOneModel1.Store.ThongTinNguoiDung_Sua" />
+          <FunctionImportMapping FunctionImportName="ThongTinNguoiDung_Them" FunctionName="RangSuNoOneModel1.Store.ThongTinNguoiDung_Them" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

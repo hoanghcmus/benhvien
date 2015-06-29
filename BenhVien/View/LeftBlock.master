@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/View/Site.master" AutoEventWireup="true" CodeFile="LeftBlock.master.cs" Inherits="View_LeftBlock" %>
+
+<%@ Register Src="~/UserControl/UC_Hotline.ascx" TagPrefix="uc1" TagName="UC_Hotline" %>
+
+
+<%@ Register Src="~/UserControl/UC_Left_Video_Block.ascx" TagName="UC_Left_Video_Block" TagPrefix="uc2" %>
+
+
+<%@ Register Src="../UserControl/UC_HoiDap.ascx" TagName="UC_HoiDap" TagPrefix="uc3" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+
+    <link href="../Styles/highslide/highslide.css" rel="stylesheet" />
+
+    <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-buttons.css" rel="stylesheet" />
+    <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" />
+    <link href="/Styles/FancyBox-2.1.5/source/jquery.fancybox.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" runat="Server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+    </asp:ContentPlaceHolder>
+    <div class="block-wrapper">
+        <div class="block">
+            <div class="block-heder">
+                <h4>HOTLINE</h4>
+            </div>
+            <div class="block-content">
+                <%--<div class="block-line">
+                    <div class="contact-name"><span>Mr.Hoàng</span></div>
+                </div>
+                <div class="block-line bot15">
+                    <div class="contact-info">
+                        <div class="call">
+                            <img src="/Design/call.png" alt="" />
+                        </div>
+                        <div class="phone-number">
+                            <span>0983 688 507</span>
+                        </div>
+                    </div>
+                </div>
+                --%>
+                <uc1:UC_Hotline runat="server" ID="UC_Hotline" />
+            </div>
+        </div>
+        <div class="block">
+            <div class="block-heder">
+                <h4>HỎI ĐÁP VỚI BÁC SĨ</h4>
+            </div>
+            <div class="block-content">
+                <ul>
+
+                    <uc3:UC_HoiDap ID="UC_HoiDap1" runat="server" />
+
+                </ul>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block-heder">
+                <h4>VIDEO - CLIPS </h4>
+            </div>
+            <div class="block-content">
+                <%--<div class="block-line bot10" style="margin-top: -10px;">
+                    <div class="video-img">
+
+                        <a class="fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo" style="color: black; font-weight: bold;">
+                            <img src="/Design/163.jpg" alt="Video here" />
+                            <i class="video-play-button">
+                                <img src="/Design/play.png" alt="Play video" />
+                            </i></a>
+
+                    </div>
+                </div>
+                <div class="block-line">
+                    <ul>
+                        <li class=" link"><a href="javascript:void(0);">Cách chải răng trong thòi gian niềng răng.</a></li>
+                        <li class=" link"><a href="javascript:void(0);">The dõi và khắc phục sự cố bung mắc cài.</a></li>
+                        <li class=" link"><a href="javascript:void(0);">Duy trì niềng răng sau khi niềng răng</a></li>
+
+                    </ul>
+                </div>--%>
+
+
+
+
+
+                <uc2:UC_Left_Video_Block ID="UC_Left_Video_Block1" runat="server" />
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="Server">
+    <script src="/Styles/highslide/highslide-full.js" type="text/javascript"></script>
+    <script src="/Styles/highslide/highslide-with-gallery.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        hs.graphicsDir = '../Styles/highslide/graphics/';
+        hs.align = 'center';
+        hs.transitions = ['expand', 'crossfade'];
+        hs.fadeInOut = true;
+        hs.dimmingOpacity = 0.8;
+        hs.outlineType = 'rounded-white';
+        hs.captionEval = 'this.thumb.alt';
+        hs.marginBottom = 105;
+        hs.numberPosition = 'caption';
+        // Add the slideshow providing the controlbar and the thumbstrip
+        hs.addSlideshow({
+            //slideshowGroup: 'group1',
+            interval: 5000,
+            repeat: false,
+            useControls: true,
+            overlayOptions: {
+                className: 'text-controls',
+                position: 'bottom center',
+                relativeTo: 'viewport',
+                offsetY: -60
+            },
+            thumbstrip: {
+                position: 'bottom center',
+                mode: 'horizontal',
+                relativeTo: 'viewport'
+            }
+        });
+    </script>
+
+    <script src="/Styles/FancyBox-2.1.5/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
+    <script src="/Styles/FancyBox-2.1.5/source/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="/Styles/FancyBox-2.1.5/source/jquery.fancybox.js" type="text/javascript"></script>
+    <script src="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-buttons.js" type="text/javascript"></script>
+    <script src="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-media.js" type="text/javascript"></script>
+    <script src="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-thumbs.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.fancybox-media').fancybox({
+                openEffect: 'none',
+                closeEffect: 'none',
+                helpers: {
+                    media: {}
+                }
+            });
+        });
+    </script>
+
+    <asp:ContentPlaceHolder ID="footer" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+

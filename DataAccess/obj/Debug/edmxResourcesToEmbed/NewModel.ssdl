@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RangSuModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityType Name="BaiViet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TieuDe_Vn" Type="nvarchar" MaxLength="300" />
+    <Property Name="HinhAnh" Type="nvarchar" MaxLength="300" />
+    <Property Name="TomTat_Vn" Type="nvarchar" MaxLength="3000" />
+    <Property Name="ChiTiet_Vn" Type="nvarchar(max)" />
+    <Property Name="NgayTao" Type="nvarchar" MaxLength="200" />
+    <Property Name="NguoiTao" Type="nvarchar" MaxLength="300" />
+    <Property Name="NgayCapNhat" Type="nvarchar" MaxLength="200" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="300" />
+    <Property Name="LinkDown" Type="nvarchar" MaxLength="200" />
+    <Property Name="LuotXem" Type="int" />
+    <Property Name="TrangThai" Type="int" />
+    <Property Name="TrangChu" Type="bit" />
+    <Property Name="IDTheLoai" Type="int" />
+  </EntityType>
+  <EntityType Name="DangNhap">
+    <Key>
+      <PropertyRef Name="IDDangNhap" />
+    </Key>
+    <Property Name="IDDangNhap" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDNguoiDung" Type="int" />
+    <Property Name="ThoiGian" Type="nvarchar" MaxLength="300" />
+    <Property Name="DiaChiIP" Type="nvarchar" MaxLength="300" />
+    <Property Name="HanhDong" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="HoiDap">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="300" />
+    <Property Name="Email" Type="nvarchar" MaxLength="300" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="3000" />
+    <Property Name="TieuDe" Type="nvarchar" MaxLength="200" />
+    <Property Name="NoiDungHoi" Type="nvarchar(max)" />
+    <Property Name="NoiDungDap" Type="nvarchar(max)" />
+    <Property Name="NgayGui" Type="datetime" />
+    <Property Name="TrangThai" Type="int" />
+  </EntityType>
+  <EntityType Name="HoTro">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ten" Type="nvarchar" MaxLength="200" />
+    <Property Name="SDT" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="ImageAndClips">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ten_Vn" Type="nvarchar" MaxLength="200" />
+    <Property Name="NgayTao" Type="nvarchar" MaxLength="200" />
+    <Property Name="MoTa_Vn" Type="nvarchar" MaxLength="2000" />
+    <Property Name="LuotXem" Type="int" />
+    <Property Name="HinhAnh" Type="nvarchar" MaxLength="200" />
+    <Property Name="ImgOrClip" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IDTheLoai" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LienHe">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="300" />
+    <Property Name="Email" Type="nvarchar" MaxLength="300" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="3000" />
+    <Property Name="TieuDe" Type="nvarchar" MaxLength="200" />
+    <Property Name="NoiDung" Type="nvarchar(max)" />
+    <Property Name="NgayGui" Type="datetime" />
+    <Property Name="TrangThai" Type="int" />
+    <Property Name="TheLoai" Type="int" />
+  </EntityType>
+  <EntityType Name="LoaiMenu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenLoai" Type="nvarchar" MaxLength="300" />
+    <Property Name="MoTa" Type="nvarchar" MaxLength="3000" />
+  </EntityType>
+  <EntityType Name="Module">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenLoai" Type="nvarchar" MaxLength="300" />
+    <Property Name="MoTa" Type="nvarchar" MaxLength="3000" />
+  </EntityType>
+  <EntityType Name="NguoiDung">
+    <Key>
+      <PropertyRef Name="IDNguoiDung" />
+    </Key>
+    <Property Name="IDNguoiDung" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenDangNhap" Type="nvarchar" MaxLength="300" />
+    <Property Name="MatKhau" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="NhomNguoiDung">
+    <Key>
+      <PropertyRef Name="IDNhom" />
+    </Key>
+    <Property Name="IDNhom" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenNhom" Type="nvarchar" MaxLength="300" />
+    <Property Name="QuyenHan" Type="int" />
+    <Property Name="NgayTao" Type="nvarchar" MaxLength="50" />
+    <Property Name="MoTa" Type="nvarchar" MaxLength="3000" />
+  </EntityType>
+  <EntityType Name="PhanNhom">
+    <Key>
+      <PropertyRef Name="IDPhanNhom" />
+    </Key>
+    <Property Name="IDPhanNhom" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDNguoiDung" Type="int" />
+    <Property Name="IDNhom" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayTao" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SlideShow">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TieuDe_Vn" Type="nvarchar" MaxLength="200" />
+    <Property Name="HinhAnh" Type="nvarchar" MaxLength="300" />
+    <Property Name="Mota" Type="nvarchar" MaxLength="3000" />
+    <Property Name="ViTri" Type="int" />
+    <Property Name="HienThi" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TheLoai">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TieuDe_Vn" Type="nvarchar" MaxLength="200" />
+    <Property Name="MoTa_Vn" Type="nvarchar" MaxLength="3000" />
+    <Property Name="HinhAnh" Type="nvarchar" MaxLength="200" />
+    <Property Name="IDParent" Type="int" />
+    <Property Name="IDLoaiMenu" Type="int" />
+    <Property Name="IDModule" Type="int" />
+    <Property Name="DuongDan_Vn" Type="nvarchar" MaxLength="200" />
+    <Property Name="ViTri" Type="int" />
+    <Property Name="Footer" Type="bit" />
+  </EntityType>
+  <EntityType Name="ThongKeTruyCap">
+    <Key>
+      <PropertyRef Name="Ten" />
+    </Key>
+    <Property Name="Ten" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="LuotTruyCap" Type="int" />
+  </EntityType>
+  <EntityType Name="ThongTinNguoiDung">
+    <Key>
+      <PropertyRef Name="IDTTND" />
+    </Key>
+    <Property Name="IDTTND" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDNguoiDung" Type="int" />
+    <Property Name="TenNguoiDung" Type="nvarchar" MaxLength="300" />
+    <Property Name="ChucVu" Type="nvarchar" MaxLength="300" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="3000" />
+    <Property Name="NgaySinh" Type="nvarchar" MaxLength="300" />
+    <Property Name="SoDT" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <Association Name="FK_DangNhap_NguoiDung">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="0..1" />
+    <End Role="DangNhap" Type="Self.DangNhap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="IDNguoiDung" />
+      </Principal>
+      <Dependent Role="DangNhap">
+        <PropertyRef Name="IDNguoiDung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ImageAndClips_TheLoai">
+    <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="1" />
+    <End Role="ImageAndClips" Type="Self.ImageAndClips" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TheLoai">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ImageAndClips">
+        <PropertyRef Name="IDTheLoai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NoiDung_TheLoai">
+    <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="0..1" />
+    <End Role="BaiViet" Type="Self.BaiViet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TheLoai">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BaiViet">
+        <PropertyRef Name="IDTheLoai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhanNhom_NguoiDung">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="0..1" />
+    <End Role="PhanNhom" Type="Self.PhanNhom" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="IDNguoiDung" />
+      </Principal>
+      <Dependent Role="PhanNhom">
+        <PropertyRef Name="IDNguoiDung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhanNhom_NhomNguoiDung">
+    <End Role="NhomNguoiDung" Type="Self.NhomNguoiDung" Multiplicity="0..1" />
+    <End Role="PhanNhom" Type="Self.PhanNhom" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhomNguoiDung">
+        <PropertyRef Name="IDNhom" />
+      </Principal>
+      <Dependent Role="PhanNhom">
+        <PropertyRef Name="IDNhom" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TheLoai_LoaiMenu">
+    <End Role="LoaiMenu" Type="Self.LoaiMenu" Multiplicity="0..1" />
+    <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiMenu">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TheLoai">
+        <PropertyRef Name="IDLoaiMenu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TheLoai_Module">
+    <End Role="Module" Type="Self.Module" Multiplicity="0..1" />
+    <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Module">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TheLoai">
+        <PropertyRef Name="IDModule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TheLoai_TheLoai">
+    <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="0..1" />
+    <End Role="TheLoai1" Type="Self.TheLoai" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TheLoai">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TheLoai1">
+        <PropertyRef Name="IDParent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ThongTinNguoiDung_NguoiDung">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="0..1" />
+    <End Role="ThongTinNguoiDung" Type="Self.ThongTinNguoiDung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="IDNguoiDung" />
+      </Principal>
+      <Dependent Role="ThongTinNguoiDung">
+        <PropertyRef Name="IDNguoiDung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="HoiDap_LayTheoTrangThai" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TinhTrang" Type="int" Mode="In" />
+    <Parameter Name="ChieuDai" Type="int" Mode="In" />
+    <Parameter Name="SoTrang" Type="int" Mode="In" />
+    <Parameter Name="SoHangMoiTrang" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="RangSuModelStoreContainer">
+    <EntitySet Name="BaiViet" EntityType="Self.BaiViet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DangNhap" EntityType="Self.DangNhap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HoiDap" EntityType="Self.HoiDap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HoTro" EntityType="Self.HoTro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ImageAndClips" EntityType="Self.ImageAndClips" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LienHe" EntityType="Self.LienHe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoaiMenu" EntityType="Self.LoaiMenu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Module" EntityType="Self.Module" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NhomNguoiDung" EntityType="Self.NhomNguoiDung" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhanNhom" EntityType="Self.PhanNhom" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SlideShow" EntityType="Self.SlideShow" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TheLoai" EntityType="Self.TheLoai" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ThongKeTruyCap" EntityType="Self.ThongKeTruyCap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ThongTinNguoiDung" EntityType="Self.ThongTinNguoiDung" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_DangNhap_NguoiDung" Association="Self.FK_DangNhap_NguoiDung">
+      <End Role="NguoiDung" EntitySet="NguoiDung" />
+      <End Role="DangNhap" EntitySet="DangNhap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ImageAndClips_TheLoai" Association="Self.FK_ImageAndClips_TheLoai">
+      <End Role="TheLoai" EntitySet="TheLoai" />
+      <End Role="ImageAndClips" EntitySet="ImageAndClips" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NoiDung_TheLoai" Association="Self.FK_NoiDung_TheLoai">
+      <End Role="TheLoai" EntitySet="TheLoai" />
+      <End Role="BaiViet" EntitySet="BaiViet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhanNhom_NguoiDung" Association="Self.FK_PhanNhom_NguoiDung">
+      <End Role="NguoiDung" EntitySet="NguoiDung" />
+      <End Role="PhanNhom" EntitySet="PhanNhom" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhanNhom_NhomNguoiDung" Association="Self.FK_PhanNhom_NhomNguoiDung">
+      <End Role="NhomNguoiDung" EntitySet="NhomNguoiDung" />
+      <End Role="PhanNhom" EntitySet="PhanNhom" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TheLoai_LoaiMenu" Association="Self.FK_TheLoai_LoaiMenu">
+      <End Role="LoaiMenu" EntitySet="LoaiMenu" />
+      <End Role="TheLoai" EntitySet="TheLoai" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TheLoai_Module" Association="Self.FK_TheLoai_Module">
+      <End Role="Module" EntitySet="Module" />
+      <End Role="TheLoai" EntitySet="TheLoai" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TheLoai_TheLoai" Association="Self.FK_TheLoai_TheLoai">
+      <End Role="TheLoai" EntitySet="TheLoai" />
+      <End Role="TheLoai1" EntitySet="TheLoai" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ThongTinNguoiDung_NguoiDung" Association="Self.FK_ThongTinNguoiDung_NguoiDung">
+      <End Role="NguoiDung" EntitySet="NguoiDung" />
+      <End Role="ThongTinNguoiDung" EntitySet="ThongTinNguoiDung" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

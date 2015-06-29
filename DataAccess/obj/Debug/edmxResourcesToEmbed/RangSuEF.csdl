@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RangSuNoOneModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityType Name="BaiViet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TieuDe_Vn" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HinhAnh" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TomTat_Vn" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Name="ChiTiet_Vn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NgayTao" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NguoiTao" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="NgayCapNhat" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NguoiCapNhat" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="LinkDown" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="LuotXem" Type="Int32" />
+    <Property Name="TrangThai" Type="Int32" />
+    <Property Name="TrangChu" Type="Boolean" />
+    <NavigationProperty Name="TheLoai" Relationship="Self.FK_NoiDung_TheLoai" FromRole="BaiViet" ToRole="TheLoai" />
+  </EntityType>
+  <EntityType Name="DangNhap">
+    <Key>
+      <PropertyRef Name="IDDangNhap" />
+    </Key>
+    <Property Name="IDDangNhap" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ThoiGian" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChiIP" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HanhDong" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NguoiDung" Relationship="Self.FK_DangNhap_NguoiDung" FromRole="DangNhap" ToRole="NguoiDung" />
+  </EntityType>
+  <EntityType Name="HoiDap">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoTen" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Name="TieuDe" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NoiDungHoi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NoiDungDap" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NgayGui" Type="DateTime" Precision="3" />
+    <Property Name="TrangThai" Type="Int32" />
+  </EntityType>
+  <EntityType Name="HoTro">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ten" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ImageAndClip">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ten_Vn" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NgayTao" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MoTa_Vn" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="LuotXem" Type="Int32" />
+    <Property Name="HinhAnh" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ImgOrClip" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="TheLoai" Relationship="Self.FK_ImageAndClips_TheLoai" FromRole="ImageAndClips" ToRole="TheLoai" />
+  </EntityType>
+  <EntityType Name="LienHe">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoTen" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Name="TieuDe" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NgayGui" Type="DateTime" Precision="3" />
+    <Property Name="TrangThai" Type="Int32" />
+    <Property Name="TheLoai" Type="Int32" />
+  </EntityType>
+  <EntityType Name="LoaiMenu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenLoai" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="MoTa" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TheLoais" Relationship="Self.FK_TheLoai_LoaiMenu" FromRole="LoaiMenu" ToRole="TheLoai" />
+  </EntityType>
+  <EntityType Name="Module">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenLoai" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="MoTa" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TheLoais" Relationship="Self.FK_TheLoai_Module" FromRole="Module" ToRole="TheLoai" />
+  </EntityType>
+  <EntityType Name="NguoiDung">
+    <Key>
+      <PropertyRef Name="IDNguoiDung" />
+    </Key>
+    <Property Name="IDNguoiDung" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenDangNhap" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="MatKhau" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DangNhaps" Relationship="Self.FK_DangNhap_NguoiDung" FromRole="NguoiDung" ToRole="DangNhap" />
+    <NavigationProperty Name="PhanNhoms" Relationship="Self.FK_PhanNhom_NguoiDung" FromRole="NguoiDung" ToRole="PhanNhom" />
+    <NavigationProperty Name="ThongTinNguoiDungs" Relationship="Self.FK_ThongTinNguoiDung_NguoiDung" FromRole="NguoiDung" ToRole="ThongTinNguoiDung" />
+  </EntityType>
+  <EntityType Name="NhomNguoiDung">
+    <Key>
+      <PropertyRef Name="IDNhom" />
+    </Key>
+    <Property Name="IDNhom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TenNhom" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="QuyenHan" Type="Int32" />
+    <Property Name="NgayTao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MoTa" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PhanNhoms" Relationship="Self.FK_PhanNhom_NhomNguoiDung" FromRole="NhomNguoiDung" ToRole="PhanNhom" />
+  </EntityType>
+  <EntityType Name="PhanNhom">
+    <Key>
+      <PropertyRef Name="IDPhanNhom" />
+    </Key>
+    <Property Name="IDPhanNhom" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NgayTao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NguoiDung" Relationship="Self.FK_PhanNhom_NguoiDung" FromRole="PhanNhom" ToRole="NguoiDung" />
+    <NavigationProperty Name="NhomNguoiDung" Relationship="Self.FK_PhanNhom_NhomNguoiDung" FromRole="PhanNhom" ToRole="NhomNguoiDung" />
+  </EntityType>
+  <EntityType Name="SlideShow">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TieuDe_Vn" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="HinhAnh" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Mota" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Name="ViTri" Type="Int32" />
+    <Property Name="HienThi" Type="Int32" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TheLoai">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TieuDe_Vn" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MoTa_Vn" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Name="HinhAnh" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DuongDan_Vn" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ViTri" Type="Int32" />
+    <Property Name="Footer" Type="Boolean" />
+    <NavigationProperty Name="BaiViets" Relationship="Self.FK_NoiDung_TheLoai" FromRole="TheLoai" ToRole="BaiViet" />
+    <NavigationProperty Name="ImageAndClips" Relationship="Self.FK_ImageAndClips_TheLoai" FromRole="TheLoai" ToRole="ImageAndClips" />
+    <NavigationProperty Name="LoaiMenu" Relationship="Self.FK_TheLoai_LoaiMenu" FromRole="TheLoai" ToRole="LoaiMenu" />
+    <NavigationProperty Name="Module" Relationship="Self.FK_TheLoai_Module" FromRole="TheLoai" ToRole="Module" />
+    <NavigationProperty Name="TheLoai1" Relationship="Self.FK_TheLoai_TheLoai" FromRole="TheLoai" ToRole="TheLoai1" />
+    <NavigationProperty Name="TheLoai2" Relationship="Self.FK_TheLoai_TheLoai" FromRole="TheLoai1" ToRole="TheLoai" />
+  </EntityType>
+  <EntityType Name="ThongKeTruyCap">
+    <Key>
+      <PropertyRef Name="Ten" />
+    </Key>
+    <Property Name="Ten" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LuotTruyCap" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ThongTinNguoiDung">
+    <Key>
+      <PropertyRef Name="IDTTND" />
+    </Key>
+    <Property Name="IDTTND" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenNguoiDung" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="ChucVu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Name="NgaySinh" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="SoDT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgayCapNhat" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NguoiDung" Relationship="Self.FK_ThongTinNguoiDung_NguoiDung" FromRole="ThongTinNguoiDung" ToRole="NguoiDung" />
+  </EntityType>
+  <Association Name="FK_NoiDung_TheLoai">
+    <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="0..1" />
+    <End Role="BaiViet" Type="Self.BaiViet" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_DangNhap_NguoiDung">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="0..1" />
+    <End Role="DangNhap" Type="Self.DangNhap" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_ImageAndClips_TheLoai">
+    <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="1" />
+    <End Role="ImageAndClips" Type="Self.ImageAndClip" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_TheLoai_LoaiMenu">
+    <End Role="LoaiMenu" Type="Self.LoaiMenu" Multiplicity="0..1" />
+    <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_TheLoai_Module">
+    <End Role="Module" Type="Self.Module" Multiplicity="0..1" />
+    <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_PhanNhom_NguoiDung">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="0..1" />
+    <End Role="PhanNhom" Type="Self.PhanNhom" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_ThongTinNguoiDung_NguoiDung">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="0..1" />
+    <End Role="ThongTinNguoiDung" Type="Self.ThongTinNguoiDung" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_PhanNhom_NhomNguoiDung">
+    <End Role="NhomNguoiDung" Type="Self.NhomNguoiDung" Multiplicity="0..1" />
+    <End Role="PhanNhom" Type="Self.PhanNhom" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_TheLoai_TheLoai">
+    <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="0..1" />
+    <End Role="TheLoai1" Type="Self.TheLoai" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="RangSuNoOneEntities">
+    <EntitySet Name="BaiViets" EntityType="Self.BaiViet" />
+    <EntitySet Name="DangNhaps" EntityType="Self.DangNhap" />
+    <EntitySet Name="HoiDaps" EntityType="Self.HoiDap" />
+    <EntitySet Name="HoTroes" EntityType="Self.HoTro" />
+    <EntitySet Name="ImageAndClips" EntityType="Self.ImageAndClip" />
+    <EntitySet Name="LienHes" EntityType="Self.LienHe" />
+    <EntitySet Name="LoaiMenus" EntityType="Self.LoaiMenu" />
+    <EntitySet Name="Modules" EntityType="Self.Module" />
+    <EntitySet Name="NguoiDungs" EntityType="Self.NguoiDung" />
+    <EntitySet Name="NhomNguoiDungs" EntityType="Self.NhomNguoiDung" />
+    <EntitySet Name="PhanNhoms" EntityType="Self.PhanNhom" />
+    <EntitySet Name="SlideShows" EntityType="Self.SlideShow" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="TheLoais" EntityType="Self.TheLoai" />
+    <EntitySet Name="ThongKeTruyCaps" EntityType="Self.ThongKeTruyCap" />
+    <EntitySet Name="ThongTinNguoiDungs" EntityType="Self.ThongTinNguoiDung" />
+    <AssociationSet Name="FK_NoiDung_TheLoai" Association="Self.FK_NoiDung_TheLoai">
+      <End Role="TheLoai" EntitySet="TheLoais" />
+      <End Role="BaiViet" EntitySet="BaiViets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DangNhap_NguoiDung" Association="Self.FK_DangNhap_NguoiDung">
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+      <End Role="DangNhap" EntitySet="DangNhaps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ImageAndClips_TheLoai" Association="Self.FK_ImageAndClips_TheLoai">
+      <End Role="TheLoai" EntitySet="TheLoais" />
+      <End Role="ImageAndClips" EntitySet="ImageAndClips" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TheLoai_LoaiMenu" Association="Self.FK_TheLoai_LoaiMenu">
+      <End Role="LoaiMenu" EntitySet="LoaiMenus" />
+      <End Role="TheLoai" EntitySet="TheLoais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TheLoai_Module" Association="Self.FK_TheLoai_Module">
+      <End Role="Module" EntitySet="Modules" />
+      <End Role="TheLoai" EntitySet="TheLoais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhanNhom_NguoiDung" Association="Self.FK_PhanNhom_NguoiDung">
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+      <End Role="PhanNhom" EntitySet="PhanNhoms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ThongTinNguoiDung_NguoiDung" Association="Self.FK_ThongTinNguoiDung_NguoiDung">
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+      <End Role="ThongTinNguoiDung" EntitySet="ThongTinNguoiDungs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhanNhom_NhomNguoiDung" Association="Self.FK_PhanNhom_NhomNguoiDung">
+      <End Role="NhomNguoiDung" EntitySet="NhomNguoiDungs" />
+      <End Role="PhanNhom" EntitySet="PhanNhoms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TheLoai_TheLoai" Association="Self.FK_TheLoai_TheLoai">
+      <End Role="TheLoai" EntitySet="TheLoais" />
+      <End Role="TheLoai1" EntitySet="TheLoais" />
+    </AssociationSet>
+    <FunctionImport Name="BaiViet_LayTatCa" EntitySet="BaiViets" ReturnType="Collection(RangSuNoOneModel.BaiViet)">
+      <Parameter Name="ChieuDai" Mode="In" Type="Int32" />
+      <Parameter Name="SoTrang" Mode="In" Type="Int32" />
+      <Parameter Name="SoHangMoiTrang" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="TheLoai_LayTheoIDParent" EntitySet="TheLoais" ReturnType="Collection(RangSuNoOneModel.TheLoai)">
+      <Parameter Name="ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="TheLoai_LayTatCa" EntitySet="TheLoais" ReturnType="Collection(RangSuNoOneModel.TheLoai)" />
+  </EntityContainer>
+  <ComplexType Name="TheLoai_LayTheoIDParent_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="3000" />
+    <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="IDParent" Nullable="true" />
+    <Property Type="Int32" Name="IDLoaiMenu" Nullable="true" />
+    <Property Type="Int32" Name="IDModule" Nullable="true" />
+    <Property Type="String" Name="DuongDan_Vn" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="ViTri" Nullable="true" />
+    <Property Type="Boolean" Name="Footer" Nullable="true" />
+    <Property Type="String" Name="TenLoaiMenu" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="TenLoaiModule" Nullable="true" MaxLength="300" />
+  </ComplexType>
+  <ComplexType Name="TheLoai_LayTatCa_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="TieuDe_Vn" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="MoTa_Vn" Nullable="true" MaxLength="3000" />
+    <Property Type="String" Name="HinhAnh" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="IDParent" Nullable="true" />
+    <Property Type="Int32" Name="IDLoaiMenu" Nullable="true" />
+    <Property Type="Int32" Name="IDModule" Nullable="true" />
+    <Property Type="String" Name="DuongDan_Vn" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="ViTri" Nullable="true" />
+    <Property Type="Boolean" Name="Footer" Nullable="true" />
+    <Property Type="String" Name="TenLoaiMenu" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="TenLoaiModule" Nullable="true" MaxLength="300" />
+  </ComplexType>
+</Schema>

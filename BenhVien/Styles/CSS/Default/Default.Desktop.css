@@ -1,0 +1,715 @@
+﻿@charset "utf-8";
+
+@font-face {
+    font-family: UTM_EREMITAGE;
+    src: url("UTM_EREMITAGE.TTF");
+}
+
+@font-face {
+    font-family: avo;
+    src: url("/Styles/CSS/Fonts/Avo/UTM AVO_0.TTF");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial;
+}
+
+a {
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+body, .wrapper, .header, .vertical-nav, .horizontal-slideshow, .body, .footer {
+    float: left;
+    width: 100%;
+}
+
+/*CSS for header*/
+.header {
+    height: 113px;
+    position: relative;
+}
+
+.header-container {
+    float: left;
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-wrapper {
+    float: left;
+    width: 74.074%;
+    margin-left: 12.963%;
+    height: inherit;
+    position: relative;
+    top: 0;
+}
+
+.img, .link, .full {
+    width: 100%;
+    height: 100%;
+}
+/*CSS for header ---*/
+li {
+    float: left;
+}
+
+    li.has-sub {
+        position: relative;
+        z-index: 1000;
+    }
+
+        li.has-sub ul {
+            position: absolute;
+        }
+/* Start CSS for top-navigation */
+.header-top-nav {
+    float: right;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+    /* Start CSS for top-navigation */
+    .header-top-nav > ul {
+        float: left;
+        width: 100%;
+    }
+
+    .header-top-nav li {
+        float: right;
+        width: 144px;
+        height: 29px;
+        margin-right: -31px;
+        padding-top: 4px;
+        background-image: url("/Design/li_style.png");
+        background-repeat: no-repeat;
+        color: white;
+        font-family: 'avo';
+        font-size: 14px;
+        text-indent: 35px;
+    }
+
+        .header-top-nav li:first-child {
+            margin-right: -12px;
+            background-image: url("/Design/li_last_style.png");
+        }
+
+/*.header-top-nav li a {
+            float: left;
+            width: 80%;
+            text-align: center;
+        }*/
+/* End CSS for top-navigation */
+
+
+/*CSS for header*/
+.header-title {
+    float: left;
+    width: 50%;
+    height: 31.858%;
+    position: absolute;
+    top: 36%;
+    left: 9%;
+}
+
+.header-logo {
+    float: left;
+    width: 8%;
+    height: 69.911%;
+    position: absolute;
+    top: 15.044%;
+    left: 0;
+}
+
+.header-hotline {
+    width: auto;
+    height: 18px;
+    position: absolute;
+    bottom: 54px;
+    right: 0;
+}
+
+.header-search {
+    width: 257px;
+    height: 30px;
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+}
+
+.search-box {
+    float: left;
+    width: 220px;
+    height: 100%;
+    /*border: 1px solid #707070;*/
+    border: none;
+    border-radius: 3px;
+    text-indent: 10px;
+    font-style: italic;
+    font-size: 12px;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(167,171,162,1);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(167,171,162,1);
+    box-shadow: 1px 1px 1px 0px rgba(167,171,162,1);
+}
+
+.search-button {
+    float: left;
+    margin-left: 4px;
+    width: 31px;
+    height: 100%;
+}
+
+    .search-button input {
+        float: left;
+        width: 100%;
+        height: 100%;
+        background-image: url("/Design/search.png");
+        border: none;
+    }
+/*CSS for header---*/
+
+/*Start CSS for horizontal-navigation*/
+.vertical-nav {
+    float: left;
+    height: 50px;
+    background-color: #4eb222;
+    border-top: 1px solid #009900;
+    border-bottom: 1px solid #fff;
+}
+
+.vertical-nav-wapper {
+    float: left;
+    width: 74.074%;
+    height: 100%;
+    margin-left: 12.692%;
+}
+
+    .vertical-nav-wapper ul {
+        height: 100%;
+    }
+
+    .vertical-nav-wapper li {
+        font-size: 17px;
+        padding-left: 17px;
+        padding-right: 17px;
+        padding-top: 1.5%;
+        text-align: center;
+        height: 70%;
+    }
+
+        .vertical-nav-wapper li:hover {
+            background-color: #148f4b;
+        }
+
+        .vertical-nav-wapper li.has-sub ul {
+            width: 243px;
+            top: 50px;
+            left: 0px;
+        }
+
+
+li.has-sub ul {
+    display: none;
+}
+
+li.has-sub:hover > ul {
+    display: block;
+}
+
+.vertical-nav-wapper li.has-sub ul li {
+    width: inherit;
+    text-align: left;
+    height: 36px;
+    background-color: #148f4b;
+    padding-top: 10px;
+    border-top: 1px solid #FFF;
+}
+
+    .vertical-nav-wapper li.has-sub ul li:hover {
+        background-color: #3aa864;
+    }
+
+    .vertical-nav-wapper li.has-sub ul li.has-sub ul {
+        top: -1px;
+        left: 100%;
+    }
+/*Start CSS for horizontal-navigation*/
+
+.horizontal-slideshow {
+    height: 393px;
+}
+
+.flexslider {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-control-nav, .flex-control-paging {
+    clear: both;
+    margin: 0 auto;
+}
+
+.body {
+    background-color: #dee9e4;
+}
+
+.body-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.banner-box-line {
+    width: 100%;
+}
+
+.banner-box {
+    background-color: #fff;
+    border-radius: 11px 11px 5px 5px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 235px;
+}
+
+    .banner-box:last-child {
+        margin-right: 0px;
+    }
+
+.banner-box-pic {
+    float: left;
+    width: 100%;
+    height: 131px;
+}
+
+.banner-box-title {
+    float: left;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+}
+
+    .banner-box-title span {
+        float: left;
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .banner-box-title a {
+        margin-top: 20px;
+        color: #4eaa32;
+    }
+
+.link:hover a {
+    color: #148f4b;
+    font-weight: bold;
+}
+
+.footer {
+    /*height: 326px;*/
+    background-image: url("/Design/footer.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.footer-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 42px;
+}
+
+.footer-block {
+    float: left;
+    width: 100%;
+}
+
+.sumary-art {
+    color: white;
+    font-size: 14px;
+    margin: 18px auto 0;
+    text-align: center;
+    width: 777px;
+}
+
+.logo-white {
+    width: 202px;
+    margin: 0 auto;
+}
+
+.read-more {
+    margin-top: 9px;
+    margin-bottom: 26px;
+    font-size: 13.5px;
+}
+
+    .read-more a {
+        border-bottom: 1px solid;
+        color: #abe592;
+        font-style: italic;
+    }
+
+        .read-more a:hover {
+            color: #E0E0E0;
+        }
+
+.footer-info-left, .footer-info-right {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-info-left {
+    width: 47.5%;
+    padding-right: 2%;
+    border-right: 1px solid #FFF;
+}
+
+.footer-info-right {
+    width: 47.5%;
+    padding-left: 2%;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.bot15 {
+    margin-bottom: 15px;
+}
+
+.bot10 {
+    margin-bottom: 10px;
+}
+
+.bot5 {
+    margin-bottom: 5px;
+}
+
+.white {
+    color: white;
+    font-size: 14px;
+}
+
+.social-logo {
+    float: left;
+    margin-right: 5px;
+    width: 32px;
+    height: 32px;
+}
+
+.product-wrapper {
+    width: 702px;
+    margin-right: 29px;
+}
+
+.product-wrapper, .block-wrapper {
+    float: left;
+    margin-bottom: 35px;
+}
+
+.product-header {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #148f4b;
+}
+
+.product-title {
+    width: 268px;
+    height: 32px;
+    background-color: #148f4b;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+    .product-title h4 {
+        color: #fff;
+        float: left;
+        margin-top: 6px;
+        text-indent: 16px;
+    }
+
+.product-container, .article-container {
+    float: left;
+    width: 700px;
+    border: 1px solid #D0D0D0;
+    border-top: none;
+    background-color: #FFF;
+    padding-top: 15px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.product-box {
+    float: left;
+    width: 319px;
+    background-color: #FFF;
+    padding: 3px;
+    margin-left: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #dcd8ff;
+}
+
+.product-pic {
+    float: left;
+    width: 100%;
+    height: 186px;
+}
+
+.product-name {
+    float: left;
+    width: 100%;
+    min-height: 45px;
+    margin-top: -10px;
+    background-image: url("/Design/pro_name_bg.png");
+    background-size: 100% 100%;
+}
+
+    .product-name h4 {
+        float: left;
+        margin-top: 18px;
+        padding-left: 9px;
+        padding-right: 9px;
+        text-align: justify;
+    }
+
+    .product-name a {
+        color: #4eb222;
+    }
+
+
+.block-wrapper {
+    float: left;
+    width: 266px;
+    background-color: #FFF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.block {
+    float: left;
+    width: 100%;
+}
+
+.block-heder {
+    width: 100%;
+    height: 32px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #4eb222;
+}
+
+    .block-heder h4 {
+        float: left;
+        width: 100%;
+        margin-top: 6px;
+        text-align: center;
+        color: #FFF;
+    }
+
+.block-content {
+    float: left;
+    width: 91.5%;
+    padding: 7% 4% 14% 4%;
+    border: 1px solid #D0D0D0;
+    border-bottom: none;
+    margin-bottom: -5px;
+}
+
+.block:last-child .block-content {
+    border-bottom: 1px solid #D0D0D0;
+    margin-bottom: 0px;
+    padding-bottom: 8%;
+}
+
+.block-line {
+    float: left;
+    width: 100%;
+}
+
+    .block-line.bot15:last-child {
+        margin-bottom: 0;
+    }
+
+.contact-name {
+    width: 108px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #a1a1a1;
+    color: #FFF;
+    padding: 1%;
+    margin-bottom: 3px;
+}
+
+.contact-info {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.call {
+    float: left;
+    width: 29px;
+    height: 29px;
+}
+
+.phone-number {
+    float: left;
+    width: 120px;
+    height: 29px;
+    background-color: #1b7b56;
+}
+
+    .phone-number span {
+        float: left;
+        color: #FFF;
+        margin: 5px 0px 0px 5px;
+    }
+
+
+.block-content li {
+    width: 100%;
+    list-style: disc;
+    list-style-position: inside;
+    text-align: justify;
+}
+
+    .block-content li a {
+        font-size: 13.5px;
+        color: #4a4a4a;
+    }
+
+.video-img {
+    width: 100%;
+    height: 163px;
+    position: relative;
+}
+
+.video-play-button {
+    position: absolute;
+    top: 55px;
+    left: 98px;
+    opacity: 0.7;
+}
+
+    .video-play-button:hover {
+        opacity: 1;
+    }
+
+.article-wrapper {
+    float: left;
+    width: 711px;
+    margin-right: 18px;
+}
+
+.article-container {
+    width: 709px;
+}
+
+.article-box {
+    float: left;
+    width: 211px;
+    margin-left: 19px;
+    margin-bottom: 27px;
+}
+
+.article-pic {
+    float: left;
+    width: 203px;
+    height: 135px;
+    padding: 3px;
+    border: 1px solid #dcd8ff;
+}
+
+.article-name {
+    float: left;
+    width: 100%;
+    height: 40px;
+}
+
+    .article-name p, .article-name a {
+        float: left;
+        width: 100%;
+    }
+
+    .article-name p {
+        margin-top: 10px;
+    }
+
+    .article-name a {
+        font-size: 13.2px;
+        color: #4a4a4a;
+        text-align: justify;
+    }
+
+.paging {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px 0px 5px 0px;
+    border-top: 1px solid #989898;
+}
+
+    .paging li {
+        float: left;
+        width: 27px;
+        height: 27px;
+        margin-right: 3px;
+        background-color: #c6d2cc;
+        border-radius: 3px;
+    }
+
+        .paging li:hover {
+            background-color: orange;
+        }
+
+        .paging li a {
+            float: left;
+            width: 100%;
+            text-align: center;
+            margin-top: 5px;
+            color: #4f4f4f;
+        }
+
+            .paging li a:hover {
+                color: #FFF;
+                font-weight: bold;
+            }
+
+.bai-viet {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -20px;
+    text-align: justify;
+}
+
+    .bai-viet img {
+        width: auto;
+        height: auto;
+    }
+
+.paging-button {
+    background-color: #c6d2cc;
+    border-radius: 3px;
+    float: left;
+    height: 27px;
+    margin-right: 3px;
+    width: 27px;
+}
+
+.Detail_content02 a {
+    color: blue;
+}
