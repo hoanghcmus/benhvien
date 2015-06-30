@@ -17,12 +17,12 @@
                 <ItemTemplate>
                     <div class="item_videos">
                         <div class="url_videos">
-                            <a class="fancybox-media" href="<%#Eval("ImgOrClip")%>">
-                                <img src='<%#Eval("HinhAnh") %>' alt="Hình ảnh"/>
+                            <a class="fancybox-media link" href="<%#Eval("ImgOrClip")%>">
+                                <img src='<%#Eval("HinhAnh") %>' alt="Hình ảnh" class="img" />
                                 <i class="playvideo"></i></a>
                         </div>
                         <div class="name_videos">
-                            <h4><a class="fancybox-media" href="<%#Eval("ImgOrClip")%>">
+                            <h4><a class="fancybox-media  link" href="<%#Eval("ImgOrClip")%>">
                                 <%#Eval("Ten_Vn").ToString() %></a>
                             </h4>
                             <p class="meta">
@@ -33,7 +33,7 @@
                                 <strong>Mô tả:</strong>ss
                                 <%#Eval("MoTa_Vn") %>
                             </p>
-                            
+
                         </div>
                     </div>
                 </ItemTemplate>

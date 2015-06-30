@@ -24,9 +24,10 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
+    font-size: 13px;
 }
 
-body, .wrapper, .header, .vertical-nav, .horizontal-slideshow, .body, .footer {
+body, .wrapper, .header, .vertical-nav, .horizontal-slideshow, .body, .footer, .line-fix-parent-width {
     float: left;
     width: 100%;
 }
@@ -56,6 +57,7 @@ body, .wrapper, .header, .vertical-nav, .horizontal-slideshow, .body, .footer {
 }
 
 .img, .link, .full {
+    float: left;
     width: 100%;
     height: 100%;
 }
@@ -274,6 +276,7 @@ li.has-sub:hover > ul {
     width: 74.074%;
     margin-left: 12.692%;
     padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 .banner-box-line {
@@ -422,15 +425,20 @@ li.has-sub:hover > ul {
     height: 32px;
 }
 
-.product-wrapper {
-    width: 702px;
-    margin-right: 29px;
-}
+
 
 .product-wrapper, .block-wrapper {
     float: left;
-    margin-bottom: 35px;
+    margin-bottom: 18px;
 }
+
+.product-wrapper {
+    width: 100%;
+}
+
+    .product-wrapper img {
+        max-width: 100%;
+    }
 
 .product-header {
     float: left;
@@ -439,7 +447,7 @@ li.has-sub:hover > ul {
 }
 
 .product-title {
-    width: 268px;
+    width: 40%;
     height: 32px;
     background-color: #148f4b;
     border-top-left-radius: 5px;
@@ -449,13 +457,16 @@ li.has-sub:hover > ul {
     .product-title h4 {
         color: #fff;
         float: left;
-        margin-top: 6px;
+        font-family: Arial;
+        font-size: 1.2vw;
+        font-weight: bold;
+        margin-top: 9px;
         text-indent: 16px;
     }
 
 .product-container, .article-container {
     float: left;
-    width: 700px;
+    width: 99.8%;
     border: 1px solid #D0D0D0;
     border-top: none;
     background-color: #FFF;
@@ -463,43 +474,6 @@ li.has-sub:hover > ul {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
-
-.product-box {
-    float: left;
-    width: 319px;
-    background-color: #FFF;
-    padding: 3px;
-    margin-left: 13px;
-    margin-bottom: 15px;
-    border: 1px solid #dcd8ff;
-}
-
-.product-pic {
-    float: left;
-    width: 100%;
-    height: 186px;
-}
-
-.product-name {
-    float: left;
-    width: 100%;
-    min-height: 45px;
-    margin-top: -10px;
-    background-image: url("/Design/pro_name_bg.png");
-    background-size: 100% 100%;
-}
-
-    .product-name h4 {
-        float: left;
-        margin-top: 18px;
-        padding-left: 9px;
-        padding-right: 9px;
-        text-align: justify;
-    }
-
-    .product-name a {
-        color: #4eb222;
-    }
 
 
 .block-wrapper {
@@ -764,7 +738,7 @@ li.has-sub:hover > ul {
         width: 100%;
         margin-top: 10px;
         font-family: Arial;
-        font-size: 1.3vw;
+        font-size: 1.2vw;
         font-weight: bold;
         text-align: center;
     }
@@ -782,9 +756,71 @@ li.has-sub:hover > ul {
     margin-right: 1.5%;
 }
 
+.khoi {
+    float: left;
+    width: 99%;
+    margin-bottom: 10px;
+}
+
+.khoi-tieu-de {
+    float: left;
+    width: 100%;
+    height: 34px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #148f4b;
+    position: relative;
+}
+
+.gach-ngang {
+    float: left;
+    width: 96%;
+    height: 1px;
+    margin-left: 2%;
+    background-color: #1eb260;
+    position: absolute;
+    top: 1px;
+}
+
+.nga-mau {
+    float: left;
+    width: 100%;
+    height: 17px;
+    background-color: #118646;
+    position: absolute;
+    bottom: 0;
+}
+
+.tieu-de {
+    float: left;
+    width: 100%;
+    position: absolute;
+    bottom: 8px;
+}
+
+    .tieu-de h1 {
+        float: left;
+        width: 100%;
+        color: #FFF;
+        font-family: Arial;
+        font-size: 1.2vw;
+        font-weight: bold;
+        text-align: center;
+    }
+
+.khoi-noi-dung {
+    float: left;
+    width: 100%;
+    outline: 1px solid #e1e2e2;
+}
+
 .body-right {
     float: left;
     width: 68.5%;
+    font-family: Arial;
+    font-size: 13px;
+    color: #4f4f4f;
+    text-align: justify;
 }
 
 .inside-full {
@@ -802,3 +838,496 @@ li.has-sub:hover > ul {
     width: 32.992%;
     margin-left: 1%;
 }
+
+.banner-lien-ket {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.hnav, .hnav ul {
+    float: left;
+    width: 100%;
+}
+
+    .hnav > ul {
+    }
+
+        .hnav > ul > li {
+            float: left;
+            width: 100%;
+            height: 29px;
+            border-bottom: 1px solid #b2c9bd;
+        }
+
+            .hnav > ul > li:last-child {
+                border-bottom: none;
+            }
+
+            .hnav > ul > li > a {
+                color: #148f4b;
+            }
+
+                .hnav > ul > li > a > span {
+                    float: left;
+                    width: 94%;
+                    margin-left: 3%;
+                    margin-top: 9px;
+                    font-family: Arial;
+                    font-size: 13px;
+                    /*font-size: 1vw;*/
+                }
+
+            .hactive, .hnav > ul > li:hover {
+                background-color: #d1f8e3;
+            }
+
+.khoi-noi-dung-wrap {
+    float: left;
+    width: 94%;
+    margin-left: 3%;
+}
+
+.h24 {
+    height: 24px;
+}
+
+.w50p {
+    width: 50%;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.nhan {
+    float: left;
+    margin-top: 3px;
+    font-family: Arial;
+    font-size: 13px;
+    color: #5f5f5f;
+}
+
+.input {
+    float: right;
+    height: 22px;
+    border: 1px solid #c8c8c8;
+}
+
+.btn {
+    float: right;
+    width: 20%;
+    margin-left: 1.6%;
+    height: 26px;
+    background-color: #148f4b;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-family: Arial;
+    font-size: 13px;
+    color: #FFF;
+    text-align: center;
+}
+
+.galery-block {
+    float: left;
+    width: 99%;
+    height: 290px;
+    padding-bottom: 0px;
+    margin-left: 1%;
+}
+
+.galery-content {
+    float: left;
+    width: 100%;
+    height: 276px;
+    overflow: hidden;
+}
+
+    .galery-content ul {
+        float: left;
+        width: 100%;
+        height: inherit;
+    }
+
+        .galery-content ul li {
+            float: left;
+            width: 100%;
+        }
+
+.gallery-item {
+    float: left;
+    width: 41.8%;
+    height: 78px;
+    margin-left: 4%;
+    padding: 0.5%;
+    margin-top: 4%;
+    background-color: #FFF;
+}
+
+.inside-left-wrap {
+    float: left;
+    width: 100%;
+    outline: 1px solid #e1e2e2;
+}
+
+.khoi-tin-lon {
+    float: left;
+    width: 100%;
+}
+
+.tin-lon-figure {
+    float: left;
+    width: 99%;
+    margin: 0.5%;
+    height: 275px;
+}
+
+.tin-lon-tieu-de {
+    float: left;
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+    .tin-lon-tieu-de h1 {
+        float: left;
+        width: 100%;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+        .tin-lon-tieu-de h1 a {
+            color: #148f4b;
+        }
+
+.tin-lon-mo-ta {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    .tin-lon-mo-ta p {
+        float: left;
+        width: 100%;
+    }
+
+.khoi-tin-lien-quan {
+    float: left;
+    width: 100%;
+}
+
+.tin-lien-quan-tieu-de {
+    float: left;
+    width: 100%;
+    height: 33px;
+    background-color: #d1f8e3;
+    border-bottom: 1px solid #148f4b;
+}
+
+    .tin-lien-quan-tieu-de h1 {
+        float: left;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+        color: #148f4b;
+        font-weight: bold;
+    }
+
+.tin-lien-quan-noi-dung {
+    float: left;
+    width: 100%;
+}
+
+.tin-lien-quan-item {
+    float: left;
+    width: 100%;
+    height: 39%;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cecece;
+}
+
+.item-lien-quan-figure {
+    float: left;
+    width: 27.5%;
+    height: 100%;
+    margin: 0 2%;
+}
+
+.item-lien-quan-tieu-de {
+    float: left;
+    width: 68%;
+}
+
+    .item-lien-quan-tieu-de h1 {
+    }
+
+        .item-lien-quan-tieu-de h1 a {
+            color: #148f4b;
+        }
+
+.khoi1 {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.khoi1-tieu-de {
+    float: left;
+    width: 100%;
+    height: 31px;
+    background-color: #d1f8e3;
+    border-top: 3px solid #148f4b;
+}
+
+    .khoi1-tieu-de h1 {
+        float: left;
+        width: 90%;
+        margin-left: 10px;
+        margin-top: 8px;
+        color: #148f4b;
+        font-weight: bold;
+    }
+
+.khoi1-noi-dung {
+    float: left;
+    width: 100%;
+    outline: 1px solid #e1e2e2;
+}
+
+.khoi-wrap1 {
+    float: left;
+    width: 95%;
+    margin: 2.5%;
+}
+
+.item-ngang {
+    float: left;
+    width: 100%;
+    height: 126px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+    .item-ngang:last-child {
+        margin-bottom: 0px;
+    }
+
+.item-ngang-figure {
+    float: left;
+    width: 44%;
+    height: 100%;
+    margin-right: 2%;
+}
+
+.item-ngang-content {
+    float: left;
+    width: 54%;
+}
+
+.item-ngang-tieu-de {
+    float: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+    .item-ngang-tieu-de h1 {
+        float: left;
+        width: 100%;
+        font-weight: bold;
+    }
+
+        .item-ngang-tieu-de h1 a {
+            color: #148f4b;
+        }
+
+.item-ngang-mo-ta {
+    float: left;
+    width: 100%;
+}
+
+    .item-ngang-mo-ta p {
+    }
+
+.qnav {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+    .qnav > ul {
+        float: left;
+        width: 100%;
+    }
+
+        .qnav > ul > li {
+            float: left;
+            width: 100%;
+            margin-bottom: 5.5px;
+            /*line-height: 16px;*/
+        }
+
+            .qnav > ul > li:last-child {
+                margin-bottom: 0px;
+            }
+
+            .qnav > ul > li > a {
+                color: #4f4f4f;
+            }
+
+                .qnav > ul > li > a > span:first-child {
+                    float: left;
+                    width: 2%;
+                    margin-top: 4px;
+                    margin-right: 3px;
+                }
+
+                .qnav > ul > li > a > span:last-child {
+                    float: left;
+                    width: 94%;
+                }
+
+.item-doc {
+    float: left;
+    width: 47.897%;
+    margin-right: 4.2%;
+}
+
+    .item-doc:last-child {
+        margin-right: 0px;
+    }
+
+
+.item-doc-figure {
+    float: left;
+    width: 100%;
+    height: 141px;
+}
+
+.item-doc-tieu-de {
+    float: left;
+    width: 100%;
+    margin-top: 9px;
+    margin-bottom: 5px;
+}
+
+    .item-doc-tieu-de h1 {
+        float: left;
+        width: 100%;
+        font-weight: bold;
+    }
+
+        .item-doc-tieu-de h1 a {
+            color: #148f4b;
+        }
+
+.item-doc-mo-ta {
+    float: left;
+    width: 100%;
+}
+
+    .item-doc-mo-ta p {
+        float: left;
+        width: 100%;
+    }
+
+.tin-lien-quan-ngang {
+    float: left;
+    width: 100%;
+}
+
+.tin-lien-quan-ngang-tieu-de {
+    float: left;
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: -12px;
+}
+
+    .tin-lien-quan-ngang-tieu-de h1 {
+        float: left;
+        width: 100%;
+        color: #148f4b;
+        font-weight: bold;
+    }
+
+.tnav {
+    float: left;
+    width: 100%;
+    /*margin-top: 0px;*/
+    margin-bottom: 10px;
+}
+
+    .tnav > ul > li {
+        border-bottom: 1px dashed #bcbcbc;
+    }
+
+        .tnav > ul > li:last-child {
+            border-bottom: none;
+        }
+
+        .tnav > ul > li > a > span:last-child {
+            margin-bottom: 3px;
+        }
+
+        .tnav > ul > li:last-child > a > span:last-child {
+            margin-bottom: 0px;
+        }
+
+
+.web-link {
+    float: left;
+    width: 90%;
+    height: 31px;
+    margin-left: 5%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border: 1px solid #e1e2e2;
+    border-radius: 3px;
+}
+
+.web-link-input {
+    float: left;
+    width: 100%;
+    height: 100%;
+    border: none;
+    /*color: #000;*/
+}
+
+.hoi-dap-line {
+    float: left;
+    width: 91%;
+    height: 21px;
+    margin-left: 5%;
+    margin-bottom: 5px;
+}
+
+    .hoi-dap-line:first-child {
+        margin-top: 15px;
+    }
+
+    .hoi-dap-line:last-child {
+        margin-bottom: 15px;
+    }
+
+.hoi-dap-icon {
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+
+.hoi-dap-tieu-de {
+    float: left;
+    width: 88%;
+    margin-left: 2%;
+}
+
+    .hoi-dap-tieu-de a {
+        margin-top: 5px;
+        color: #148f4b;
+    }
