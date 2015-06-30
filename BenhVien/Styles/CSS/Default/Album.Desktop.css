@@ -10,16 +10,12 @@
 
 .itemalbum
 {
-    width: 218px;
-    height: 200px;
     float: left;
-    margin: 8px 0px 15px 10px;
-    border: 1px solid #FFF;
+    width: 31%;
+    height: 200px;
+    margin-left: 1%;
+    margin-right: 1%;
     background-color: #dee9e4;
-    -khtml-border-radius: 5px; /* Konqueror */
-    -moz-border-radius: 5px; /* Firefox */
-    -webkit-border-radius: 5px; /* Safari & Google Chrome */
-    -border-radius: 5px; /* Opera */
 }
 
     .itemalbum:hover
@@ -29,23 +25,24 @@
 
 .titlealbum
 {
+    float: left;
+    width: 100%;
+    height: 35px;
     background-color: #4eb222;
-    border: 1px solid #fff;
-    height: 23px;
-    margin-left: -1px;
-    margin-top: 7px;
     text-align: center;
-    width: 208px;
-    padding: 2px;
 }
 
     .titlealbum a
     {
-        position: relative;
-        font-size: 12pt;
+        float: left;
+        width: 100%;
+        margin-top: 9px;
+        font-family: Arial;
+        font-size: 13px;
         color: #FFF;
-        z-index: 999;
         text-decoration: none;
+        font-weight: bold;
+        text-align: center;
     }
 
         .titlealbum a:hover
@@ -54,41 +51,26 @@
         }
 
 .image_stack
-{ /* css style for photo stack */
-    width: 248px;
+{
+    float: left;
+    width: 100%;
     height: 160px;
     position: relative;
 }
 
     .image_stack img
-    { /* css style for photo stack */
-        width: 170px;
-        height: 100px;
-        position: absolute;
-        border: 2px solid #FFF;
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-        z-index: 99;
-        /* Firefox */
-        -moz-transition: all 0.2s ease;
-        /* WebKit */
-        -webkit-transition: all 0.2s ease;
-        /* Opera */
-        -o-transition: all 0.2s ease;
-        /* Standard */
-        transition: all 0.2s ease;
+    {
+        float: left;
+        width: 100%;
+        height: 100%;
     }
 
     .image_stack #photo1
-    { /* position of last photo in the stack */
-        top: 20px;
-        left: 45px;
-        -webkit-transform: rotate(8deg); /* safari and chrome */
-        -moz-transform: rotate(8deg); /*firefox browsers */
-        transform: rotate(8deg); /*other */
-        -ms-transform: rotate(8deg); /* Internet Explorer 9 */
-        -o-transform: rotate(8deg); /* Opera */
+    {
+        float: left;
+        width: 100%;
+        top: 0;
+        left: 0;
     }
 
     .image_stack #photo2

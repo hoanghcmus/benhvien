@@ -38,17 +38,10 @@ public partial class View_Photos : System.Web.UI.Page
             case "ImgOrClip":
                 StringBuilder sb = new StringBuilder();
                 string url01 = "";
-                string url02 = "";
-                string url03 = "";
                 string listimg = data.ImgOrClip;
                 string[] str = listimg.Split('\'');
                 url01 = str[0].ToString();
-                url02 = str[1].ToString();
-                url03 = str[2].ToString();
                 sb.Append(String.Format("<img id=\"photo1\" class=\"stackphotos\"  src='{1}' />", data.ID, url01));
-                sb.Append(String.Format("<img id=\"photo2\" class=\"stackphotos\" src='{1}' />", data.ID, url02));
-                sb.Append(String.Format("<img id=\"photo3\" class=\"stackphotos\" src='{1}' />", data.ID, url03));
-                //sb.Append(String.Format("<a href=\"DetailPhoto.aspx?ID={0}\" ><img id=\"photo3\" class=\"stackphotos\" src='{1}' /></a>", data.ID, url03));
                 return sb.ToString();
             default:
                 return "";
