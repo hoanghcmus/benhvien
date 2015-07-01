@@ -39,7 +39,7 @@ public partial class Admin_EditVideo : System.Web.UI.Page
             if (id != "")
             {
                 //lay Khao sat theo gia tri id
-                ImageAndClips data = ImageAndClips.LayTheoID(id);
+                ImageAndClips data = ImageAndClips.LayTheoID(Convert.ToInt32(id));
                 if (data == null)
                     Response.Redirect("~/Admin/MgerVideo.aspx");
                 //Dat ten trang web
@@ -83,7 +83,7 @@ public partial class Admin_EditVideo : System.Web.UI.Page
         if (lblId.Text != "")
         {
             //lay thong tin cu tu Database de cap nhat
-            data = ImageAndClips.LayTheoID(lblId.Text);
+            data = ImageAndClips.LayTheoID(Convert.ToInt32(lblId.Text));
             //cap nhat lai thoi gian chinh sua
             data.NgayTao = DateTime.Now.ToShortDateString();
         }

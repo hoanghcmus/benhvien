@@ -447,7 +447,7 @@ li.has-sub:hover > ul {
 }
 
 .product-title {
-    width: 40%;
+    width: 100%;
     height: 32px;
     background-color: #148f4b;
     border-top-left-radius: 5px;
@@ -915,13 +915,14 @@ li.has-sub:hover > ul {
 
 .input {
     float: right;
+    width: 60%;
     height: 22px;
     border: 1px solid #c8c8c8;
 }
 
 .btn {
     float: right;
-    width: 20%;
+    width: 36%;
     margin-left: 1.6%;
     height: 26px;
     background-color: #148f4b;
@@ -969,6 +970,10 @@ li.has-sub:hover > ul {
     margin-top: 4%;
     background-color: #FFF;
 }
+
+    .gallery-item img {
+        border: none !important;
+    }
 
 .inside-left-wrap {
     float: left;
@@ -1331,3 +1336,52 @@ li.has-sub:hover > ul {
         margin-top: 5px;
         color: #148f4b;
     }
+
+
+.control-pager {
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+    .control-pager a, .control-pager span {
+        float: left;
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        background-color: #e5ece5;
+        border-radius: 3px;
+        font-family: Arial;
+        /* font-weight: bold; */
+        font-size: 12px;
+        color: #148f4b;
+        text-align: center;
+        padding-top: 5px;
+        -webkit-box-shadow: 1px 1px 0px 0px rgba(174,175,174,1);
+        -moz-box-shadow: 1px 1px 0px 0px rgba(174,175,174,1);
+        box-shadow: 1px 1px 0px 0px rgba(174,175,174,1);
+    }
+
+        .control-pager a:first-child, .control-pager a:last-child {
+            width: 45px;
+            font-weight: bold;
+        }
+
+
+    .control-pager span {
+        font-weight: bold;
+        color: #f54a15;
+    }
+
+.page-item {
+}
+
+.tvlink {
+    float: left;
+    width: auto;
+    color: orange;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Tahoma;
+    margin-top: 8px;
+}

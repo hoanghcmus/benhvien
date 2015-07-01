@@ -1,39 +1,34 @@
 ﻿/*---------------------------------------------------------------------------*/
 /*----------------------------------------------------------- css list photo */
 /*---------------------------------------------------------------------------*/
-.listalbum
-{
+.listalbum {
     width: 530px;
     margin-left: 100px;
     text-align: center;
 }
 
-.itemalbum
-{
+.itemalbum {
     float: left;
     width: 31%;
-    height: 200px;
+    height: 171px;
     margin-left: 1%;
     margin-right: 1%;
-    background-color: #dee9e4;
 }
 
-    .itemalbum:hover
-    {
+    .itemalbum:hover {
         background-color: #FFF;
     }
 
-.titlealbum
-{
+.titlealbum {
     float: left;
     width: 100%;
     height: 35px;
     background-color: #4eb222;
     text-align: center;
+    margin-top: 1px;
 }
 
-    .titlealbum a
-    {
+    .titlealbum a {
         float: left;
         width: 100%;
         margin-top: 9px;
@@ -45,42 +40,36 @@
         text-align: center;
     }
 
-        .titlealbum a:hover
-        {
+        .titlealbum a:hover {
             font-weight: bold;
         }
 
-.image_stack
-{
+.image_stack {
     float: left;
     width: 100%;
-    height: 160px;
+    height: 126px;
     position: relative;
 }
 
-    .image_stack img
-    {
+    .image_stack img {
         float: left;
         width: 100%;
         height: 100%;
     }
 
-    .image_stack #photo1
-    {
+    .image_stack #photo1 {
         float: left;
         width: 100%;
         top: 0;
         left: 0;
     }
 
-    .image_stack #photo2
-    { /* position of middle photo in the stack */
+    .image_stack #photo2 { /* position of middle photo in the stack */
         top: 30px;
         left: 30px;
     }
 
-    .image_stack #photo3
-    { /* position of first photo at the top in the stack */
+    .image_stack #photo3 { /* position of first photo at the top in the stack */
         top: 40px;
         left: 20px;
         -webkit-transform: rotate(-8deg); /* safari and chrome */
@@ -90,8 +79,7 @@
         -o-transform: rotate(-8deg); /* Opera */
     }
 
-    .image_stack .rotate1
-    { /* rotate last image 15 degrees to the right */
+    .image_stack .rotate1 { /* rotate last image 15 degrees to the right */
         -webkit-transform: rotate(15deg); /* safari and chrome */
         -moz-transform: rotate(15deg); /*firefox browsers */
         transform: rotate(15deg); /*other */
@@ -99,8 +87,7 @@
         -o-transform: rotate(15deg); /* Opera */
     }
 
-    .image_stack .rotate2
-    { /* css not used*/
+    .image_stack .rotate2 { /* css not used*/
         -webkit-transform: rotate(0deg); /* safari and chrome */
         -moz-transform: rotate(0deg); /*firefox browsers */
         transform: rotate(0deg); /*other */
@@ -108,8 +95,7 @@
         -o-transform: rotate(0deg); /* Opera */
     }
 
-    .image_stack .rotate3
-    { /*rotate first image 15 degrees to the left*/
+    .image_stack .rotate3 { /*rotate first image 15 degrees to the left*/
         -webkit-transform: rotate(-15deg); /* safari and chrome */
         -moz-transform: rotate(-15deg); /*firefox browsers */
         transform: rotate(-15deg); /*other */
@@ -120,16 +106,13 @@
 /*---------------------------------------------------------------------------*/
 /*--------------------------------------------------------- css Detail photo */
 /*---------------------------------------------------------------------------*/
-.gallery
-{
-    width: 660px;
-    text-align: left;
-    margin-left: 10px;
+.gallery {
+    float: left;
+    width: 100%;
     margin-bottom: 20px;
 }
 
-    .gallery .iconphoto
-    {
+    .gallery .iconphoto {
         width: 40px;
         height: 40px;
         background: url( '/Design/iconphoto.png' ) no-repeat;
@@ -139,65 +122,32 @@
         z-index: 100;
     }
 
-    .gallery a
-    {
-        display: inline-block;
-        width: 195px;
+    .gallery a {
+        float: left;
+        width: 31.333%;
         height: 135px;
-        margin: 10px;
-        opacity: 1;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 10px;
         position: relative;
-        -khtml-user-drag: element;
-        /* CSS3 Prevent selections */
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        user-select: none;
-        /* CSS3 transition rules */
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
     }
 
-        .gallery a img
-        {
-            border: 5px solid #FFF;
-            cursor: pointer;
-            display: block;
+        .gallery a img {
+            float: left;
             height: 100%;
-            left: 0px;
+            border: none;
             position: absolute;
+            left: 0px;
             top: 0px;
             width: 100%;
             z-index: 1;
-            /* CSS3 Box sizing property */
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            -o-box-sizing: border-box;
-            box-sizing: border-box;
-            /* CSS3 transition rules */
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
-            /* CSS3 Box Shadow */
-            -moz-box-shadow: 2px 2px 4px #444;
-            -webkit-box-shadow: 2px 2px 4px #444;
-            -o-box-shadow: 2px 2px 4px #444;
-            box-shadow: 2px 2px 4px #444;
         }
 
-        /* Custom CSS3 rotate transformation */
-        .gallery a img
-        {
-            -moz-transform: rotate(-3deg);
-            -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
-        }
 
-        .gallery a:hover img
-        {
+
+        .gallery a:hover img {
             z-index: 5;
             border: 5px solid #fff;
             /* CSS3 transition rules */

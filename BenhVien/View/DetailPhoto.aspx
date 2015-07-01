@@ -2,7 +2,6 @@
     CodeFile="DetailPhoto.aspx.cs" Inherits="View_DetailPhoto" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" runat="Server">
     <div class="product-wrapper">
@@ -12,15 +11,15 @@
             </div>
         </div>
         <div class="product-container">
-            <h3>
-                <asp:Label ID="Label1" runat="server" Text="Hình ảnh"  style="color: #148f4b; font-size: 15px; margin-left: 20px;"/></h3>
+            <h3 style="margin-bottom: 9px;">
+                <asp:Label ID="Label1" runat="server" Text="Hình ảnh" Style="color: #148f4b; font-size: 15px; margin-left: 9px; font-weight: bold;" /></h3>
             <div class="gallery">
-                <asp:DataList ID="dlListimages" runat="server" RepeatColumns="3">
+                <asp:Repeater ID="dlListimages" runat="server">
                     <ItemTemplate>
-                        <a class="highslide" draggable="true" onclick="return hs.expand(this)" href="<%#Eval("HinhAnh")%>">
-                            <img src='<%#Eval("HinhAnh")%>'><i class="iconphoto"></i> </a>
+                        <a class="highslide" onclick="return hs.expand(this)" href="<%#Eval("HinhAnh")%>">
+                            <img src='<%#Eval("HinhAnh")%>' alt="Pic" /></a>
                     </ItemTemplate>
-                </asp:DataList>
+                </asp:Repeater>
             </div>
         </div>
     </div>

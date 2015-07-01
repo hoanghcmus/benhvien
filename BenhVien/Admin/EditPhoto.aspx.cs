@@ -40,7 +40,7 @@ public partial class Admin_EditPhoto : System.Web.UI.Page
         string id = Request.QueryString["ID"] ?? "";
         if (id != "")
         {
-            ImageAndClips data = ImageAndClips.LayTheoID(id);
+            ImageAndClips data = ImageAndClips.LayTheoID(Convert.ToInt32(id));
             if (data == null)
                 Response.Redirect("~/Admin/MgerPhoto.aspx");
             lbTitle01.Text = "Cập nhật album";
@@ -82,7 +82,7 @@ public partial class Admin_EditPhoto : System.Web.UI.Page
     {
         ImageAndClips data = null;
         if (lblId.Text != "")
-            data = ImageAndClips.LayTheoID(lblId.Text);//lay thong tin cu cap nhat
+            data = ImageAndClips.LayTheoID(Convert.ToInt32(lblId.Text));//lay thong tin cu cap nhat
         else
             data = new ImageAndClips();//Them moi
         data.Ten_Vn = txtTenVn.Text;
@@ -155,7 +155,7 @@ public partial class Admin_EditPhoto : System.Web.UI.Page
                 {
                     album = new List<Img>();
                     //lay du lieu moi nhat Db
-                    data = ImageAndClips.LayTheoID(lblId.Text);
+                    data = ImageAndClips.LayTheoID(Convert.ToInt32(lblId.Text));
                     SetData(data);
                     //Cap nhat hanh dong dang nhap
                     CapNhatHanhDong("Cập nhật album (id: " + lblId.Text + ")");

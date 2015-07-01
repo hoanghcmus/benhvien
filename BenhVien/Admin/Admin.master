@@ -82,7 +82,7 @@
                     </li>
                 </ul>
                 <div class="brand">
-                    <span class="first">Quản Trị&nbsp;&nbsp;</span> <span class="second">Website Răng sứ No 1</span>
+                    <span class="first">Quản Trị&nbsp;&nbsp;</span> <span class="second">Website Bệnh viện Nam Bình Thuận</span>
                 </div>
             </div>
         </div>
@@ -140,7 +140,7 @@
             </asp:HyperLink>
             <asp:HyperLink ID="lnkLetter" class="nav-header" NavigateUrl="MgerLetter.aspx?Status=0"
                 runat="server">
-                <i class="icon-tag"></i>Ý kiến khách hàng <span class="label label-info">
+                <i class="icon-tag"></i>Hỏi đáp<span class="label label-info">
                     <asp:Label ID="lbLetter" runat="server" Text="0" /></span>
             </asp:HyperLink>
             <asp:HyperLink ID="lnkMgerContact" class="nav-header" NavigateUrl="MgerContact.aspx?Status=0"
@@ -148,10 +148,10 @@
                 <i class="icon-comment"></i>Thư liên hệ <span class="label label-info">
                     <asp:Label ID="lblh" runat="server" Text="0" /></span>
             </asp:HyperLink>
-            <asp:HyperLink ID="lnkMgerSupport" class="nav-header" NavigateUrl="MgerSupport.aspx"
+            <%-- <asp:HyperLink ID="lnkMgerSupport" class="nav-header" NavigateUrl="MgerSupport.aspx"
                 runat="server">
             <i class="icon-phone"></i>Hổ trợ khách hàng 
-            </asp:HyperLink>
+            </asp:HyperLink>--%>
             <asp:HyperLink ID="lnkMgerMenu" NavigateUrl="MgerMenu.aspx" class="nav-header" runat="server">
             <i class="icon-asterisk">
                 </i>Quản lý thể loại menu</asp:HyperLink>

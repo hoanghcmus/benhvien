@@ -16,33 +16,6 @@ public partial class View_Search : System.Web.UI.Page
 
         if (!IsPostBack)
         {
-            int howManyPages = 0;
-            string trang = Request.QueryString["Page"] ?? "1";
-            string firstPageUrl = "";
-            string pagerFormat = "";
-
-            //string keyword = Request.Form["keyword"] ?? "";
-            string keyword = Request.QueryString["keyword"] ?? "";
-
-            keyword = DecodeUtf8(keyword);
-            List<TimKiem> listTimKiem = TimKiem.TimKiemThongTin(keyword.Trim(), trang, 47, out howManyPages);
-            if (listTimKiem != null)
-            {
-                rptTimKiem.DataSource = listTimKiem;
-                rptTimKiem.DataBind();
-                if (listTimKiem.Count != 0)
-                {
-                    lbMessage.Text = "<b style='color: red;'>Có " + listTimKiem.Count() + " kết quả được tìm thấy</b>";
-                }
-                else
-                {
-                    lbMessage.Text = "<b style='color: red;'>Không có kết quả nào phù hợp với nội dung tìm kiếm :: <i style='color:blue;'>" + keyword + "</i> ::</b>";
-                }
-                firstPageUrl = Link.TimKiem(keyword);
-                pagerFormat = Link.TimKiem(keyword, "{0}");
-            }
-
-            pagerBottom.Show(int.Parse(trang), howManyPages, firstPageUrl, pagerFormat, true);
 
         }
     }
@@ -77,14 +50,43 @@ public partial class View_Search : System.Web.UI.Page
             case "hienthinoidung":
                 if (data.Module.Equals("baiviet"))
                 {
-                    return "<span style='color:red;'>[..Thông tin..]  </span>" + data.TieuDe;
+                    return "<span style='color:red;'>[.::Thông tin::.]  </span>" + data.TieuDe;
                 }
                 else
                 {
-                    return "<span style='color:blue;'>[.. Hỏi đáp ..]  </span>" + data.NoiDung;
+                    return "<span style='color:blue;'>[.::Hỏi đáp::.]  </span>" + data.NoiDung;
                 }
             default:
                 return "";
         }
+    }
+
+
+    protected void ListPager_PreRender(object sender, EventArgs e)
+    {
+
+        //string keyword = Request.Form["keyword"] ?? "";
+        string keyword = Request.QueryString["keyword"] ?? "";
+
+        keyword = DecodeUtf8(keyword);
+        List<TimKiem> listTimKiem = TimKiem.TimKiemTuBaiVietVaHoiDap(keyword);
+        if (listTimKiem != null)
+        {
+            rptArticleList.DataSource = listTimKiem;
+            rptArticleList.DataBind();
+            if (listTimKiem.Count != 0)
+            {
+                lbMessage.Text = "<b style='color: red;  color: red; font-size: 13px;f ont-family: Arial; margin-bottom: 5px;float: left;'>Có " + listTimKiem.Count() + " kết quả được tìm thấy</b>";
+            }
+            else
+            {
+                lbMessage.Text = "<b style='color: red;  color: red; font-size: 13px;f ont-family: Arial; margin-bottom: 5px;float: left;'>Không có kết quả nào phù hợp với nội dung tìm kiếm :: <i style='color:blue;'>" + keyword + "</i> ::</b>";
+            }
+        }
+    }
+
+    protected void rptArticleList_DataBound(object sender, EventArgs e)
+    {
+        ListPager.Visible = (ListPager.PageSize < ListPager.TotalRowCount);
     }
 }

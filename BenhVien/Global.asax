@@ -30,6 +30,7 @@
         Session["QuyenHan"] = "";
         Session["IDDangNhap"] = "";
         Session["HanhDongDangNhap"] = "";
+        Session["thanhvien"] = 0;
         // Code that runs when a new session is started
         Session.Timeout = 120;
         Application.Lock();
@@ -38,7 +39,7 @@
         try
         {
             DataAccess.Classes.ThongKeTruyCap data = DataAccess.Classes.ThongKeTruyCap.Start();
-            Application["SoLuotTruyCap"] = data.LuotTruyCap.ToString();            
+            Application["SoLuotTruyCap"] = data.LuotTruyCap.ToString();
             data = null;
         }
         catch

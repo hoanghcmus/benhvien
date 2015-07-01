@@ -16,15 +16,15 @@
             <div class="stats">
                 <p class="stat">
                     <span class="number">
+                        <asp:Label ID="lbvideo" runat="server" Text="0" /></span>Video
+                </p>
+                <p class="stat">
+                    <span class="number">
                         <asp:Label ID="lbalbum" runat="server" Text="0" /></span>Album ảnh
                 </p>
                 <p class="stat">
                     <span class="number">
                         <asp:Label ID="lbbaiViet" runat="server" Text="0" /></span>Bài viết -
-                </p>
-                <p class="stat">
-                    <span class="number">
-                        <asp:Label ID="lbproduct" runat="server" Text="0" /></span>Sản phẩm -
                 </p>
                 <p class="stat">
                     <span class="number">

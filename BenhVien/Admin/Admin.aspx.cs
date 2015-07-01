@@ -37,6 +37,7 @@ public partial class Admin_Admin : System.Web.UI.Page
         }
         lblienHe.Text = LienHe.Dem().ToString();
         lbbaiViet.Text = BaiViet.DemTheoModule("1").ToString();
-        lbalbum.Text = ImageAndClips.DemTheoTheLoai("20").ToString();
+        lbalbum.Text = ImageAndClips.DemTheoTheLoai("14").ToString();
+        lbvideo.Text = ImageAndClips.DemTheoTheLoai("12").ToString();
     }
 }

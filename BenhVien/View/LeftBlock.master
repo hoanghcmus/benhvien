@@ -1,18 +1,9 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/View/Site.master" AutoEventWireup="true" CodeFile="LeftBlock.master.cs" Inherits="View_LeftBlock" %>
 
-<%@ Register Src="~/UserControl/UC_Hotline.ascx" TagPrefix="uc1" TagName="UC_Hotline" %>
-
-
-<%@ Register Src="~/UserControl/UC_Left_Video_Block.ascx" TagName="UC_Left_Video_Block" TagPrefix="uc2" %>
-
-
-<%@ Register Src="../UserControl/UC_HoiDap.ascx" TagName="UC_HoiDap" TagPrefix="uc3" %>
-
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 
-    <link href="../Styles/highslide/highslide.css" rel="stylesheet" />
-
+    <link href="/Styles/highslide/highslide.css" rel="stylesheet" />
     <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-buttons.css" rel="stylesheet" />
     <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" />
     <link href="/Styles/FancyBox-2.1.5/source/jquery.fancybox.css" rel="stylesheet" />
@@ -77,6 +68,7 @@
             });
         });
     </script>
+
 
     <asp:ContentPlaceHolder ID="footer" runat="server">
     </asp:ContentPlaceHolder>

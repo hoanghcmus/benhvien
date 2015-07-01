@@ -90,7 +90,7 @@ public partial class Admin_Admin : System.Web.UI.MasterPage
         lnkEditArticle.Visible = false;
         lnkMgerArticle.Visible = false;
         lnkMgerPhoto.Visible = false;
-        lnkMgerSupport.Visible = false;
+        //lnkMgerSupport.Visible = false;
         lnkSlideShow.Visible = false;
         lnkMgerVideo.Visible = false;
     }
@@ -102,7 +102,7 @@ public partial class Admin_Admin : System.Web.UI.MasterPage
         lnkEditArticle.Visible = true;
         lnkMgerArticle.Visible = true;
         lnkMgerPhoto.Visible = true;
-        lnkMgerSupport.Visible = true;
+        //lnkMgerSupport.Visible = true;
         lnkSlideShow.Visible = true;
         lnkMgerVideo.Visible = true;
     }

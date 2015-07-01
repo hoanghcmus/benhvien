@@ -141,14 +141,14 @@
                                         type="button" value="Duy&#7879;t file" class="btnedit" />
                                 </td>
                             </tr>
-                            <tr class="text">
+                         <%--   <tr class="text">
                                 <td>
                                     Thêm hiển thị menu cuối website:
                                 </td>
                                 <td>
                                     <asp:CheckBox ID="ckbFooter" runat="server" Text="Có" />
                                 </td>
-                            </tr>
+                            </tr>--%>
                             <tr>
                                 <td colspan="2">
                                     <asp:Button ID="btnLuu" runat="server" Text="Lưu menu" CssClass="btnedit" />

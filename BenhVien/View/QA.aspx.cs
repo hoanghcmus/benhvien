@@ -17,26 +17,6 @@ public partial class View_QA : System.Web.UI.Page
         {
             captchaImage.ImageUrl = new CaptchaProvider().CreateCaptcha();
             UpdataPageView.UpdataMetagMainTitle(Page, "Hỏi đáp");
-
-
-            int howManyPages = 0;
-            string tinhTrang = "1";
-            string firstPageUrl = "";
-            string pagerFormat = "";
-            string Trang = Request.QueryString["Page"] ?? "1";
-            List<HoiDap> listHoiDap = HoiDap.LayTheoTrangThai(tinhTrang, Trang, out howManyPages);
-
-            if (listHoiDap != null)
-            {
-                rptHoiDap.DataSource = listHoiDap;
-                rptHoiDap.DataBind();
-
-                firstPageUrl = DataAccess.Connect.Link.HoiDap(tinhTrang);
-                pagerFormat = DataAccess.Connect.Link.HoiDap(tinhTrang, "{0}");
-            }
-
-
-            pagerBottom.Show(int.Parse(Trang), howManyPages, firstPageUrl, pagerFormat, true);
         }
     }
     protected void refesh()
@@ -75,7 +55,7 @@ public partial class View_QA : System.Web.UI.Page
                 {
                     succesfull.Visible = true;
                     refesh();
-                    succesfull.Text = "Nội dung liên hệ của bạn đã được gủi đến Răng sứ No 1. Chúng tôi sẽ trả lời liên hệ của bạn trong thời gian sớm nhất!";
+                    succesfull.Text = "Nội dung liên hệ của bạn đã được gủi đến bệnh viện Nam Bình Thuận. Chúng tôi sẽ trả lời liên hệ của bạn trong thời gian sớm nhất!";
                 }
                 else
                 {
@@ -115,5 +95,21 @@ public partial class View_QA : System.Web.UI.Page
             default:
                 return "";
         }
+    }
+
+    protected void ListPager_PreRender(object sender, EventArgs e)
+    {
+        List<HoiDap> listHoiDap = HoiDap.GetByStatus(1);
+
+        if (listHoiDap != null && listHoiDap.Count != 0)
+        {
+            rptArticleList.DataSource = listHoiDap;
+            rptArticleList.DataBind();
+        }
+    }
+
+    protected void rptArticleList_DataBound(object sender, EventArgs e)
+    {
+        ListPager.Visible = (ListPager.PageSize < ListPager.TotalRowCount);
     }
 }

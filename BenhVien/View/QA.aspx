@@ -5,8 +5,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" runat="Server">
-    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-
     <div class="product-wrapper">
         <div class="product-header">
             <div class="product-title">
@@ -19,9 +17,7 @@
 
                     <div id="feedback">
                         <p>
-                            Mọi thắc mắc, ý kiến đóng góp xin vui lòng gửi nội dung liên hệ với chúng tôi, 
-                    vui lòng gõ tiếng Việt có dấu & nêu nội dung thông tin rõ ràng, rành mạch.
-                    Bắt đầu bằng việc viết nội dung thư vào bên dưới và gửi đi!
+                            Vui lòng nhập thông tin vào form bên dưới!
                         </p>
                         <div class="GuiYkien">
                             <asp:UpdatePanel ID="UpdatePanel2" runat="server">
@@ -110,24 +106,47 @@
                 </div>
             </div>
 
-            <div class="qa">
-                <asp:Repeater ID="rptHoiDap" runat="server">
-                    <ItemTemplate>
-                        <div class="question bot5">
-                            <img src="/Design/answer.png" alt="Question Icon" />
-                            <a href="<%#Showinfo(Container.DataItem,"hienthilink") %>"><%#Eval("NoiDungHoi") %> (<i style="font-size: 12px;"> <%#Eval("HoTen") %> gửi ngày <%#Showinfo(Container.DataItem,"ngaygui") %></i> )</a>
+            <div class="qa">            
 
-                        </div>
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+                    <ContentTemplate>
 
-                        <div class="answer bot10">
-                            <%-- <img src="/Design/answer.png" alt="Answer Icon" />--%>
-                            <%#Showinfo(Container.DataItem,"laytomtat") %>
-                            <a href="<%#Showinfo(Container.DataItem,"hienthilink") %>">Chi tiết</a>
-                        </div>
-                    </ItemTemplate>
-                </asp:Repeater>
+                        <asp:ListView ID="rptArticleList" runat="server" ItemPlaceholderID="ItemPlaceholderIDArticleList" OnDataBound="rptArticleList_DataBound">
+                            <LayoutTemplate>
 
-                <uc1:UC_Paging ID="pagerBottom" runat="server" />
+                                <asp:PlaceHolder runat="server" ID="ItemPlaceholderIDArticleList"></asp:PlaceHolder>
+                            </LayoutTemplate>
+                            <ItemTemplate>
+                                <div class="question bot5">
+                                    <img src="/Design/answer.png" alt="Question Icon" />
+                                    <a href="<%#Showinfo(Container.DataItem,"hienthilink") %>"><%#Eval("NoiDungHoi") %> (<i style="font-size: 12px;"> <%#Eval("HoTen") %> gửi ngày <%#Showinfo(Container.DataItem,"ngaygui") %></i> )</a>
+
+                                </div>
+
+                                <div class="answer bot10">
+                                    <%#Showinfo(Container.DataItem,"laytomtat") %>
+                                    <a href="<%#Showinfo(Container.DataItem,"hienthilink") %>">Chi tiết</a>
+                                </div>
+
+                            </ItemTemplate>
+                        </asp:ListView>
+
+                        <asp:DataPager ID="ListPager" PagedControlID="rptArticleList" runat="server" PageSize="10" OnPreRender="ListPager_PreRender" class="control-pager">
+                            <Fields>
+                                <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="false" ShowPreviousPageButton="true" ShowNextPageButton="false" PreviousPageText="Trước" />
+                                <asp:NumericPagerField ButtonType="Link" />
+                                <asp:NextPreviousPagerField ButtonType="Link" ShowNextPageButton="true" ShowLastPageButton="false" ShowPreviousPageButton="false" NextPageText="Sau" />
+                                <asp:TemplatePagerField></asp:TemplatePagerField>
+                            </Fields>
+                        </asp:DataPager>
+
+                    </ContentTemplate>
+
+                    <Triggers>
+                        <asp:AsyncPostBackTrigger ControlID="ListPager" />
+                    </Triggers>
+                </asp:UpdatePanel>
+
 
             </div>
 

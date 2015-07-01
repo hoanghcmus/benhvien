@@ -24,7 +24,7 @@ namespace DataAccess.Classes
         {
             try
             {
-                return CBO.FillCollection<TimKiem>(DataProvider.Instance.ExecuteReader("TimKiem_BaiViet_Va_HoiDap", tuKhoa));
+                return CBO.FillCollection<TimKiem>(DataProvider.Instance.ExecuteReader("TimKiem_BaiViet_Va_HoiDap_All", tuKhoa));
             }
             catch
             { return null; }
