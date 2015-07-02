@@ -1,16 +1,19 @@
 ﻿@charset "utf-8";
 
-@font-face {
+@font-face
+{
     font-family: UTM_EREMITAGE;
     src: url("UTM_EREMITAGE.TTF");
 }
 
-@font-face {
+@font-face
+{
     font-family: avo;
     src: url("/Styles/CSS/Fonts/Avo/UTM AVO_0.TTF");
 }
 
-* {
+*
+{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -18,27 +21,32 @@
     font-family: Arial;
 }
 
-a {
+a
+{
     color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6
+{
     font-weight: normal;
     font-size: 13px;
 }
 
-body, .wrapper, .header, .vertical-nav, .horizontal-slideshow, .body, .footer, .line-fix-parent-width {
+body, .wrapper, .header, .vertical-nav, .horizontal-slideshow, .body, .footer, .line-fix-parent-width
+{
     float: left;
     width: 100%;
 }
 
 /*CSS for header*/
-.header {
+.header
+{
     height: 113px;
     position: relative;
 }
 
-.header-container {
+.header-container
+{
     float: left;
     width: 100%;
     height: inherit;
@@ -47,7 +55,8 @@ body, .wrapper, .header, .vertical-nav, .horizontal-slideshow, .body, .footer, .
     left: 0;
 }
 
-.header-wrapper {
+.header-wrapper
+{
     float: left;
     width: 74.074%;
     margin-left: 12.963%;
@@ -56,26 +65,31 @@ body, .wrapper, .header, .vertical-nav, .horizontal-slideshow, .body, .footer, .
     top: 0;
 }
 
-.img, .link, .full {
+.img, .link, .full
+{
     float: left;
     width: 100%;
     height: 100%;
 }
 /*CSS for header ---*/
-li {
+li
+{
     float: left;
 }
 
-    li.has-sub {
+    li.has-sub
+    {
         position: relative;
         z-index: 1000;
     }
 
-        li.has-sub ul {
+        li.has-sub ul
+        {
             position: absolute;
         }
 /* Start CSS for top-navigation */
-.header-top-nav {
+.header-top-nav
+{
     float: right;
     width: 100%;
     position: absolute;
@@ -83,12 +97,14 @@ li {
     right: 0;
 }
     /* Start CSS for top-navigation */
-    .header-top-nav > ul {
+    .header-top-nav > ul
+    {
         float: left;
         width: 100%;
     }
 
-    .header-top-nav li {
+    .header-top-nav li
+    {
         float: right;
         width: 144px;
         height: 29px;
@@ -102,7 +118,8 @@ li {
         text-indent: 35px;
     }
 
-        .header-top-nav li:first-child {
+        .header-top-nav li:first-child
+        {
             margin-right: -12px;
             background-image: url("/Design/li_last_style.png");
         }
@@ -116,7 +133,8 @@ li {
 
 
 /*CSS for header*/
-.header-title {
+.header-title
+{
     float: left;
     width: 50%;
     height: 31.858%;
@@ -125,7 +143,8 @@ li {
     left: 9%;
 }
 
-.header-logo {
+.header-logo
+{
     float: left;
     width: 8%;
     height: 69.911%;
@@ -134,7 +153,8 @@ li {
     left: 0;
 }
 
-.header-hotline {
+.header-hotline
+{
     width: auto;
     height: 18px;
     position: absolute;
@@ -142,7 +162,8 @@ li {
     right: 0;
 }
 
-.header-search {
+.header-search
+{
     width: 257px;
     height: 30px;
     position: absolute;
@@ -150,7 +171,8 @@ li {
     right: 0;
 }
 
-.search-box {
+.search-box
+{
     float: left;
     width: 220px;
     height: 100%;
@@ -165,14 +187,16 @@ li {
     box-shadow: 1px 1px 1px 0px rgba(167,171,162,1);
 }
 
-.search-button {
+.search-button
+{
     float: left;
     margin-left: 4px;
     width: 31px;
     height: 100%;
 }
 
-    .search-button input {
+    .search-button input
+    {
         float: left;
         width: 100%;
         height: 100%;
@@ -182,7 +206,8 @@ li {
 /*CSS for header---*/
 
 /*Start CSS for horizontal-navigation*/
-.vertical-nav {
+.vertical-nav
+{
     float: left;
     width: 100%;
     height: 50px;
@@ -191,20 +216,23 @@ li {
     border-bottom: 1px solid #fff;
 }
 
-.vertical-nav-wapper {
+.vertical-nav-wapper
+{
     float: left;
     width: 74.074%;
     height: 100%;
     margin-left: 12.692%;
 }
 
-    .vertical-nav-wapper ul {
+    .vertical-nav-wapper ul
+    {
         float: left;
         width: 100%;
         height: 100%;
     }
 
-    .vertical-nav-wapper li {
+    .vertical-nav-wapper li
+    {
         float: left;
         font-family: 'avo';
         font-size: 1.2vw;
@@ -215,26 +243,31 @@ li {
         height: 70%;
     }
 
-        .vertical-nav-wapper li:hover, .active {
+        .vertical-nav-wapper li:hover, .active
+        {
             background-color: #148f4b;
         }
 
-        .vertical-nav-wapper li.has-sub ul {
+        .vertical-nav-wapper li.has-sub ul
+        {
             width: 243px;
             top: 50px;
             left: 0px;
         }
 
 
-li.has-sub ul {
+li.has-sub ul
+{
     display: none;
 }
 
-li.has-sub:hover > ul {
+li.has-sub:hover > ul
+{
     display: block;
 }
 
-.vertical-nav-wapper li.has-sub ul li {
+.vertical-nav-wapper li.has-sub ul li
+{
     width: inherit;
     text-align: left;
     height: 36px;
@@ -243,35 +276,42 @@ li.has-sub:hover > ul {
     border-top: 1px solid #FFF;
 }
 
-    .vertical-nav-wapper li.has-sub ul li:hover {
+    .vertical-nav-wapper li.has-sub ul li:hover
+    {
         background-color: #3aa864;
     }
 
-    .vertical-nav-wapper li.has-sub ul li.has-sub ul {
+    .vertical-nav-wapper li.has-sub ul li.has-sub ul
+    {
         top: -1px;
         left: 100%;
     }
 /*Start CSS for horizontal-navigation*/
 
-.horizontal-slideshow {
+.horizontal-slideshow
+{
     height: 393px;
     position: relative;
 }
 
-.flexslider {
+.flexslider
+{
     width: 100%;
     height: 100%;
 }
 
-.flex-control-nav, .flex-control-paging {
+.flex-control-nav, .flex-control-paging
+{
     clear: both;
     margin: 0 auto;
 }
 
-.body {
+.body
+{
 }
 
-.body-wrapper {
+.body-wrapper
+{
     float: left;
     width: 74.074%;
     margin-left: 12.692%;
@@ -279,11 +319,13 @@ li.has-sub:hover > ul {
     margin-bottom: 20px;
 }
 
-.banner-box-line {
+.banner-box-line
+{
     width: 100%;
 }
 
-.banner-box {
+.banner-box
+{
     background-color: #fff;
     border-radius: 11px 11px 5px 5px;
     float: left;
@@ -292,59 +334,69 @@ li.has-sub:hover > ul {
     width: 235px;
 }
 
-    .banner-box:last-child {
+    .banner-box:last-child
+    {
         margin-right: 0px;
     }
 
-.banner-box-pic {
+.banner-box-pic
+{
     float: left;
     width: 100%;
     height: 131px;
 }
 
-.banner-box-title {
+.banner-box-title
+{
     float: left;
     width: 100%;
     height: 45px;
     text-align: center;
 }
 
-    .banner-box-title span {
+    .banner-box-title span
+    {
         float: left;
         margin-top: 12px;
         width: 100%;
     }
 
-    .banner-box-title a {
+    .banner-box-title a
+    {
         margin-top: 20px;
         color: #4eaa32;
     }
 
-.link:hover a {
+.link:hover a
+{
     color: #148f4b;
     font-weight: bold;
 }
 
-.footer {
+.footer
+{
     /*height: 326px;*/
     background-image: url("/Design/footer.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-.footer-wrapper {
+.footer-wrapper
+{
     float: left;
     width: 74.074%;
     margin-left: 12.692%;
     padding-top: 42px;
 }
 
-.footer-block {
+.footer-block
+{
     float: left;
     width: 100%;
 }
 
-.sumary-art {
+.sumary-art
+{
     color: #FFF;
     font-size: 14px;
     margin-left: 11.15%;
@@ -353,72 +405,86 @@ li.has-sub:hover > ul {
     margin-top: 18px;
 }
 
-.logo-white {
+.logo-white
+{
     float: left;
     width: 38.5%;
     height: 29px;
     margin-left: 30.75%;
 }
 
-.read-more {
+.read-more
+{
     margin-top: 9px;
     margin-bottom: 26px;
     font-size: 13.5px;
 }
 
-    .read-more a {
+    .read-more a
+    {
         border-bottom: 1px solid;
         color: #abe592;
         font-style: italic;
     }
 
-        .read-more a:hover {
+        .read-more a:hover
+        {
             color: #E0E0E0;
         }
 
-.footer-info-left, .footer-info-right {
+.footer-info-left, .footer-info-right
+{
     float: left;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.footer-info-left {
+.footer-info-left
+{
     width: 47.5%;
     padding-right: 2%;
     border-right: 1px solid #FFF;
 }
 
-.footer-info-right {
+.footer-info-right
+{
     width: 47.5%;
     padding-left: 2%;
 }
 
-.align-right {
+.align-right
+{
     text-align: right;
 }
 
-.align-left {
+.align-left
+{
     text-align: left;
 }
 
-.bot15 {
+.bot15
+{
     margin-bottom: 15px;
 }
 
-.bot10 {
+.bot10
+{
     margin-bottom: 10px;
 }
 
-.bot5 {
+.bot5
+{
     margin-bottom: 5px;
 }
 
-.white {
+.white
+{
     color: white;
     font-size: 14px;
 }
 
-.social-logo {
+.social-logo
+{
     float: left;
     margin-right: 5px;
     width: 32px;
@@ -427,34 +493,40 @@ li.has-sub:hover > ul {
 
 
 
-.product-wrapper, .block-wrapper {
+.product-wrapper, .block-wrapper
+{
     float: left;
     margin-bottom: 18px;
 }
 
-.product-wrapper {
+.product-wrapper
+{
     width: 100%;
 }
 
-    .product-wrapper img {
+    .product-wrapper img
+    {
         max-width: 100%;
     }
 
-.product-header {
+.product-header
+{
     float: left;
     width: 100%;
     border-bottom: 1px solid #148f4b;
 }
 
-.product-title {
-    width: 40%;
+.product-title
+{
+    width: 100%;
     height: 32px;
     background-color: #148f4b;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-    .product-title h4 {
+    .product-title h4
+    {
         color: #fff;
         float: left;
         font-family: Arial;
@@ -464,19 +536,22 @@ li.has-sub:hover > ul {
         text-indent: 16px;
     }
 
-.product-container, .article-container {
+.product-container, .article-container
+{
     float: left;
     width: 99.8%;
     border: 1px solid #D0D0D0;
     border-top: none;
     background-color: #FFF;
     padding-top: 15px;
+    padding-bottom: 15px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
 
 
-.block-wrapper {
+.block-wrapper
+{
     float: left;
     width: 266px;
     background-color: #FFF;
@@ -484,12 +559,14 @@ li.has-sub:hover > ul {
     border-top-right-radius: 5px;
 }
 
-.block {
+.block
+{
     float: left;
     width: 100%;
 }
 
-.block-heder {
+.block-heder
+{
     width: 100%;
     height: 32px;
     border-top-left-radius: 5px;
@@ -497,7 +574,8 @@ li.has-sub:hover > ul {
     background-color: #4eb222;
 }
 
-    .block-heder h4 {
+    .block-heder h4
+    {
         float: left;
         width: 100%;
         margin-top: 6px;
@@ -505,7 +583,8 @@ li.has-sub:hover > ul {
         color: #FFF;
     }
 
-.block-content {
+.block-content
+{
     float: left;
     width: 91.5%;
     padding: 7% 4% 14% 4%;
@@ -514,22 +593,26 @@ li.has-sub:hover > ul {
     margin-bottom: -5px;
 }
 
-.block:last-child .block-content {
+.block:last-child .block-content
+{
     border-bottom: 1px solid #D0D0D0;
     margin-bottom: 0px;
     padding-bottom: 8%;
 }
 
-.block-line {
+.block-line
+{
     float: left;
     width: 100%;
 }
 
-    .block-line.bot15:last-child {
+    .block-line.bot15:last-child
+    {
         margin-bottom: 0;
     }
 
-.contact-name {
+.contact-name
+{
     width: 108px;
     margin: 0 auto;
     text-align: center;
@@ -539,78 +622,91 @@ li.has-sub:hover > ul {
     margin-bottom: 3px;
 }
 
-.contact-info {
+.contact-info
+{
     width: 150px;
     margin: 0 auto;
 }
 
-.call {
+.call
+{
     float: left;
     width: 29px;
     height: 29px;
 }
 
-.phone-number {
+.phone-number
+{
     float: left;
     width: 120px;
     height: 29px;
     background-color: #1b7b56;
 }
 
-    .phone-number span {
+    .phone-number span
+    {
         float: left;
         color: #FFF;
         margin: 5px 0px 0px 5px;
     }
 
 
-.block-content li {
+.block-content li
+{
     width: 100%;
     list-style: disc;
     list-style-position: inside;
     text-align: justify;
 }
 
-    .block-content li a {
+    .block-content li a
+    {
         font-size: 13.5px;
         color: #4a4a4a;
     }
 
-.video-img {
+.video-img
+{
     width: 100%;
     height: 163px;
     position: relative;
 }
 
-.video-play-button {
+.video-play-button
+{
     position: absolute;
     top: 55px;
     left: 98px;
     opacity: 0.7;
 }
 
-    .video-play-button:hover {
+    .video-play-button:hover
+    {
         opacity: 1;
     }
 
-.article-wrapper {
+.article-wrapper
+{
     float: left;
     width: 711px;
     margin-right: 18px;
 }
 
-.article-container {
+.article-container
+{
     width: 709px;
 }
 
-.article-box {
+.article-box
+{
     float: left;
     width: 211px;
     margin-left: 19px;
     margin-bottom: 27px;
 }
 
-.article-pic {
+.article-pic
+{
     float: left;
     width: 203px;
     height: 135px;
@@ -618,28 +714,33 @@ li.has-sub:hover > ul {
     border: 1px solid #dcd8ff;
 }
 
-.article-name {
+.article-name
+{
     float: left;
     width: 100%;
     height: 40px;
 }
 
-    .article-name p, .article-name a {
+    .article-name p, .article-name a
+    {
         float: left;
         width: 100%;
     }
 
-    .article-name p {
+    .article-name p
+    {
         margin-top: 10px;
     }
 
-    .article-name a {
+    .article-name a
+    {
         font-size: 13.2px;
         color: #4a4a4a;
         text-align: justify;
     }
 
-.paging {
+.paging
+{
     float: left;
     width: 100%;
     margin-top: 20px;
@@ -647,7 +748,8 @@ li.has-sub:hover > ul {
     border-top: 1px solid #989898;
 }
 
-    .paging li {
+    .paging li
+    {
         float: left;
         width: 27px;
         height: 27px;
@@ -656,11 +758,13 @@ li.has-sub:hover > ul {
         border-radius: 3px;
     }
 
-        .paging li:hover {
+        .paging li:hover
+        {
             background-color: orange;
         }
 
-        .paging li a {
+        .paging li a
+        {
             float: left;
             width: 100%;
             text-align: center;
@@ -668,24 +772,28 @@ li.has-sub:hover > ul {
             color: #4f4f4f;
         }
 
-            .paging li a:hover {
+            .paging li a:hover
+            {
                 color: #FFF;
                 font-weight: bold;
             }
 
-.bai-viet {
+.bai-viet
+{
     margin-left: 10px;
     margin-right: 10px;
     margin-top: -20px;
     text-align: justify;
 }
 
-    .bai-viet img {
+    .bai-viet img
+    {
         width: auto;
         height: auto;
     }
 
-.paging-button {
+.paging-button
+{
     background-color: #c6d2cc;
     border-radius: 3px;
     float: left;
@@ -694,11 +802,13 @@ li.has-sub:hover > ul {
     width: 27px;
 }
 
-.Detail_content02 a {
+.Detail_content02 a
+{
     color: blue;
 }
 
-.popular-info {
+.popular-info
+{
     float: left;
     width: 74.074%;
     margin-left: 12.692%;
@@ -707,23 +817,27 @@ li.has-sub:hover > ul {
     bottom: -42px;
 }
 
-.info-block {
+.info-block
+{
     float: left;
     width: 24%;
     margin-right: 1.3%;
 }
 
-    .info-block:last-child {
+    .info-block:last-child
+    {
         margin-right: 0px;
     }
 
-.info-figure {
+.info-figure
+{
     float: left;
     width: 100%;
     height: 88px;
 }
 
-.info-title {
+.info-title
+{
     float: left;
     width: 100%;
     height: 41px;
@@ -733,7 +847,8 @@ li.has-sub:hover > ul {
     border-bottom-left-radius: 8px;
 }
 
-    .info-title h1 {
+    .info-title h1
+    {
         float: left;
         width: 100%;
         margin-top: 10px;
@@ -743,26 +858,30 @@ li.has-sub:hover > ul {
         text-align: center;
     }
 
-.sep {
+.sep
+{
     float: left;
     width: 100%;
     height: 42px;
     background-color: #e4eae7;
 }
 
-.body-left {
+.body-left
+{
     float: left;
     width: 30%;
     margin-right: 1.5%;
 }
 
-.khoi {
+.khoi
+{
     float: left;
     width: 99%;
     margin-bottom: 10px;
 }
 
-.khoi-tieu-de {
+.khoi-tieu-de
+{
     float: left;
     width: 100%;
     height: 34px;
@@ -772,7 +891,8 @@ li.has-sub:hover > ul {
     position: relative;
 }
 
-.gach-ngang {
+.gach-ngang
+{
     float: left;
     width: 96%;
     height: 1px;
@@ -782,7 +902,8 @@ li.has-sub:hover > ul {
     top: 1px;
 }
 
-.nga-mau {
+.nga-mau
+{
     float: left;
     width: 100%;
     height: 17px;
@@ -791,14 +912,16 @@ li.has-sub:hover > ul {
     bottom: 0;
 }
 
-.tieu-de {
+.tieu-de
+{
     float: left;
     width: 100%;
     position: absolute;
     bottom: 8px;
 }
 
-    .tieu-de h1 {
+    .tieu-de h1
+    {
         float: left;
         width: 100%;
         color: #FFF;
@@ -808,13 +931,15 @@ li.has-sub:hover > ul {
         text-align: center;
     }
 
-.khoi-noi-dung {
+.khoi-noi-dung
+{
     float: left;
     width: 100%;
     outline: 1px solid #e1e2e2;
 }
 
-.body-right {
+.body-right
+{
     float: left;
     width: 68.5%;
     font-family: Arial;
@@ -823,53 +948,63 @@ li.has-sub:hover > ul {
     text-align: justify;
 }
 
-.inside-full {
+.inside-full
+{
     float: left;
     width: 100%;
 }
 
-.inside-left {
+.inside-left
+{
     float: left;
     width: 66%;
 }
 
-.inside-right {
+.inside-right
+{
     float: left;
     width: 32.992%;
     margin-left: 1%;
 }
 
-.banner-lien-ket {
+.banner-lien-ket
+{
     float: left;
     width: 100%;
     height: auto;
     margin-bottom: 5px;
 }
 
-.hnav, .hnav ul {
+.hnav, .hnav ul
+{
     float: left;
     width: 100%;
 }
 
-    .hnav > ul {
+    .hnav > ul
+    {
     }
 
-        .hnav > ul > li {
+        .hnav > ul > li
+        {
             float: left;
             width: 100%;
             height: 29px;
             border-bottom: 1px solid #b2c9bd;
         }
 
-            .hnav > ul > li:last-child {
+            .hnav > ul > li:last-child
+            {
                 border-bottom: none;
             }
 
-            .hnav > ul > li > a {
+            .hnav > ul > li > a
+            {
                 color: #148f4b;
             }
 
-                .hnav > ul > li > a > span {
+                .hnav > ul > li > a > span
+                {
                     float: left;
                     width: 94%;
                     margin-left: 3%;
@@ -879,33 +1014,40 @@ li.has-sub:hover > ul {
                     /*font-size: 1vw;*/
                 }
 
-            .hactive, .hnav > ul > li:hover {
+            .hactive, .hnav > ul > li:hover
+            {
                 background-color: #d1f8e3;
             }
 
-.khoi-noi-dung-wrap {
+.khoi-noi-dung-wrap
+{
     float: left;
     width: 94%;
     margin-left: 3%;
 }
 
-.h24 {
+.h24
+{
     height: 24px;
 }
 
-.w50p {
+.w50p
+{
     width: 50%;
 }
 
-.mb5 {
+.mb5
+{
     margin-bottom: 5px;
 }
 
-.mb10 {
+.mb10
+{
     margin-bottom: 10px;
 }
 
-.nhan {
+.nhan
+{
     float: left;
     margin-top: 3px;
     font-family: Arial;
@@ -913,15 +1055,18 @@ li.has-sub:hover > ul {
     color: #5f5f5f;
 }
 
-.input {
+.input
+{
     float: right;
+    width: 60%;
     height: 22px;
     border: 1px solid #c8c8c8;
 }
 
-.btn {
+.btn
+{
     float: right;
-    width: 20%;
+    width: 36%;
     margin-left: 1.6%;
     height: 26px;
     background-color: #148f4b;
@@ -934,7 +1079,8 @@ li.has-sub:hover > ul {
     text-align: center;
 }
 
-.galery-block {
+.galery-block
+{
     float: left;
     width: 99%;
     height: 290px;
@@ -942,25 +1088,29 @@ li.has-sub:hover > ul {
     margin-left: 1%;
 }
 
-.galery-content {
+.galery-content
+{
     float: left;
     width: 100%;
     height: 276px;
     overflow: hidden;
 }
 
-    .galery-content ul {
+    .galery-content ul
+    {
         float: left;
         width: 100%;
         height: inherit;
     }
 
-        .galery-content ul li {
+        .galery-content ul li
+        {
             float: left;
             width: 100%;
         }
 
-.gallery-item {
+.gallery-item
+{
     float: left;
     width: 41.8%;
     height: 78px;
@@ -970,59 +1120,74 @@ li.has-sub:hover > ul {
     background-color: #FFF;
 }
 
-.inside-left-wrap {
+    .gallery-item img
+    {
+        border: none !important;
+    }
+
+.inside-left-wrap
+{
     float: left;
     width: 100%;
     outline: 1px solid #e1e2e2;
 }
 
-.khoi-tin-lon {
+.khoi-tin-lon
+{
     float: left;
     width: 100%;
 }
 
-.tin-lon-figure {
+.tin-lon-figure
+{
     float: left;
     width: 99%;
     margin: 0.5%;
     height: 275px;
 }
 
-.tin-lon-tieu-de {
+.tin-lon-tieu-de
+{
     float: left;
     width: 100%;
     margin-top: 18px;
     margin-bottom: 7px;
 }
 
-    .tin-lon-tieu-de h1 {
+    .tin-lon-tieu-de h1
+    {
         float: left;
         width: 100%;
         font-size: 13px;
         font-weight: bold;
     }
 
-        .tin-lon-tieu-de h1 a {
+        .tin-lon-tieu-de h1 a
+        {
             color: #148f4b;
         }
 
-.tin-lon-mo-ta {
+.tin-lon-mo-ta
+{
     float: left;
     width: 100%;
     margin-bottom: 20px;
 }
 
-    .tin-lon-mo-ta p {
+    .tin-lon-mo-ta p
+    {
         float: left;
         width: 100%;
     }
 
-.khoi-tin-lien-quan {
+.khoi-tin-lien-quan
+{
     float: left;
     width: 100%;
 }
 
-.tin-lien-quan-tieu-de {
+.tin-lien-quan-tieu-de
+{
     float: left;
     width: 100%;
     height: 33px;
@@ -1030,7 +1195,8 @@ li.has-sub:hover > ul {
     border-bottom: 1px solid #148f4b;
 }
 
-    .tin-lien-quan-tieu-de h1 {
+    .tin-lien-quan-tieu-de h1
+    {
         float: left;
         width: 90%;
         margin-left: 5%;
@@ -1039,12 +1205,14 @@ li.has-sub:hover > ul {
         font-weight: bold;
     }
 
-.tin-lien-quan-noi-dung {
+.tin-lien-quan-noi-dung
+{
     float: left;
     width: 100%;
 }
 
-.tin-lien-quan-item {
+.tin-lien-quan-item
+{
     float: left;
     width: 100%;
     height: 39%;
@@ -1053,32 +1221,38 @@ li.has-sub:hover > ul {
     border-bottom: 1px solid #cecece;
 }
 
-.item-lien-quan-figure {
+.item-lien-quan-figure
+{
     float: left;
     width: 27.5%;
     height: 100%;
     margin: 0 2%;
 }
 
-.item-lien-quan-tieu-de {
+.item-lien-quan-tieu-de
+{
     float: left;
     width: 68%;
 }
 
-    .item-lien-quan-tieu-de h1 {
+    .item-lien-quan-tieu-de h1
+    {
     }
 
-        .item-lien-quan-tieu-de h1 a {
+        .item-lien-quan-tieu-de h1 a
+        {
             color: #148f4b;
         }
 
-.khoi1 {
+.khoi1
+{
     float: left;
     width: 100%;
     margin-top: 15px;
 }
 
-.khoi1-tieu-de {
+.khoi1-tieu-de
+{
     float: left;
     width: 100%;
     height: 31px;
@@ -1086,7 +1260,8 @@ li.has-sub:hover > ul {
     border-top: 3px solid #148f4b;
 }
 
-    .khoi1-tieu-de h1 {
+    .khoi1-tieu-de h1
+    {
         float: left;
         width: 90%;
         margin-left: 10px;
@@ -1095,19 +1270,22 @@ li.has-sub:hover > ul {
         font-weight: bold;
     }
 
-.khoi1-noi-dung {
+.khoi1-noi-dung
+{
     float: left;
     width: 100%;
     outline: 1px solid #e1e2e2;
 }
 
-.khoi-wrap1 {
+.khoi-wrap1
+{
     float: left;
     width: 95%;
     margin: 2.5%;
 }
 
-.item-ngang {
+.item-ngang
+{
     float: left;
     width: 100%;
     height: 126px;
@@ -1115,172 +1293,204 @@ li.has-sub:hover > ul {
     overflow: hidden;
 }
 
-    .item-ngang:last-child {
+    .item-ngang:last-child
+    {
         margin-bottom: 0px;
     }
 
-.item-ngang-figure {
+.item-ngang-figure
+{
     float: left;
     width: 44%;
     height: 100%;
     margin-right: 2%;
 }
 
-.item-ngang-content {
+.item-ngang-content
+{
     float: left;
     width: 54%;
 }
 
-.item-ngang-tieu-de {
+.item-ngang-tieu-de
+{
     float: left;
     width: 100%;
     margin-bottom: 5px;
 }
 
-    .item-ngang-tieu-de h1 {
+    .item-ngang-tieu-de h1
+    {
         float: left;
         width: 100%;
         font-weight: bold;
     }
 
-        .item-ngang-tieu-de h1 a {
+        .item-ngang-tieu-de h1 a
+        {
             color: #148f4b;
         }
 
-.item-ngang-mo-ta {
+.item-ngang-mo-ta
+{
     float: left;
     width: 100%;
 }
 
-    .item-ngang-mo-ta p {
+    .item-ngang-mo-ta p
+    {
     }
 
-.qnav {
+.qnav
+{
     float: left;
     width: 100%;
     margin-top: 15px;
 }
 
-    .qnav > ul {
+    .qnav > ul
+    {
         float: left;
         width: 100%;
     }
 
-        .qnav > ul > li {
+        .qnav > ul > li
+        {
             float: left;
             width: 100%;
             margin-bottom: 5.5px;
             /*line-height: 16px;*/
         }
 
-            .qnav > ul > li:last-child {
+            .qnav > ul > li:last-child
+            {
                 margin-bottom: 0px;
             }
 
-            .qnav > ul > li > a {
+            .qnav > ul > li > a
+            {
                 color: #4f4f4f;
             }
 
-                .qnav > ul > li > a > span:first-child {
+                .qnav > ul > li > a > span:first-child
+                {
                     float: left;
-                    width: 2%;
+                    width: 6px;
                     margin-top: 4px;
                     margin-right: 3px;
                 }
 
-                .qnav > ul > li > a > span:last-child {
+                .qnav > ul > li > a > span:last-child
+                {
                     float: left;
                     width: 94%;
                 }
 
-.item-doc {
+.item-doc
+{
     float: left;
     width: 47.897%;
     margin-right: 4.2%;
 }
 
-    .item-doc:last-child {
+    .item-doc:last-child
+    {
         margin-right: 0px;
     }
 
 
-.item-doc-figure {
+.item-doc-figure
+{
     float: left;
     width: 100%;
     height: 141px;
 }
 
-.item-doc-tieu-de {
+.item-doc-tieu-de
+{
     float: left;
     width: 100%;
     margin-top: 9px;
     margin-bottom: 5px;
 }
 
-    .item-doc-tieu-de h1 {
+    .item-doc-tieu-de h1
+    {
         float: left;
         width: 100%;
         font-weight: bold;
     }
 
-        .item-doc-tieu-de h1 a {
+        .item-doc-tieu-de h1 a
+        {
             color: #148f4b;
         }
 
-.item-doc-mo-ta {
+.item-doc-mo-ta
+{
     float: left;
     width: 100%;
 }
 
-    .item-doc-mo-ta p {
+    .item-doc-mo-ta p
+    {
         float: left;
         width: 100%;
     }
 
-.tin-lien-quan-ngang {
+.tin-lien-quan-ngang
+{
     float: left;
     width: 100%;
 }
 
-.tin-lien-quan-ngang-tieu-de {
+.tin-lien-quan-ngang-tieu-de
+{
     float: left;
     width: 100%;
     margin-top: 18px;
     margin-bottom: -12px;
 }
 
-    .tin-lien-quan-ngang-tieu-de h1 {
+    .tin-lien-quan-ngang-tieu-de h1
+    {
         float: left;
         width: 100%;
         color: #148f4b;
         font-weight: bold;
     }
 
-.tnav {
+.tnav
+{
     float: left;
     width: 100%;
     /*margin-top: 0px;*/
     margin-bottom: 10px;
 }
 
-    .tnav > ul > li {
+    .tnav > ul > li
+    {
         border-bottom: 1px dashed #bcbcbc;
     }
 
-        .tnav > ul > li:last-child {
+        .tnav > ul > li:last-child
+        {
             border-bottom: none;
         }
 
-        .tnav > ul > li > a > span:last-child {
+        .tnav > ul > li > a > span:last-child
+        {
             margin-bottom: 3px;
         }
 
-        .tnav > ul > li:last-child > a > span:last-child {
+        .tnav > ul > li:last-child > a > span:last-child
+        {
             margin-bottom: 0px;
         }
 
 
-.web-link {
+.web-link
+{
     float: left;
     width: 90%;
     height: 31px;
@@ -1291,7 +1501,8 @@ li.has-sub:hover > ul {
     border-radius: 3px;
 }
 
-.web-link-input {
+.web-link-input
+{
     float: left;
     width: 100%;
     height: 100%;
@@ -1299,7 +1510,8 @@ li.has-sub:hover > ul {
     /*color: #000;*/
 }
 
-.hoi-dap-line {
+.hoi-dap-line
+{
     float: left;
     width: 91%;
     height: 21px;
@@ -1307,27 +1519,209 @@ li.has-sub:hover > ul {
     margin-bottom: 5px;
 }
 
-    .hoi-dap-line:first-child {
+    .hoi-dap-line:first-child
+    {
         margin-top: 15px;
     }
 
-    .hoi-dap-line:last-child {
+    .hoi-dap-line:last-child
+    {
         margin-bottom: 15px;
     }
 
-.hoi-dap-icon {
+.hoi-dap-icon
+{
     float: left;
     width: 10%;
     height: 100%;
 }
 
-.hoi-dap-tieu-de {
+.hoi-dap-tieu-de
+{
     float: left;
     width: 88%;
     margin-left: 2%;
 }
 
-    .hoi-dap-tieu-de a {
+    .hoi-dap-tieu-de a
+    {
         margin-top: 5px;
         color: #148f4b;
     }
+
+
+.control-pager
+{
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+    .control-pager a, .control-pager span
+    {
+        float: left;
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        background-color: #e5ece5;
+        border-radius: 3px;
+        font-family: Arial;
+        /* font-weight: bold; */
+        font-size: 12px;
+        color: #148f4b;
+        text-align: center;
+        padding-top: 5px;
+        -webkit-box-shadow: 1px 1px 0px 0px rgba(174,175,174,1);
+        -moz-box-shadow: 1px 1px 0px 0px rgba(174,175,174,1);
+        box-shadow: 1px 1px 0px 0px rgba(174,175,174,1);
+    }
+
+        .control-pager a:first-child, .control-pager a:last-child
+        {
+            width: 45px;
+            font-weight: bold;
+        }
+
+
+    .control-pager span
+    {
+        font-weight: bold;
+        color: #f54a15;
+    }
+
+.page-item
+{
+}
+
+.tvlink
+{
+    float: left;
+    width: auto;
+    color: orange;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Tahoma;
+    margin-top: 8px;
+}
+
+.cat-block
+{
+    float: left;
+    width: 47%;
+    height: 72px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 2%;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+}
+
+    .cat-block:hover
+    {
+         background-color: rgba(20,143,75,0.1);
+    }
+
+.cat-block-pic
+{
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+    .cat-block-pic a, .cat-block-pic a img
+    {
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+
+        .cat-block-pic a img
+        {
+        }
+
+
+.cat-block-title
+{
+    float: left;
+    width: 69%;
+    margin-left: 1%;
+}
+
+    .cat-block-title p
+    {
+        float: left;
+        width: 100%;
+        margin-top: 1%;
+    }
+
+        .cat-block-title p a
+        {
+            float: left;
+            width: 100%;
+            font-family: UTM_Facebook;
+            font-size: 20px;
+            color: #443d37;
+            margin-top: 18px;
+            text-indent: 36px;
+        }
+
+.welcome-block-title
+{
+    float: left;
+    width: 100%;
+    color: red;
+    font-weight: bold;
+    font-family: UTM_Facebook;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.item-bai-viet
+{
+    float: left;
+    height: 63px;
+    width: 46.34%;
+    margin-bottom: 15px;
+    margin-left: 2%;
+    margin-right: 1%;
+    position: relative;
+    border-radius: 2px;
+    font-family: Arial;
+}
+
+    .item-bai-viet:hover
+    {
+        background-color: rgba(20,143,75,0.1);
+        -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+        box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+    }
+
+.duong-dan-bai-viet
+{
+    float: left;
+    height: 100%;
+    margin-right: 2.36%;
+    width: 24.06%;
+}
+
+.tieu-de-bai-viet
+{
+    float: left;
+    width: 71%;
+    height: 100%;
+    overflow: hidden;
+}
+
+    .tieu-de-bai-viet a
+    {
+        color: #148f4b;
+    }
+
+.meta
+{
+    font-size: 12px;
+    margin-top: 2px;
+}

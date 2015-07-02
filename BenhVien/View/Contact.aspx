@@ -2,7 +2,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" runat="Server">
-    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
     <div class="product-wrapper">
         <div class="product-header">
             <div class="product-title">
@@ -16,9 +16,7 @@
 
                     <div id="feedback">
                         <p>
-                            Mọi thắc mắc, liên hệ đặt hàng của chúng tôi. Xin vui lòng gửi nội dung liên hệ với chúng tôi, 
-                    vui lòng gõ tiếng Việt có dấu & nêu nội dung thông tin rõ ràng, rành mạch.
-                    Bắt đầu bằng việc viết nội dung thư vào bên dưới và gửi đi!
+                            Vui lòng nhập thông tin vào form bên dưới!
                         </p>
                         <div class="GuiYkien">
                             <asp:UpdatePanel ID="UpdatePanel2" runat="server">

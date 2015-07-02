@@ -20,15 +20,6 @@ public partial class View_Photos : System.Web.UI.Page
     private void PopulateControls()
     {
         UpdataPageView.UpdataMetagMainTitle(Page, "Hình ảnh");
-        int howManyPages = 0;
-        string trang = Request.QueryString["Page"] ?? "1";
-        string firstPageUrl = "";
-        string pagerFormat = "";
-        dlListImg.DataSource = ImageAndClips.LayTheoTheLoai("14", trang, out howManyPages);
-        dlListImg.DataBind();
-        firstPageUrl = Link.Photos();
-        pagerFormat = Link.Photos("{0}");
-        pagerBottom.Show(int.Parse(trang), howManyPages, firstPageUrl, pagerFormat, true);
     }
     public string ShowImg(object input, string colunmName)
     {
@@ -48,4 +39,21 @@ public partial class View_Photos : System.Web.UI.Page
         }
 
     }
+    protected void ListPager_PreRender(object sender, EventArgs e)
+    {
+        string IDTheLoai = Request.QueryString["catID"] ?? "0";
+        List<ImageAndClips> listBV = ImageAndClips.LayTheoTheLoaiNoPaging(IDTheLoai);
+
+        if (listBV != null && listBV.Count != 0)
+        {
+            rptArticleList.DataSource = listBV;
+            rptArticleList.DataBind();
+        }
+    }
+
+    protected void rptArticleList_DataBound(object sender, EventArgs e)
+    {
+        ListPager.Visible = (ListPager.PageSize < ListPager.TotalRowCount);
+    }
+
 }

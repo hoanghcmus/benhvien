@@ -13,32 +13,58 @@
             </div>
         </div>
         <div class="product-container">
-            <asp:DataList ID="dlVideos" runat="server">
-                <ItemTemplate>
-                    <div class="item_videos">
-                        <div class="url_videos">
-                            <a class="fancybox-media link" href="<%#Eval("ImgOrClip")%>">
-                                <img src='<%#Eval("HinhAnh") %>' alt="Hình ảnh" class="img" />
-                                <i class="playvideo"></i></a>
-                        </div>
-                        <div class="name_videos">
-                            <h4><a class="fancybox-media  link" href="<%#Eval("ImgOrClip")%>">
-                                <%#Eval("Ten_Vn").ToString() %></a>
-                            </h4>
-                            <p class="meta">
-                                <strong>Ngày tạo:</strong>
-                                <%#Eval("NgayTao") %>
-                            </p>
-                            <p class="text">
-                                <strong>Mô tả:</strong>ss
-                                <%#Eval("MoTa_Vn") %>
-                            </p>
 
-                        </div>
-                    </div>
-                </ItemTemplate>
-            </asp:DataList>
-            <uc1:UC_Paging ID="pagerBottom" runat="server" />
+
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+                <ContentTemplate>
+
+                    <asp:ListView ID="rptArticleList" runat="server" ItemPlaceholderID="ItemPlaceholderIDArticleList" OnDataBound="rptArticleList_DataBound">
+                        <LayoutTemplate>
+
+                            <asp:PlaceHolder runat="server" ID="ItemPlaceholderIDArticleList"></asp:PlaceHolder>
+                        </LayoutTemplate>
+                        <ItemTemplate>
+                            <div class="item_videos">
+                                <div class="url_videos">
+                                    <a class="fancybox-media link" href="<%#Eval("ImgOrClip")%>">
+                                        <img src='<%#Eval("HinhAnh") %>' alt="Hình ảnh" class="img" />
+                                        <i class="playvideo"></i></a>
+                                </div>
+                                <div class="name_videos">
+                                    <h4><a class="fancybox-media  link" href="<%#Eval("ImgOrClip")%>">
+                                        <%#Eval("Ten_Vn").ToString() %></a>
+                                    </h4>
+                                    <p class="meta">
+                                        <strong>Ngày tạo:</strong>
+                                        <%#Eval("NgayTao") %>
+                                    </p>
+                                    <p class="text">
+                                        <strong>Mô tả:</strong>
+                                        <%#Eval("MoTa_Vn") %>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </ItemTemplate>
+                    </asp:ListView>
+
+                    <asp:DataPager ID="ListPager" PagedControlID="rptArticleList" runat="server" PageSize="10" OnPreRender="ListPager_PreRender" class="control-pager">
+                        <Fields>
+                            <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="false" ShowPreviousPageButton="true" ShowNextPageButton="false" PreviousPageText="Trước" />
+                            <asp:NumericPagerField ButtonType="Link" />
+                            <asp:NextPreviousPagerField ButtonType="Link" ShowNextPageButton="true" ShowLastPageButton="false" ShowPreviousPageButton="false" NextPageText="Sau" />
+                            <asp:TemplatePagerField></asp:TemplatePagerField>
+                        </Fields>
+                    </asp:DataPager>
+
+                </ContentTemplate>
+
+                <Triggers>
+                    <asp:AsyncPostBackTrigger ControlID="ListPager" />
+                </Triggers>
+            </asp:UpdatePanel>
+
+
         </div>
     </div>
 </asp:Content>

@@ -105,11 +105,24 @@ namespace DataAccess.Classes
                 return null;
             }
         }
-        public static ImageAndClips LayTheoID(string id)
+
+        public static int ImageAndClips_GetLastID(int idTheLoai)
         {
             try
             {
-                return CBO.FillObject<ImageAndClips>(DataProvider.Instance.ExecuteReader("ImageAndClips_LayTheoID", Convert.ToInt32(id)));
+                return Convert.ToInt32(DataProvider.Instance.ExecuteScalar("ImageAndClips_GetLastID", idTheLoai));
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+
+        public static ImageAndClips LayTheoID(int id)
+        {
+            try
+            {
+                return CBO.FillObject<ImageAndClips>(DataProvider.Instance.ExecuteReader("ImageAndClips_LayTheoID", id));
             }
             catch
             {

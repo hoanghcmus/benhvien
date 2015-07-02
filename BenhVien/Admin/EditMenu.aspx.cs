@@ -92,8 +92,8 @@ public partial class Admin_EditMenu : System.Web.UI.Page
         ddlParent.SelectedValue = data.IDParent.ToString();
         ddlLoadMenu.SelectedValue = data.IDLoaiMenu.ToString();
         ddlModule.SelectedValue = data.IDModule.ToString();
-        if (data.Footer == true)
-            ckbFooter.Checked = true;
+        //if (data.Footer == true)
+        //    ckbFooter.Checked = true;
     }
     #endregion
 
@@ -104,7 +104,7 @@ public partial class Admin_EditMenu : System.Web.UI.Page
         txtmoTaVn.Text = "";
         txtHinhAnh.Text = "";
         txtDuongDanVn.Text = "";
-        ckbFooter.Checked = false;
+        //ckbFooter.Checked = false;
     }
     private TheLoai GetData()
     {
@@ -121,10 +121,10 @@ public partial class Admin_EditMenu : System.Web.UI.Page
         data.IDLoaiMenu = ConvertType.ToInt32(ddlLoadMenu.SelectedValue.Trim());
         data.IDModule = ConvertType.ToInt32(ddlModule.SelectedValue.Trim());
         data.IDParent = ConvertType.ToInt32(ddlParent.SelectedValue.Trim());
-        if (ckbFooter.Checked)
-            data.Footer = true;
-        else
-            data.Footer = false;
+        //if (ckbFooter.Checked)
+        //    data.Footer = true;
+        //else
+        //    data.Footer = false;
         return data;
     }
     protected override void OnInit(EventArgs e)

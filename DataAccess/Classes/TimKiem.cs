@@ -15,6 +15,7 @@ namespace DataAccess.Classes
         public string TieuDe { get; set; }
         public string NoiDung { get; set; }
         public string Module { get; set; }
+        public int IDTheLoai { get; set; }
 
         public TimKiem() { }
         #endregion
@@ -24,7 +25,7 @@ namespace DataAccess.Classes
         {
             try
             {
-                return CBO.FillCollection<TimKiem>(DataProvider.Instance.ExecuteReader("TimKiem_BaiViet_Va_HoiDap", tuKhoa));
+                return CBO.FillCollection<TimKiem>(DataProvider.Instance.ExecuteReader("TimKiem_BaiViet_Va_HoiDap_All", tuKhoa));
             }
             catch
             { return null; }

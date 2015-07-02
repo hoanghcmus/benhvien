@@ -1,11 +1,10 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="View_Site" %>
 
-<%@ Register Src="../UserControl/UC_MenuTop.ascx" TagName="UC_MenuTop" TagPrefix="uc1" %>
-
 <%@ Register Src="../UserControl/UC_ShowPhoto.ascx" TagName="UC_ShowPhoto" TagPrefix="uc2" %>
-
 <%@ Register Src="../UserControl/UC_Search.ascx" TagName="UC_Search" TagPrefix="uc3" %>
 <%@ Register Src="~/UserControl/UC_MenuNgang.ascx" TagPrefix="uc1" TagName="UC_MenuNgang" %>
+<%@ Register Src="~/UserControl/UC_MenuDoc.ascx" TagPrefix="uc1" TagName="UC_MenuDoc" %>
+
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -47,7 +46,7 @@
 <body>
 
     <form id="form1" runat="server">
-
+        <asp:ScriptManager ID="MainScriptManager" runat="server"></asp:ScriptManager>
         <div class="wrapper">
 
             <div class="header">
@@ -58,7 +57,6 @@
                             <ul>
                                 <li><a href="/lien-he.html">Liên hệ </a></li>
                                 <li><a href="/hoi-dap.html">Hỏi-đáp </a></li>
-                                <li><a href="/trang-chu.html">Đăng nhập </a></li>
                             </ul>
                         </div>
 
@@ -85,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <div class="vertical-nav">
+        <div class="vertical-nav" id="vertical-nav">
             <div class="vertical-nav-wapper">
                 <%-- Usercontrol Menu ngang --%>
                 <uc1:UC_MenuNgang runat="server" ID="UC_MenuNgang" />
@@ -135,47 +133,8 @@
                         </div>
                         <div class="khoi-noi-dung">
                             <div class="hnav">
-                                <ul>
-                                    <li>
-                                        <a href="javascript:void()" class="link"><span>PHÒNG TỔ CHỨC HÀNH CHÍNH QUẢN TRỊ</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void()" class="link"><span>PHÒNG KẾ HOẠCH TỔNG HỢP</span></a>
-                                    </li>
-                                    <li class="hactive">
-                                        <a href="javascript:void()" class="link"><span>PHÒNG TÀI CHÍNH KẾ TOÁN</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void()" class="link"><span>PHÒNG CẤP CỨU BAN ĐẦU</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void()" class="link"><span>KHOA NỘI NHI NHIỄM</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void()" class="link"><span>KHOA NGOẠI SẢN</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void()" class="link"><span>KHOA TAI-MŨI-HỌNG</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void()" class="link"><span>KHOA RĂNG-HÀM-MẶT</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void()" class="link"><span>KHOA MẮT</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void()" class="link"><span>KHOA TRỊ LIỆU, PHỤC HỒI CHỨC NĂNG</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void()" class="link"><span>KHOA DƯỢC</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void()" class="link"><span>KHOA XÉT NGHIỆM</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void()" class="link"><span>KHOA CHUẨN ĐOÁN CHỈNH HÌNH</span></a>
-                                    </li>
-                                </ul>
+                                <%-- Menu bên trái --%>
+                                <uc1:UC_MenuDoc runat="server" ID="UC_MenuDoc" />
                             </div>
 
                         </div>
@@ -187,32 +146,22 @@
                             <div class="gach-ngang"></div>
                             <div class="nga-mau"></div>
                             <div class="tieu-de">
-                                <h1>TRA CỨU BỆNH NHÂN</h1>
+                                <h1>ĐĂNG NHẬP THÀNH VIÊN</h1>
                             </div>
                         </div>
                         <div class="khoi-noi-dung">
                             <div class="khoi-noi-dung-wrap">
                                 <div class="line-fix-parent-width h24 mb5" style="margin-top: 24px;">
-                                    <span class="nhan">Địa điểm:</span>
-                                    <asp:TextBox ID="txtDiaDiem" runat="server" CssClass="input"></asp:TextBox>
+                                    <span class="nhan">Tên người dùng:</span>
+                                    <asp:TextBox ID="txtTenNguoiDung" runat="server" CssClass="input"></asp:TextBox>
                                 </div>
                                 <div class="line-fix-parent-width h24 mb5">
-                                    <span class="nhan">Họ tên:</span>
-                                    <asp:TextBox ID="txtHoTen" runat="server" CssClass="input"></asp:TextBox>
+                                    <span class="nhan">Mật khẩu:</span>
+                                    <asp:TextBox ID="txtMatKhau" runat="server" CssClass="input" TextMode="Password"></asp:TextBox>
                                 </div>
-                                <div class="line-fix-parent-width h24 mb5">
-                                    <span class="nhan">Ngày nhập viện:</span>
-                                    <asp:TextBox ID="txtNgayNhapVien" runat="server" CssClass="input w50p"></asp:TextBox>
-                                </div>
-                                <div class="line-fix-parent-width h24 mb5">
-                                    <span class="nhan">Ngày xuất viện:</span>
-                                    <asp:TextBox ID="txtNgayXuatVien" runat="server" CssClass="input w50p"></asp:TextBox>
-                                </div>
-
                                 <div class="line-fix-parent-width h24 mb10">
-                                    <asp:Button ID="btnTim" runat="server" CssClass="btn" Text="Tìm"></asp:Button>
-                                    <asp:Button ID="btnXoa" runat="server" CssClass="btn" Text="Xóa"></asp:Button>
-
+                                    <asp:Literal ID="ltrTrangThanhVien" runat="server" Text="Trang thành viên"></asp:Literal>
+                                    <asp:Button ID="btnDangNhap" runat="server" CssClass="btn" Text="Đăng nhập"></asp:Button>
                                 </div>
 
                             </div>
@@ -221,31 +170,16 @@
 
                     <%-- Banner liên kết --%>
                     <div class="khoi">
-                        <div class="banner-lien-ket">
-                            <a href="javascript:void();" class="link">
-                                <img src="/Design/b1.jpg" alt="Anh banner" class="img" />
-                            </a>
-                        </div>
-                        <div class="banner-lien-ket">
-                            <a href="javascript:void();" class="link">
-                                <img src="/Design/b2.jpg" alt="Anh banner" class="img" />
-                            </a>
-                        </div>
-                        <div class="banner-lien-ket">
-                            <a href="javascript:void();" class="link">
-                                <img src="/Design/b3.jpg" alt="Anh banner" class="img" />
-                            </a>
-                        </div>
-                        <div class="banner-lien-ket">
-                            <a href="javascript:void();" class="link">
-                                <img src="/Design/b4.jpg" alt="Anh banner" class="img" />
-                            </a>
-                        </div>
-                        <div class="banner-lien-ket">
-                            <a href="javascript:void();" class="link">
-                                <img src="/Design/b5.jpg" alt="Anh banner" class="img" />
-                            </a>
-                        </div>
+                        <asp:Repeater ID="rptBannerLienKet" runat="server">
+                            <ItemTemplate>
+                                <div class="banner-lien-ket">
+                                    <a href="<%#Eval("DuongDan_Vn") %>" class="link">
+                                        <img src="<%#Eval("HinhAnh") %>" alt="Anh banner" class="img" />
+                                    </a>
+                                </div>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                     
                     </div>
 
                     <%-- Hình ảnh hoạt động --%>
@@ -262,46 +196,7 @@
                             <div class="galery-block">
                                 <div class="galery-content" id="galery-content">
                                     <ul>
-                                        <li>
-                                            <div class="gallery-item">
-                                                <a class="highslide imgshow link" rel="main-gallery" href="/Design/1.jpg">
-                                                    <img src="/Design/1.jpg" alt="Picture" class="img" /></a>
-                                            </div>
-                                            <div class="gallery-item">
-                                                <a class="highslide imgshow link" rel="main-gallery" href="/Design/2.jpg">
-                                                    <img src="/Design/2.jpg" alt="Picture" class="img" /></a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="gallery-item">
-                                                <a class="highslide imgshow link" rel="main-gallery" href="/Design/3.jpg">
-                                                    <img src="/Design/3.jpg" alt="Picture" class="img" /></a>
-                                            </div>
-                                            <div class="gallery-item">
-                                                <a class="highslide imgshow link" rel="main-gallery" href="/Design/4.jpg">
-                                                    <img src="/Design/4.jpg" alt="Picture" class="img" /></a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="gallery-item">
-                                                <a class="highslide imgshow link" rel="main-gallery" href="/Design/5.jpg">
-                                                    <img src="/Design/5.jpg" alt="Picture" class="img" /></a>
-                                            </div>
-                                            <div class="gallery-item">
-                                                <a class="highslide imgshow link" rel="main-gallery" href="/Design/6.jpg">
-                                                    <img src="/Design/6.jpg" alt="Picture" class="img" /></a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="gallery-item">
-                                                <a class="highslide imgshow link" rel="main-gallery" href="/Design/7.jpg">
-                                                    <img src="/Design/7.jpg" alt="Picture" class="img" /></a>
-                                            </div>
-                                            <div class="gallery-item">
-                                                <a class="highslide imgshow link" rel="main-gallery" href="/Design/8.jpg">
-                                                    <img src="/Design/8.jpg" alt="Picture" class="img" /></a>
-                                            </div>
-                                        </li>
+                                        <asp:Literal ID="ltrListImages" runat="server"></asp:Literal>
                                     </ul>
 
                                 </div>
@@ -317,575 +212,6 @@
                 <div class="body-right">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
                     </asp:ContentPlaceHolder>
-
-                    <%-- Khối tin tức đầu tiên --%>
-                    <div class="inside-full">
-                        <div class="inside-left">
-                            <div class="inside-left-wrap">
-                                <div class="khoi-tin-lon">
-                                    <div class="tin-lon-figure">
-                                        <img src="/Design/a1.jpg" alt="Tin tức" class="img" />
-                                    </div>
-                                    <div class="tin-lon-tieu-de">
-                                        <h1><a href="javascript:void()" class="link">Có nên chúc Tết nhân viên y tế phát tài</a></h1>
-                                    </div>
-                                    <div class="tin-lon-mo-ta">
-                                        <p>
-                                            Chúc phát tài ở đây được hiểu là chúc cho có nhiều tiền. Và mỗi khi chúc Tết nhân viên y tế, người ta lại ngập ngừng khi dùng câu chúc này. Đơn giản vì người ta cho rằng ngành y là ngành nhân đạo, bạn càng ...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="inside-right">
-                            <div class="khoi-tin-lien-quan">
-                                <div class="tin-lien-quan-tieu-de">
-                                    <h1>Tin tức liên quan</h1>
-                                </div>
-                                <div class="tin-lien-quan-noi-dung">
-                                    <div class="tin-lien-quan-item">
-                                        <div class="item-lien-quan-figure">
-                                            <a href="javascript:void();" class="link">
-                                                <img src="/Design/1.jpg" alt="Tin liên quan" class="img" />
-                                            </a>
-                                        </div>
-                                        <div class="item-lien-quan-tieu-de">
-                                            <h1><a href="javascript:void();" class="link">Có nên chúc Tết nhân viên y tế phát tài?</a></h1>
-                                        </div>
-                                    </div>
-
-                                    <div class="tin-lien-quan-item">
-                                        <div class="item-lien-quan-figure">
-                                            <a href="javascript:void();" class="link">
-                                                <img src="/Design/1.jpg" alt="Tin liên quan" class="img" />
-                                            </a>
-                                        </div>
-                                        <div class="item-lien-quan-tieu-de">
-                                            <h1><a href="javascript:void();" class="link">Có nên chúc Tết nhân viên y tế phát tài?</a></h1>
-                                        </div>
-                                    </div>
-
-                                    <div class="tin-lien-quan-item">
-                                        <div class="item-lien-quan-figure">
-                                            <a href="javascript:void();" class="link">
-                                                <img src="/Design/1.jpg" alt="Tin liên quan" class="img" />
-                                            </a>
-                                        </div>
-                                        <div class="item-lien-quan-tieu-de">
-                                            <h1><a href="javascript:void();" class="link">Có nên chúc Tết nhân viên y tế phát tài?</a></h1>
-                                        </div>
-                                    </div>
-
-                                    <div class="tin-lien-quan-item">
-                                        <div class="item-lien-quan-figure">
-                                            <a href="javascript:void();" class="link">
-                                                <img src="/Design/1.jpg" alt="Tin liên quan" class="img" />
-                                            </a>
-                                        </div>
-                                        <div class="item-lien-quan-tieu-de">
-                                            <h1><a href="javascript:void();" class="link">Có nên chúc Tết nhân viên y tế phát tài?</a></h1>
-                                        </div>
-                                    </div>
-
-                                    <div class="tin-lien-quan-item">
-                                        <div class="item-lien-quan-figure">
-                                            <a href="javascript:void();" class="link">
-                                                <img src="/Design/1.jpg" alt="Tin liên quan" class="img" />
-                                            </a>
-                                        </div>
-                                        <div class="item-lien-quan-tieu-de">
-                                            <h1><a href="javascript:void();" class="link">Có nên chúc Tết nhân viên y tế phát tài?</a></h1>
-                                        </div>
-                                    </div>
-
-                                    <div class="tin-lien-quan-item">
-                                        <div class="item-lien-quan-figure">
-                                            <a href="javascript:void();" class="link">
-                                                <img src="/Design/1.jpg" alt="Tin liên quan" class="img" />
-                                            </a>
-                                        </div>
-                                        <div class="item-lien-quan-tieu-de">
-                                            <h1><a href="javascript:void();" class="link">Có nên chúc Tết nhân viên y tế phát tài?</a></h1>
-                                        </div>
-                                    </div>
-
-                                    <div class="tin-lien-quan-item">
-                                        <div class="item-lien-quan-figure">
-                                            <a href="javascript:void();" class="link">
-                                                <img src="/Design/1.jpg" alt="Tin liên quan" class="img" />
-                                            </a>
-                                        </div>
-                                        <div class="item-lien-quan-tieu-de">
-                                            <h1><a href="javascript:void();" class="link">Có nên chúc Tết nhân viên y tế phát tài?</a></h1>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <%-- Khổi quy chế, quy định --%>
-                    <div class="inside-full">
-                        <div class="khoi1">
-                            <div class="khoi1-tieu-de">
-                                <h1>QUY ĐỊNH, QUY CHẾ</h1>
-                            </div>
-                            <div class="khoi1-noi-dung">
-                                <div class="inside-left">
-                                    <div class="khoi-wrap1">
-
-                                        <div class="item-ngang">
-                                            <div class="item-ngang-figure">
-                                                <img src="/Design/a1.jpg" alt="Hinh anh" class="img" />
-                                            </div>
-                                            <div class="item-ngang-content">
-                                                <div class="item-ngang-tieu-de">
-                                                    <h1><a href="javascript:void();" class="line">Tiêu chuẩn về phong cách, đạo đức trong cán bộ, công chức, viên chức của Bệnh viện Nam Bình Thuận</a></h1>
-                                                </div>
-                                                <div class="item-ngang-mo-ta">
-                                                    <p>
-                                                        Chúc phát tài ở đây được hiểu là chúc cho có nhiều tiền. Và mỗi khi chúc Tết nhân viên y tế, người ta lại ngập ngừng khi dùng câu chúc này.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="item-ngang">
-                                            <div class="item-ngang-figure">
-                                                <img src="/Design/a1.jpg" alt="Hinh anh" class="img" />
-                                            </div>
-                                            <div class="item-ngang-content">
-                                                <div class="item-ngang-tieu-de">
-                                                    <h1><a href="javascript:void();" class="line">Tiêu chuẩn về phong cách, đạo đức trong cán bộ, công chức, viên chức của Bệnh viện Nam Bình Thuận</a></h1>
-                                                </div>
-                                                <div class="item-ngang-mo-ta">
-                                                    <p>
-                                                        Chúc phát tài ở đây được hiểu là chúc cho có nhiều tiền. Và mỗi khi chúc Tết nhân viên y tế, người ta lại ngập ngừng khi dùng câu chúc này.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-
-                                <div class="inside-right">
-                                    <div class="qnav">
-                                        <ul>
-                                            <li>
-                                                <a href="javascript:v09d();" class="link">
-                                                    <span>
-                                                        <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                    <span>Công dụng trị bệnh của lá, hoa và quả khế</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:v09d();" class="link">
-                                                    <span>
-                                                        <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                    <span>Chức năng, nhiệm vụ và chế độ làm việc của Tổ thu viện phí.</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:v09d();" class="link">
-                                                    <span>
-                                                        <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                    <span>Quản lý chất thải trong bệnh viện trong Bệnh viện Phan Thiết".</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:v09d();" class="link">
-                                                    <span>
-                                                        <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                    <span>Tiếp nhận bệnh nhân đến khám và điều trị tại bệnh viện Nam Bình Thuận.</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:v09d();" class="link">
-                                                    <span>
-                                                        <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                    <span>Công dụng trị bệnh của lá, hoa và quả khế</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:v09d();" class="link">
-                                                    <span>
-                                                        <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                    <span>Công dụng trị bệnh của lá, hoa và quả khế</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:v09d();" class="link">
-                                                    <span>
-                                                        <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                    <span>Quản lý chất thải trong bệnh viện trong Bệnh viện Phan Thiết".</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <%-- Khối thông tin y dược --%>
-                    <div class="inside-full">
-                        <div class="inside-left">
-
-                            <div class="khoi1">
-                                <div class="khoi1-tieu-de">
-                                    <h1>THÔNG TIN Y DƯỢC</h1>
-                                </div>
-                                <div class="khoi1-noi-dung">
-                                    <div class="khoi-wrap1">
-
-                                        <div class="line-fix-parent-width">
-                                            <div class="item-doc">
-                                                <div class="item-doc-figure">
-                                                    <img src="/Design/a1.jpg" alt="Hinh anh" class="img" />
-                                                </div>
-                                                <div class="item-doc-tieu-de">
-                                                    <h1><a href="javascript:void();" class="link">Những người tuyệt đối không nên ăn trứng vịt lộn</a></h1>
-                                                </div>
-                                                <div class="item-doc-mo-ta">
-                                                    <p>
-                                                        Chưa bao giờ ở thị xã Ninh Hòa - Khánh Hòa lên cơn sốt như lúc này. Tất cả bắt đầu từ ...
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="item-doc">
-                                                <div class="item-doc-figure">
-                                                    <img src="/Design/a1.jpg" alt="Hinh anh" class="img" />
-                                                </div>
-                                                <div class="item-doc-tieu-de">
-                                                    <h1><a href="javascript:void();" class="link">Những người tuyệt đối không nên ăn trứng vịt lộn</a></h1>
-                                                </div>
-                                                <div class="item-doc-mo-ta">
-                                                    <p>
-                                                        Chưa bao giờ ở thị xã Ninh Hòa - Khánh Hòa lên cơn sốt như lúc này. Tất cả bắt đầu từ ...
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="tin-lien-quan-ngang">
-                                            <div class="tin-lien-quan-ngang-tieu-de">
-                                                <h1>Tin tức liên quan</h1>
-                                            </div>
-
-                                            <div class="qnav">
-                                                <ul>
-                                                    <li>
-                                                        <a href="javascript:v09d();" class="link">
-                                                            <span>
-                                                                <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                            <span>Công dụng trị bệnh của lá, hoa và quả khế</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:v09d();" class="link">
-                                                            <span>
-                                                                <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                            <span>Chức năng, nhiệm vụ và chế độ làm việc của Tổ thu viện phí.</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:v09d();" class="link">
-                                                            <span>
-                                                                <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                            <span>Quản lý chất thải trong bệnh viện trong Bệnh viện Phan Thiết.</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:v09d();" class="link">
-                                                            <span>
-                                                                <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                            <span>Tiếp nhận bệnh nhân điều trị tại bệnh viện Nam Bình Thuận.</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="inside-right">
-                            <div class="khoi1">
-
-                                <div class="khoi-tieu-de">
-                                    <div class="gach-ngang"></div>
-                                    <div class="nga-mau"></div>
-                                    <div class="tieu-de">
-                                        <h1>THÔNG BÁO</h1>
-                                    </div>
-                                </div>
-                                <div class="khoi-noi-dung">
-                                    <div class="khoi-noi-dung-wrap">
-                                        <div class="qnav tnav">
-                                            <ul>
-                                                <li>
-                                                    <a href="javascript:v09d();" class="link">
-                                                        <span>
-                                                            <img src="/Design/gcirle.png" alt="Plus" /></span>
-                                                        <span>Báo cáo tự kiểm tra, đánh giá chất lượng bệnh viện năm 2015.</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:v09d();" class="link">
-                                                        <span>
-                                                            <img src="/Design/gcirle.png" alt="Plus" /></span>
-                                                        <span>Mẫu hợp đồng mua bán thuốc tại Bệnh viện thành phố Phan Thiết năm 2015.</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:v09d();" class="link">
-                                                        <span>
-                                                            <img src="/Design/gcirle.png" alt="Plus" /></span>
-                                                        <span>Thông báo nhu cầu tuyển dụng của đơn vị trong năm 2015.</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:v09d();" class="link">
-                                                        <span>
-                                                            <img src="/Design/gcirle.png" alt="Plus" /></span>
-                                                        <span>Thể lệ đấu thầu cho thuê mặt bằng để kinh doanh cơ sở căn – tin bệnh viện.</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:v09d();" class="link">
-                                                        <span>
-                                                            <img src="/Design/gcirle.png" alt="Plus" /></span>
-                                                        <span>TVề việc tổ chức sinh hoạt truyền thống kỷ niệm ngày thầy thuốc Việt Nam 27/02/2015.</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:v09d();" class="link">
-                                                        <span>
-                                                            <img src="/Design/gcirle.png" alt="Plus" /></span>
-                                                        <span>Thể lệ đấu thầu cho thuê mặt bằng để kinh doanh cơ sở căn – tin bệnh viện.</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:v09d();" class="link">
-                                                        <span>
-                                                            <img src="/Design/gcirle.png" alt="Plus" /></span>
-                                                        <span>Thể lệ đấu thầu cho thuê mặt bằng để kinh doanh cơ sở căn – tin bệnh viện.</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <%-- KHối tin y khoa, y học thường thức --%>
-                    <div class="inside-full">
-                        <div class="inside-left">
-
-                            <div class="khoi1">
-                                <div class="khoi1-tieu-de">
-                                    <h1>THÔNG TIN Y KHOA, Y HỌC THƯỜNG THỨC</h1>
-                                </div>
-                                <div class="khoi1-noi-dung">
-                                    <div class="khoi-wrap1">
-
-                                        <div class="line-fix-parent-width">
-
-                                            <div class="item-ngang">
-                                                <div class="item-ngang-figure">
-                                                    <img src="/Design/a1.jpg" alt="Hinh anh" class="img" />
-                                                </div>
-                                                <div class="item-ngang-content">
-                                                    <div class="item-ngang-tieu-de">
-                                                        <h1><a href="javascript:void();" class="line">Tiêu chuẩn về phong cách, đạo đức trong cán bộ, công chức, viên chức của Bệnh viện Nam Bình Thuận</a></h1>
-                                                    </div>
-                                                    <div class="item-ngang-mo-ta">
-                                                        <p>
-                                                            Chúc phát tài ở đây được hiểu là chúc cho có nhiều tiền. Và mỗi khi chúc Tết nhân viên y tế, người ta lại ngập ngừng khi dùng câu chúc này.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="item-ngang">
-                                                <div class="item-ngang-figure">
-                                                    <img src="/Design/a1.jpg" alt="Hinh anh" class="img" />
-                                                </div>
-                                                <div class="item-ngang-content">
-                                                    <div class="item-ngang-tieu-de">
-                                                        <h1><a href="javascript:void();" class="line">Tiêu chuẩn về phong cách, đạo đức trong cán bộ, công chức, viên chức của Bệnh viện Nam Bình Thuận</a></h1>
-                                                    </div>
-                                                    <div class="item-ngang-mo-ta">
-                                                        <p>
-                                                            Chúc phát tài ở đây được hiểu là chúc cho có nhiều tiền. Và mỗi khi chúc Tết nhân viên y tế, người ta lại ngập ngừng khi dùng câu chúc này.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-
-                                        <div class="tin-lien-quan-ngang">
-
-                                            <div class="qnav">
-                                                <ul>
-                                                    <li>
-                                                        <a href="javascript:v09d();" class="link">
-                                                            <span>
-                                                                <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                            <span>Công dụng trị bệnh của lá, hoa và quả khế</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:v09d();" class="link">
-                                                            <span>
-                                                                <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                            <span>Chức năng, nhiệm vụ và chế độ làm việc của Tổ thu viện phí.</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:v09d();" class="link">
-                                                            <span>
-                                                                <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                            <span>Quản lý chất thải trong bệnh viện trong Bệnh viện Phan Thiết.</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:v09d();" class="link">
-                                                            <span>
-                                                                <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                            <span>Tiếp nhận bệnh nhân điều trị tại bệnh viện Nam Bình Thuận.</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:v09d();" class="link">
-                                                            <span>
-                                                                <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                            <span>Những bài thuốc dân gian trị Hắc lào hiệu quả.</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:v09d();" class="link">
-                                                            <span>
-                                                                <img src="/Design/gplus.png" alt="Plus" /></span>
-                                                            <span>Người bệnh tim mạch đối phó với nắng nóng thế nào?</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="inside-right">
-                            <div class="khoi1">
-                                <div class="khoi">
-                                    <div class="khoi-tieu-de">
-                                        <div class="gach-ngang"></div>
-                                        <div class="nga-mau"></div>
-                                        <div class="tieu-de">
-                                            <h1>LIÊN KẾT WEBSITE</h1>
-                                        </div>
-                                    </div>
-                                    <div class="khoi-noi-dung">
-                                        <div class="web-link">
-                                            <asp:DropDownList ID="drlLienKetWebsite" runat="server" CssClass="web-link-input">
-                                                <asp:ListItem Value="0" Text="Chọn liên kết"></asp:ListItem>
-                                                <asp:ListItem Value="1" Text="VNIT Việt Nam"></asp:ListItem>
-                                                <asp:ListItem Value="2" Text="Hoàng Linh page"></asp:ListItem>
-                                            </asp:DropDownList>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="khoi">
-                                    <div class="khoi-tieu-de">
-                                        <div class="gach-ngang"></div>
-                                        <div class="nga-mau"></div>
-                                        <div class="tieu-de">
-                                            <h1>HỎI ĐÁP</h1>
-                                        </div>
-                                    </div>
-                                    <div class="khoi-noi-dung">
-
-                                        <div class="hoi-dap-line">
-                                            <div class="hoi-dap-icon">
-                                                <img src="/Design/ques.png" class="img" alt="Câu hỏi" />
-                                            </div>
-                                            <div class="hoi-dap-tieu-de">
-                                                <a href="javascript:void();" class="link">Đặt câu hỏi</a>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="hoi-dap-line">
-                                            <div class="hoi-dap-icon">
-                                                <img src="/Design/ans.png" class="img" alt="Câu hỏi" />
-                                            </div>
-                                            <div class="hoi-dap-tieu-de">
-                                                <a href="javascript:void();" class="link">BV Nam Bình Thuận trả lời</a>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="hoi-dap-line">
-                                            <div class="hoi-dap-icon">
-                                                <img src="/Design/tim.png" class="img" alt="Câu hỏi" />
-                                            </div>
-                                            <div class="hoi-dap-tieu-de">
-                                                <a href="javascript:void();" class="link">Tìm kiếm hỏi đáp</a>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="hoi-dap-line">
-                                            <div class="hoi-dap-icon">
-                                                <img src="/Design/thu.png" class="img" alt="Câu hỏi" />
-                                            </div>
-                                            <div class="hoi-dap-tieu-de">
-                                                <a href="javascript:void();" class="link">Góp ý</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="banner-lien-ket">
-                                        <a href="javascript:void();" class="link">
-                                            <img src="/Design/a2.jpg" alt="Anh banner" class="img" />
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-
                 </div>
 
             </div>
@@ -1010,6 +336,22 @@
         });
     </script>
 
+    <%-- Script xu ly menu khi cuon man hinh --%>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var menu = $("#vertical-nav");
+            $(window).scroll(function () {
+                var windowpos = $(window).scrollTop();
+
+                if (windowpos > 113) {
+                    menu.css("position", "fixed").css("top", "0").css("z-index", 10);
+                } else {
+                    menu.css("position", "relative").css("z-index", 0);
+                }
+
+            });
+        });
+    </script>
 
     <asp:ContentPlaceHolder ID="footer" runat="server">
     </asp:ContentPlaceHolder>

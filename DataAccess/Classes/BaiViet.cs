@@ -168,6 +168,17 @@ namespace DataAccess.Classes
                 return 0;
             }
         }
+        public static List<BaiViet> LayTheoIDTheLoai_List(string id)
+        {
+            try
+            {
+                return CBO.FillCollection<BaiViet>(DataProvider.Instance.ExecuteReader("BaiViet_LayTheoIDTheLoai", Convert.ToInt32(id)));
+            }
+            catch
+            {
+                return null;
+            }
+        }
         public static BaiViet LayTheoID(string id)
         {
             try
@@ -262,6 +273,15 @@ namespace DataAccess.Classes
             try
             {
                 return CBO.FillCollection<BaiViet>(DataProvider.Instance.ExecuteReader("BaiViet_LayTheoIDTheLoaiTop10", ConvertType.ToInt32(idtheloai)));
+            }
+            catch
+            { return null; }
+        }
+        public static List<BaiViet> LayTheoIDTheLoaiTop20(string idtheloai)
+        {
+            try
+            {
+                return CBO.FillCollection<BaiViet>(DataProvider.Instance.ExecuteReader("BaiViet_LayTheoIDTheLoaiTop20", ConvertType.ToInt32(idtheloai)));
             }
             catch
             { return null; }
@@ -395,6 +415,25 @@ namespace DataAccess.Classes
                 howManyPages = 0;
                 return new List<BaiViet>();
             }
+        }
+        public static List<BaiViet> LayTheoModuleTop20(string idmodule)
+        {
+            try
+            {
+                return CBO.FillCollection<BaiViet>(DataProvider.Instance.ExecuteReader("BaiViet_LayTheoModule_Top20", ConvertType.ToInt32(idmodule)));
+            }
+            catch
+            { return null; }
+        }
+
+        public static List<BaiViet> LayTheoModuleAll(string idmodule)
+        {
+            try
+            {
+                return CBO.FillCollection<BaiViet>(DataProvider.Instance.ExecuteReader("BaiViet_LayTheoModule_All", ConvertType.ToInt32(idmodule)));
+            }
+            catch
+            { return null; }
         }
         public static List<BaiViet> LayTheoModule(string module, string page, out int howManyPages)
         {

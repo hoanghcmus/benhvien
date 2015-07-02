@@ -100,6 +100,16 @@ namespace DataAccess.Classes
                 return new List<HoiDap>();
             }
         }
+        public static List<HoiDap> GetByStatus(int status)
+        {
+            try
+            {
+                return CBO.FillCollection<HoiDap>(DataProvider.Instance.ExecuteReader("HoiDap_GetByStatus", status));
+            }
+            catch
+            { return null; }
+        }
+
         public static List<HoiDap> LayTheoTrangThai(string trangThai, string page, out int howManyPages)
         {
             IDataReader reader = null;
