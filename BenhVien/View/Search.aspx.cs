@@ -41,7 +41,7 @@ public partial class View_Search : System.Web.UI.Page
             case "hienthilink":
                 if (data.Module.Equals("baiviet"))
                 {
-                    return "/bai-viet/" + Helper.ToSeoString(data.TieuDe) + "-" + data.ID + ".html";
+                    return "/" + data.IDTheLoai + "/bai-viet/" + Helper.RejectMarks(data.TieuDe) + "-" + data.ID + ".html";
                 }
                 else
                 {

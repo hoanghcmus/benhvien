@@ -49,7 +49,7 @@ public partial class Admin_EditArticle : System.Web.UI.Page
     {
         ddlLoaiMenu.DataValueField = "ID";
         ddlLoaiMenu.DataTextField = "TieuDe_Vn";
-        ddlLoaiMenu.DataSource = TheLoai.LayTheoModule("1");
+        ddlLoaiMenu.DataSource = TheLoai.LayTheoModule_ExceptID();
         ddlLoaiMenu.DataBind();
 
 
@@ -60,7 +60,7 @@ public partial class Admin_EditArticle : System.Web.UI.Page
     {
         ddlLoaiMenu.Items.Clear();
         ddlLoaiMenu.Items.Add(new ListItem("-- Chọn thể loại bài viết cần thêm --", "0"));
-        List<TheLoai> list = TheLoai.LayTheoModuleVaParentIsNull("1");
+        List<TheLoai> list = TheLoai.LayTheoModule_ExceptID();
         foreach (var item in list)
         {
             ddlLoaiMenu.Items.Add(new ListItem("* " + item.TieuDe_Vn, item.ID.ToString()));

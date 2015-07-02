@@ -15,6 +15,7 @@ namespace DataAccess.Classes
         public string TieuDe { get; set; }
         public string NoiDung { get; set; }
         public string Module { get; set; }
+        public int IDTheLoai { get; set; }
 
         public TimKiem() { }
         #endregion

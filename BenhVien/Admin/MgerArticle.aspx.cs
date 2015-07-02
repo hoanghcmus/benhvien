@@ -100,7 +100,7 @@ public partial class Admin_MgerArticle : System.Web.UI.Page
     {
         ddlTheLoai.DataValueField = "ID";
         ddlTheLoai.DataTextField = "TieuDe_Vn";
-        ddlTheLoai.DataSource = TheLoai.LayTheoModule("1");
+        ddlTheLoai.DataSource = TheLoai.LayTheoModule_ExceptID();
         ddlTheLoai.DataBind();
     }
     #endregion

@@ -22,7 +22,7 @@ public partial class View_DetailPhoto : System.Web.UI.Page
     private void PopulateControls()
     {
         string id = Request.QueryString["ID"];
-        ImageAndClips data = ImageAndClips.LayTheoID(id);
+        ImageAndClips data = ImageAndClips.LayTheoID(Convert.ToInt32(id));
         if (data != null)
         {
             string img = "";
@@ -44,7 +44,7 @@ public partial class View_DetailPhoto : System.Web.UI.Page
                 }
                 stt++;
             }
-            UpdataPageView.UpdataMetagOpenGraph(Page,data.Ten_Vn, data.MoTa_Vn, Link.DetailPhoto(data.Ten_Vn, data.ID.ToString()), img,"Photo");
+            UpdataPageView.UpdataMetagOpenGraph(Page, data.Ten_Vn, data.MoTa_Vn, Link.DetailPhoto(data.Ten_Vn, data.ID.ToString()), img, "Photo");
             dlListimages.DataSource = listimgs;
             dlListimages.DataBind();
         }

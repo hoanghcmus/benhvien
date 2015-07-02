@@ -26,7 +26,7 @@
                             </LayoutTemplate>
                             <ItemTemplate>
                                 <div class="search-retult-line">
-                                    <a href='<%#ShowInfo(Container.DataItem, "hienthilink")%>'>
+                                    <a href='<%#ShowInfo(Container.DataItem, "hienthilink")%>' target="_blank">
                                         <%#ShowInfo(Container.DataItem, "hienthinoidung")%>
 
                                     </a>

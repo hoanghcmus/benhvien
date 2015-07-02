@@ -119,7 +119,7 @@ public partial class Admin_EditVideo : System.Web.UI.Page
             if (rs)
             {
                 //lay du lieu moi nhat Db
-                data = ImageAndClips.LayTheoID(lblId.Text);
+                data = ImageAndClips.LayTheoID(Convert.ToInt32(lblId.Text));
                 SetData(data);
                 //Cap nhat hanh dong dang nhap
                 CapNhatHanhDong("Cập nhật video (id: " + lblId.Text + ")");

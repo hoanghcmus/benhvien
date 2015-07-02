@@ -3,13 +3,7 @@
 
 <%@ Register Src="../UserControl/UC_Paging.ascx" TagName="UC_Paging" TagPrefix="uc2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <meta itemprop="image" content="../Design/lau-thai.jpg" />
-    <meta itemprop="headline" content="Răng sứ No 1" />
-    <meta property="og:site_name" content="Các dịch vụ nha khoa thẩm mỹ" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://www.rangsunoo1.vn/" />
-    <meta property="og:title" itemprop="headline" content="Răng sứ No 1, nụ cười hạnh phúc" />
-    <meta property="og:description" content="Đến với trung tâm nha khoa Răng sứ No 1, quý khách sẽ có được nụ cười tươi và một sức khỏe răng miệng tốt" />
+ 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" runat="Server">
     <div class="product-wrapper">

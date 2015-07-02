@@ -149,6 +149,17 @@ namespace DataAccess.Classes
             catch
             { return null; }
         }
+
+
+        public static List<TheLoai> LayTheoModule_ExceptID()
+        {
+            try
+            {
+                return CBO.FillCollection<TheLoai>(DataProvider.Instance.ExecuteReader("TheLoai_LayTheoModule_ExceptID"));
+            }
+            catch
+            { return null; }
+        }
         public static List<TheLoai> LayTheoModule(string idLoaiModule)
         {
             try
