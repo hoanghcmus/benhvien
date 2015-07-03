@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/View/LeftBlock.master" AutoEventWireup="true" CodeFile="ThanhVien.master.cs" Inherits="View_ThanhVien" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" runat="Server">
+    <div class="product-wrapper">
+        <div class="product-header">
+            <div class="product-title">
+                <h4>
+                    <asp:literal id="ltrCtTitle" runat="server" text="TRANG THÀNH VIÊN"></asp:literal>
+                </h4>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="thanh-vien-wrap">
+                <div class="func-bar">
+                    <div class="func-item <%=Convert.ToInt32(Request.QueryString["catID"]) == 1 ? "factive" : "" %>">
+                        <a href="/thong-tin-chung.html" class="link">
+                            <span>Thông tin chung
+                            </span>
+                        </a>
+                    </div>
+                    <div class="func-item <%=Convert.ToInt32(Request.QueryString["catID"]) == 2 ? "factive" : "" %>">
+                        <a href="/van-ban.html" class="link">
+                            <span>Văn bản
+                            </span>
+                        </a>
+                    </div>
+                    <div class="func-item <%=Convert.ToInt32(Request.QueryString["catID"]) == 3 ? "factive" : "" %>">
+                        <a href="/giay-moi-hop.html" class="link">
+                            <span>Giấy mời họp
+                            </span>
+                        </a>
+                    </div>
+                    <div class="func-item <%=Convert.ToInt32(Request.QueryString["catID"]) == 4 ? "factive" : "" %>">
+                        <a href="/truyen-nhan-file.html" class="link">
+                            <span>Truyền nhận file
+                            </span>
+                        </a>
+                    </div>
+                    <div class="func-item <%=Convert.ToInt32(Request.QueryString["catID"]) == 5 ? "factive" : "" %>">
+                        <a href="/tai-khoan.html" class="link">
+                            <span>Tài khoản
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="func-content">
+                    <div class="func-content-wrap">
+                        <asp:contentplaceholder id="ContentPlaceHolderMain" runat="server">
+                        </asp:contentplaceholder>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="Server">
+
+    <%--    <script type="text/javascript">
+        $(".func-item").click(function () {
+            $(".func-item").removeClass("factive");
+            $(this).addClass("factive");
+        });
+    </script>--%>
+
+    <asp:contentplaceholder id="footer" runat="server">
+     </asp:contentplaceholder>
+</asp:Content>
+

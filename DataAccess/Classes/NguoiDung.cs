@@ -87,6 +87,17 @@ namespace DataAccess.Classes
                 return 0;
             }
         }
+        public static NguoiDung KiemTraDangNhapThanhVien(string tenDangNhap, string matKhau)
+        {
+            try
+            {
+                return CBO.FillObject<NguoiDung>(DataProvider.Instance.ExecuteReader("ThanhVien_KiemTraDangNhap", tenDangNhap, matKhau));
+            }
+            catch
+            {
+                return null;
+            }
+        }
         public static NguoiDung KiemTraDangNhap(string tenDangNhap, string matKhau)
         {
             try

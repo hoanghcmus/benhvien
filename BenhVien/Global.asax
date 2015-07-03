@@ -31,6 +31,7 @@
         Session["IDDangNhap"] = "";
         Session["HanhDongDangNhap"] = "";
         Session["thanhvien"] = 0;
+        Session["tenthanhvien"] = "";
         // Code that runs when a new session is started
         Session.Timeout = 120;
         Application.Lock();

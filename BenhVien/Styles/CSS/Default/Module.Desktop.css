@@ -1690,9 +1690,10 @@ table.GuiYkien {
         font-family: Arial;
     }
 
-        .search-retult-line a:hover {
-            text-decoration: underline;
-        }
+    .search-retult-line:hover {
+        /*text-decoration: underline;*/
+        background-color: rgba(20,143,75,0.2);
+    }
 
 .answer {
     float: left;
