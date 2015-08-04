@@ -61,10 +61,13 @@
     <Compile Include="Classes\NhomNguoiDung.cs" />
     <Compile Include="Classes\PhanNhom.cs" />
     <Compile Include="Classes\SlideShow.cs" />
+    <Compile Include="Classes\ThanhVien.cs" />
     <Compile Include="Classes\TheLoai.cs" />
     <Compile Include="Classes\ThongKeTruyCap.cs" />
     <Compile Include="Classes\ThongTinNguoiDung.cs" />
     <Compile Include="Classes\TimKiem.cs" />
+    <Compile Include="Classes\TruyenNhanFile.cs" />
+    <Compile Include="Classes\VanBan.cs" />
     <Compile Include="Connect\ConnectData.cs" />
     <Compile Include="Connect\GlobalConfiguration.cs" />
     <Compile Include="Connect\Link.cs" />

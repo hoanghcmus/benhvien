@@ -4,6 +4,8 @@
 <%@ Register Src="../UserControl/UC_Search.ascx" TagName="UC_Search" TagPrefix="uc3" %>
 <%@ Register Src="~/UserControl/UC_MenuNgang.ascx" TagPrefix="uc1" TagName="UC_MenuNgang" %>
 <%@ Register Src="~/UserControl/UC_MenuDoc.ascx" TagPrefix="uc1" TagName="UC_MenuDoc" %>
+<%@ Register Src="~/UserControl/UC_DangNhapThanhVien.ascx" TagPrefix="uc1" TagName="UC_DangNhapThanhVien" %>
+
 
 
 
@@ -140,33 +142,8 @@
                         </div>
                     </div>
 
-                    <%-- Tra cứu bênh nhân --%>
-                    <div class="khoi">
-                        <div class="khoi-tieu-de">
-                            <div class="gach-ngang"></div>
-                            <div class="nga-mau"></div>
-                            <div class="tieu-de">
-                                <h1>ĐĂNG NHẬP THÀNH VIÊN</h1>
-                            </div>
-                        </div>
-                        <div class="khoi-noi-dung">
-                            <div class="khoi-noi-dung-wrap">
-                                <div class="line-fix-parent-width h24 mb5" style="margin-top: 24px;">
-                                    <span class="nhan">Tên người dùng:</span>
-                                    <asp:TextBox ID="txtTenNguoiDung" runat="server" CssClass="input"></asp:TextBox>
-                                </div>
-                                <div class="line-fix-parent-width h24 mb5">
-                                    <span class="nhan">Mật khẩu:</span>
-                                    <asp:TextBox ID="txtMatKhau" runat="server" CssClass="input" TextMode="Password"></asp:TextBox>
-                                </div>
-                                <div class="line-fix-parent-width h24 mb10">
-                                    <asp:Literal ID="ltrTrangThanhVien" runat="server" Text="Trang thành viên"></asp:Literal>
-                                    <asp:Button ID="btnDangNhap" runat="server" CssClass="btn" Text="Đăng nhập"></asp:Button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                    <%-- Đăng nhập thành viên--%>
+                    <uc1:UC_DangNhapThanhVien runat="server" ID="UC_DangNhapThanhVien" />
 
                     <%-- Banner liên kết --%>
                     <div class="khoi">
@@ -179,7 +156,7 @@
                                 </div>
                             </ItemTemplate>
                         </asp:Repeater>
-                     
+
                     </div>
 
                     <%-- Hình ảnh hoạt động --%>
@@ -270,6 +247,11 @@
                 </div>
             </div>
         </div>
+
+        <asp:Panel ID="pnlThanhVien" runat="server" CssClass="pnlThanhVien">
+            <a href="/thong-tin-chung.html" id="btnThongTinThanhVien" class="btnTV"><%=Session["tenthanhvien"].ToString() %></a>
+            <asp:LinkButton ID="btnThoat" runat="server" CssClass="btnTV" OnClick="btnThoat_Click"><%=Session["tenthanhvien"].ToString().Equals("") ?  "" : "Thoát" %></asp:LinkButton>
+        </asp:Panel>
 
     </form>
 

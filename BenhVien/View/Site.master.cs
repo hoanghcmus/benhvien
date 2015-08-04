@@ -31,13 +31,19 @@ public partial class View_Site : System.Web.UI.MasterPage
 
             LoadAlbum();
 
-            if (Convert.ToInt32(Session["thanhvien"]) == 1)
-                ltrTrangThanhVien.Text = "<a href='/trang-thanh-vien.html' class='tvlink'>Trang thành viên</a>";
-            else ltrTrangThanhVien.Text = String.Empty;
-
             List<TheLoai> listTL = TheLoai.LayTheoModule("9");
             rptBannerLienKet.DataSource = listTL;
             rptBannerLienKet.DataBind();
+
+            string page = Request.AppRelativeCurrentExecutionFilePath;
+            if (page.Contains("/edit-truyen-nhan-file"))
+            {
+                Session["ckfunc"] = "tv";
+            }
+            else
+            {
+                Session["ckfunc"] = "";
+            }
         }
     }
 
@@ -102,4 +108,10 @@ public partial class View_Site : System.Web.UI.MasterPage
         }
     }
 
+    protected void btnThoat_Click(object sender, EventArgs e)
+    {
+        Session["thanhvien"] = 0;
+        Session["tenthanhvien"] = "";
+        Response.Redirect("/trang-chu.html");
+    }
 }

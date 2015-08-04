@@ -14,3 +14,8 @@ E:\TinhThanh\Project Myself\BenhVienNamBinhThuan\DataAccess\bin\Debug\DataAccess
 E:\TinhThanh\Project Myself\BenhVienNamBinhThuan\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
 E:\TinhThanh\Project Myself\BenhVienNamBinhThuan\DataAccess\obj\Debug\DataAccess.dll
 E:\TinhThanh\Project Myself\BenhVienNamBinhThuan\DataAccess\obj\Debug\DataAccess.pdb
+G:\TinhThanh\Project Myself\BenhVienNamBinhThuan\DataAccess\bin\Debug\DataAccess.dll
+G:\TinhThanh\Project Myself\BenhVienNamBinhThuan\DataAccess\bin\Debug\DataAccess.pdb
+G:\TinhThanh\Project Myself\BenhVienNamBinhThuan\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+G:\TinhThanh\Project Myself\BenhVienNamBinhThuan\DataAccess\obj\Debug\DataAccess.dll
+G:\TinhThanh\Project Myself\BenhVienNamBinhThuan\DataAccess\obj\Debug\DataAccess.pdb

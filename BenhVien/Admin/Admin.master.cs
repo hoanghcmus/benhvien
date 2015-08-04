@@ -24,6 +24,29 @@ public partial class Admin_Admin : System.Web.UI.MasterPage
     }
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (!IsPostBack)
+        {
+            string page = Request.AppRelativeCurrentExecutionFilePath;
+            if (String.Compare(page, "~/Admin/EditVanBan.aspx", true) == 0 || String.Compare(page, "~/Admin/EditTruyenNhanFile.aspx", true) == 0)
+            {
+                Session["ckfunc"] = "tv";
+            }
+            else
+            {
+                Session["ckfunc"] = "";
+            }
+
+            if (String.Compare(page, "~/Admin/EditTruyenNhanFile.aspx", true) == 0)
+            {
+                Session["uID"] = "1";
+            }
+            else
+            {
+                Session["uID"] = "";
+            }
+
+
+        }
         if (KiemTraSession() == 1)
         {
             if (!IsPostBack)

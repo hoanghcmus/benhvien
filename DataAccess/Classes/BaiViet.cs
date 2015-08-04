@@ -575,6 +575,27 @@ namespace DataAccess.Classes
                 return new List<BaiViet>();
             }
         }
+
+        public static List<BaiViet> TimTheoModule_ExceptID(string module, string sreach, string page, out int howManyPages)
+        {
+            IDataReader reader = null;
+            try
+            {
+                int pageSize = GlobalConfiguration.PageSize;
+                reader = DataProvider.Instance.ExecuteReader("BaiViet_TimTheoModule_ExceptID", ConvertType.ToInt32(module), sreach, GlobalConfiguration.DescriptionLength, page, GlobalConfiguration.PageSize);
+                reader.Read();
+                howManyPages = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
+                reader.NextResult();
+                return CBO.FillCollection<BaiViet>(reader);
+            }
+            catch
+            {
+                if (reader != null && reader.IsClosed == false)
+                    reader.Close();
+                howManyPages = 0;
+                return new List<BaiViet>();
+            }
+        }
         public static List<BaiViet> TimTheoTheLoai(string sreach, string theloai, string page, out int howManyPages)
         {
             IDataReader reader = null;

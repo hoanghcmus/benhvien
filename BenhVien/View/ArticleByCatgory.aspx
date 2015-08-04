@@ -37,7 +37,7 @@
                                         <%#ShowArticleCat(Container.DataItem, "ArticleCatTieuDe") %></a>
                                     </h4>
                                 <p class="meta">
-                                    <strong>Mô tả:</strong>
+                                    <%--<strong>Mô tả:</strong>--%>
                                     <%#ShowArticleCat(Container.DataItem, "laytomtat") %>
                                 </p>
 

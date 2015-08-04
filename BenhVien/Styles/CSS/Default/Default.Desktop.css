@@ -1061,6 +1061,54 @@ li.has-sub:hover > ul
     width: 60%;
     height: 22px;
     border: 1px solid #c8c8c8;
+    margin-bottom: 5px;
+    text-indent: 5px;
+}
+
+.inputta
+{
+    float: right;
+    width: 60%;
+    height: 81px;
+    padding-top: 3px;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 5px;
+    text-indent: 5px;
+}
+
+.down
+{
+    float: right;
+    width: 100px;
+    height: 22px;
+    margin-left: 1.6%;
+    margin-bottom: 5px;
+    background-color: orange;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-family: Arial;
+    font-size: 13px;
+    color: #FFF;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.btnedit
+{
+    float: right;
+    width: 100px;
+    height: 26px;
+    margin-left: 1.6%;
+    margin-bottom: 5px;
+    background-color: #1079bb;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-family: Arial;
+    font-size: 13px;
+    color: #FFF;
+    text-align: center;
 }
 
 .btn
@@ -1078,6 +1126,11 @@ li.has-sub:hover > ul
     color: #FFF;
     text-align: center;
 }
+
+    .btn:hover
+    {
+        background-color: #4eb222;
+    }
 
 .galery-block
 {
@@ -1501,6 +1554,33 @@ li.has-sub:hover > ul
     border-radius: 3px;
 }
 
+.lbChose
+{
+    float: left;
+    width: 162px;
+    height: 27px;
+    margin-bottom: 15px;
+}
+
+    .lbChose span
+    {
+        float: left;
+        width: 100%;
+        margin-top: 9px;
+        font-weight: bold;
+    }
+
+.tlvb
+{
+    float: left;
+    width: 153px;
+    height: 27px;
+    margin-left: 5px;
+    border: 1px solid #e1e2e2;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
 .web-link-input
 {
     float: left;
@@ -1619,7 +1699,7 @@ li.has-sub:hover > ul
 
     .cat-block:hover
     {
-         background-color: rgba(20,143,75,0.1);
+        background-color: rgba(20,143,75,0.2);
     }
 
 .cat-block-pic
@@ -1689,14 +1769,14 @@ li.has-sub:hover > ul
     position: relative;
     border-radius: 2px;
     font-family: Arial;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
 }
 
     .item-bai-viet:hover
     {
-        background-color: rgba(20,143,75,0.1);
-        -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
-        -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
-        box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+        background-color: rgba(20,143,75,0.2);
     }
 
 .duong-dan-bai-viet
@@ -1723,5 +1803,147 @@ li.has-sub:hover > ul
 .meta
 {
     font-size: 12px;
-    margin-top: 2px;
+    margin-top: 3px;
+}
+
+.pnlThanhVien
+{
+    float: left;
+    width: 153px;
+    position: fixed;
+    top: 60px;
+    right: 0px;
+}
+
+.btnTV
+{
+    float: right;
+    width: 100%;
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #118646;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+    .btnTV:first-child
+    {
+        font-weight: bold;
+    }
+
+    .btnTV:last-child
+    {
+    }
+
+.thanh-vien-wrap
+{
+    float: left;
+    width: 96%;
+    margin-left: 2%;
+}
+
+.func-bar
+{
+    float: left;
+    width: 100%;
+    height: 27px;
+}
+
+.func-item
+{
+    float: left;
+    width: auto;
+    height: 100%;
+    margin-right: 2px;
+    padding: 0 5px;
+    border: 1px solid #118646;
+    border-bottom: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: rgba(20,143,75,0.2);
+}
+
+    .func-item a
+    {
+        margin-top: 5px;
+        font-family: Tahoma;
+        font-size: 12px;
+        font-weight: bold;
+        color: #118646;
+    }
+
+.func-content
+{
+    float: left;
+    width: 100%;
+    /*height: 30px;*/
+    border: 1px solid #118646;
+}
+
+.factive
+{
+    position: relative;
+    /*background-color: rgba(20,143,75,0.2);*/
+    background-color: #FFF;
+}
+
+.func-content-wrap
+{
+    float: left;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+
+.vbtable
+{
+    width: 100%;
+}
+
+    .vbtable > thead
+    {
+        background-color: #c0c0c0;
+        font-weight: bold;
+    }
+
+    .vbtable a, .tit
+    {
+        color: #1079bb;
+        font-weight: bold;
+    }
+
+.col
+{
+    outline: 1px solid rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 5px;
+}
+
+.col1
+{
+    width: 30%;
+}
+
+.col2
+{
+    width: 36%;
+}
+
+.col3
+{
+    width: 18%;
+}
+
+.col4
+{
+    width: 12%;
+}
+
+.lnk
+{
+    float: left;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #338caa;
+    padding: 2px 8px;
 }

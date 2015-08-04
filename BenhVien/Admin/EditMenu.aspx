@@ -32,8 +32,7 @@
                     <p class="block-heading">
                         <asp:Label ID="lbtitle" runat="server" Text="Thêm Menu" /></p>
                     <div class="toolbar">
-                        <asp:ScriptManager ID="ScriptManager1" runat="server">
-                        </asp:ScriptManager>
+
                         <table class="Edit">
                             <tr>
                                 <td colspan="2">

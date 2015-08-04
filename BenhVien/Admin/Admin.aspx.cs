@@ -36,7 +36,8 @@ public partial class Admin_Admin : System.Web.UI.Page
             UC_ThongKeNguoiDung3.Visible = true;
         }
         lblienHe.Text = LienHe.Dem().ToString();
-        lbbaiViet.Text = BaiViet.DemTheoModule("1").ToString();
+        //lbbaiViet.Text = BaiViet.DemTheoModule("1").ToString();
+        lbbaiViet.Text = BaiViet.Dem().ToString();
         lbalbum.Text = ImageAndClips.DemTheoTheLoai("14").ToString();
         lbvideo.Text = ImageAndClips.DemTheoTheLoai("12").ToString();
     }

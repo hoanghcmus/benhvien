@@ -1,0 +1,52 @@
+﻿.vbtable
+{
+    width: 100%;
+}
+
+    .vbtable > thead
+    {
+        background-color: #c0c0c0;
+        font-weight: bold;
+    }
+
+    .vbtable a, .tit
+    {
+        color: #1079bb;
+        font-weight: bold;
+    }
+
+.col
+{
+    outline: 1px solid rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 5px;
+}
+
+.col1
+{
+    width: 30%;
+}
+
+.col2
+{
+    width: 36%;
+}
+
+.col3
+{
+    width: 18%;
+}
+
+.col4
+{
+    width: 12%;
+}
+
+.lnk
+{
+    float: left;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #338caa;
+    padding: 2px 8px;
+}
