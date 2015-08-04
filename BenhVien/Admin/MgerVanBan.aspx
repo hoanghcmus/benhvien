@@ -3,7 +3,11 @@
 
 <%@ Register Src="Mger_UserControl/UC_PhanTrang.ascx" TagName="UC_PhanTrang" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+<<<<<<< HEAD
     <link href="../Styles/Datatables/jquery.dataTables.min.css" rel="stylesheet" />
+=======
+    
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="content">
@@ -51,7 +55,11 @@
                             <p class="block-heading">
                                 Danh sách văn bản
                             </p>
+<<<<<<< HEAD
                             <table class="list" id="dttb">
+=======
+                            <table class="list">
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
                                 <thead>
                                     <tr>
                                         <th class="id">
@@ -129,6 +137,7 @@
     </div>
 </asp:Content>
 
+<<<<<<< HEAD
 <asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="Server">
     <script type="text/javascript" src="../Styles/Datatables/jquery.dataTables.min.js"></script>
     <script src="../Styles/Datatables/jquery.dataTables.min.js"></script>
@@ -140,3 +149,5 @@
         });
     </script>
 </asp:Content>
+=======
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454

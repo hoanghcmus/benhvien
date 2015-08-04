@@ -27,6 +27,7 @@ public partial class View_TruyenNhanFile : System.Web.UI.Page
         if (e.Item.ItemType == ListViewItemType.DataItem)
         {
             ListViewDataItem dataItem = (ListViewDataItem)e.Item;
+<<<<<<< HEAD
 
             TruyenNhanFile vb = (TruyenNhanFile)dataItem.DataItem;
             var lbt = e.Item.FindControl("down") as LinkButton;
@@ -70,6 +71,52 @@ public partial class View_TruyenNhanFile : System.Web.UI.Page
         }
     }
 
+=======
+
+            TruyenNhanFile vb = (TruyenNhanFile)dataItem.DataItem;
+
+            var lbt = e.Item.FindControl("down") as HyperLink;
+            lbt.NavigateUrl = "/View/DownLoadFile.ashx?fileName=" + vb.DuongDan;
+        }
+    }
+
+    protected void ListPager_PreRender(object sender, EventArgs e)
+    {
+        string IDThanhVien = Session["idthanhvien"].ToString() ?? "1";
+        List<TruyenNhanFile> listVB = TruyenNhanFile.LayTatCa_TheoTV(IDThanhVien);
+        LoadDataToRPT(listVB);
+        lnkGuiFile.NavigateUrl = String.Format("/edit-truyen-nhan-file-0-{0}.html", IDThanhVien);
+    }
+    protected void LoadDataToRPT(List<TruyenNhanFile> listVB)
+    {
+        if (listVB != null && listVB.Count > 0)
+        {
+            rptArticleList.DataSource = listVB;
+            rptArticleList.DataBind();
+        }
+    }
+    protected void rptArticleList_DataBound(object sender, EventArgs e)
+    {
+        ListPager.Visible = (ListPager.PageSize < ListPager.TotalRowCount);
+    }
+    protected void drlNhanGui_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        string condition = drlNhanGui.SelectedValue;
+        if (condition.Equals("1"))
+        {
+            LoadDataToRPT(TruyenNhanFile.LayTatCa_Nhan(lbID.Text));
+        }
+        else if (condition.Equals("2"))
+        {
+            LoadDataToRPT(TruyenNhanFile.LayTatCa_Gui(lbID.Text));
+        }
+        else
+        {
+            LoadDataToRPT(TruyenNhanFile.LayTatCa_TheoTV(lbID.Text));
+        }
+    }
+
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
     public string ShowInfo(object sender, string column)
     {
         string IDThanhVien = Session["idthanhvien"].ToString() ?? "1";

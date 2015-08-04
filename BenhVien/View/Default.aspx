@@ -1,5 +1,16 @@
 ﻿<%@ Page Title="Trang chủ" Language="C#" MasterPageFile="~/View/Site.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="View_Default" %>
 
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        function Redirect() {
+            var ddlLinks = document.getElementById('<%=drlLienKetWebsite.ClientID%>');
+            var selectedval = ddlLinks.options[ddlLinks.selectedIndex].value;
+            if (selectedval != '0') {
+                window.open(selectedval, '_blank');
+            };
+        }
+    </script>
+</asp:Content>
 <asp:Content ID="ContentMainPageProduct" ContentPlaceHolderID="ContentPlaceHolderMain" runat="Server">
     <%-- Khối tin tức đầu tiên --%>
     <div class="inside-full">
@@ -7,16 +18,16 @@
             <div class="inside-left-wrap">
                 <div class="khoi-tin-lon">
                     <div class="tin-lon-figure">
-                        <asp:Image ID="imgTinLonFigure" runat="server" class="img" />
+                        <asp:image id="imgTinLonFigure" runat="server" class="img" />
                     </div>
                     <div class="tin-lon-tieu-de">
                         <h1>
-                            <asp:HyperLink ID="hlTinLonTieuDe" runat="server" CssClass="link"></asp:HyperLink>
+                            <asp:hyperlink id="hlTinLonTieuDe" runat="server" cssclass="link"></asp:hyperlink>
                         </h1>
                     </div>
                     <div class="tin-lon-mo-ta">
                         <p>
-                            <asp:Literal ID="ltrTinLonMoTa" runat="server"></asp:Literal>
+                            <asp:literal id="ltrTinLonMoTa" runat="server"></asp:literal>
                         </p>
                     </div>
                 </div>
@@ -29,7 +40,7 @@
                 </div>
                 <div class="tin-lien-quan-noi-dung">
 
-                    <asp:Repeater ID="rptTinTucLienQuan" runat="server">
+                    <asp:repeater id="rptTinTucLienQuan" runat="server">
                         <ItemTemplate>
                             <div class="tin-lien-quan-item">
                                 <div class="item-lien-quan-figure">
@@ -43,7 +54,7 @@
                             </div>
 
                         </ItemTemplate>
-                    </asp:Repeater>
+                    </asp:repeater>
 
                 </div>
             </div>
@@ -54,13 +65,18 @@
     <div class="inside-full">
         <div class="khoi1">
             <div class="khoi1-tieu-de">
-                <h1>QUY ĐỊNH, QUY CHẾ</h1>
+                <div class="tieu-de-wrap">
+                    <span class="tieu-de-icon">
+                        <img src="/Design/plus.png" alt="Icon title" class="img" />
+                    </span>
+                    <h1>QUY ĐỊNH, QUY CHẾ</h1>
+                </div>
             </div>
             <div class="khoi1-noi-dung">
                 <div class="inside-left">
                     <div class="khoi-wrap1">
 
-                        <asp:Repeater ID="rptQuyCheItemNgang" runat="server">
+                        <asp:repeater id="rptQuyCheItemNgang" runat="server">
                             <ItemTemplate>
                                 <div class="item-ngang">
                                     <div class="item-ngang-figure">
@@ -78,7 +94,7 @@
                                     </div>
                                 </div>
                             </ItemTemplate>
-                        </asp:Repeater>
+                        </asp:repeater>
 
                     </div>
                 </div>
@@ -87,7 +103,7 @@
                     <div class="qnav">
                         <ul>
 
-                            <asp:Repeater ID="rptQuyCheLienQuan" runat="server">
+                            <asp:repeater id="rptQuyCheLienQuan" runat="server">
                                 <ItemTemplate>
 
                                     <li>
@@ -99,7 +115,7 @@
                                     </li>
 
                                 </ItemTemplate>
-                            </asp:Repeater>
+                            </asp:repeater>
 
                         </ul>
                     </div>
@@ -116,14 +132,19 @@
 
             <div class="khoi1">
                 <div class="khoi1-tieu-de">
-                    <h1>THÔNG TIN Y DƯỢC</h1>
+                    <div class="tieu-de-wrap">
+                        <span class="tieu-de-icon">
+                            <img src="/Design/plus.png" alt="Icon title" class="img" />
+                        </span>
+                        <h1>THÔNG TIN Y DƯỢC</h1>
+                    </div>
                 </div>
                 <div class="khoi1-noi-dung">
                     <div class="khoi-wrap1">
 
                         <div class="line-fix-parent-width">
 
-                            <asp:Repeater ID="rptThongTinYItemDoc" runat="server">
+                            <asp:repeater id="rptThongTinYItemDoc" runat="server">
                                 <ItemTemplate>
 
                                     <div class="item-doc">
@@ -141,7 +162,7 @@
                                     </div>
 
                                 </ItemTemplate>
-                            </asp:Repeater>
+                            </asp:repeater>
 
                         </div>
 
@@ -153,7 +174,7 @@
                             <div class="qnav">
                                 <ul>
 
-                                    <asp:Repeater ID="rptThongTinYLienQuan" runat="server">
+                                    <asp:repeater id="rptThongTinYLienQuan" runat="server">
                                         <ItemTemplate>
 
                                             <li>
@@ -165,7 +186,7 @@
                                             </li>
 
                                         </ItemTemplate>
-                                    </asp:Repeater>
+                                    </asp:repeater>
 
                                 </ul>
                             </div>
@@ -185,7 +206,11 @@
                     <div class="gach-ngang"></div>
                     <div class="nga-mau"></div>
                     <div class="tieu-de">
-                        <h1>THÔNG BÁO</h1>
+                        <h1>
+                            <img src="/Design/thongbao.png" class="block-heder-icon" alt="icon" />
+                            THÔNG BÁO
+
+                        </h1>
                     </div>
                 </div>
                 <div class="khoi-noi-dung">
@@ -193,7 +218,7 @@
                         <div class="qnav tnav">
                             <ul>
 
-                                <asp:Repeater ID="rptThongBao" runat="server">
+                                <asp:repeater id="rptThongBao" runat="server">
                                     <ItemTemplate>
 
                                         <li>
@@ -206,7 +231,7 @@
 
 
                                     </ItemTemplate>
-                                </asp:Repeater>
+                                </asp:repeater>
 
                             </ul>
                         </div>
@@ -224,14 +249,19 @@
 
             <div class="khoi1">
                 <div class="khoi1-tieu-de">
-                    <h1>THÔNG TIN Y KHOA, Y HỌC THƯỜNG THỨC</h1>
+                    <div class="tieu-de-wrap">
+                        <span class="tieu-de-icon">
+                            <img src="/Design/plus.png" alt="Icon title" class="img" />
+                        </span>
+                        <h1>TIN Y KHOA, Y HỌC THƯỜNG THỨC</h1>
+                    </div>
                 </div>
                 <div class="khoi1-noi-dung">
                     <div class="khoi-wrap1">
 
                         <div class="line-fix-parent-width">
 
-                            <asp:Repeater ID="rptYHocThuongThucItemNgang" runat="server">
+                            <asp:repeater id="rptYHocThuongThucItemNgang" runat="server">
                                 <ItemTemplate>
 
                                     <div class="item-ngang">
@@ -251,7 +281,7 @@
                                     </div>
 
                                 </ItemTemplate>
-                            </asp:Repeater>
+                            </asp:repeater>
 
                         </div>
 
@@ -260,7 +290,7 @@
                             <div class="qnav">
                                 <ul>
 
-                                    <asp:Repeater ID="rptYHocThuongThucLienQuan" runat="server">
+                                    <asp:repeater id="rptYHocThuongThucLienQuan" runat="server">
                                         <ItemTemplate>
 
                                             <li>
@@ -272,7 +302,7 @@
                                             </li>
 
                                         </ItemTemplate>
-                                    </asp:Repeater>
+                                    </asp:repeater>
 
                                 </ul>
                             </div>
@@ -292,14 +322,18 @@
                         <div class="gach-ngang"></div>
                         <div class="nga-mau"></div>
                         <div class="tieu-de">
-                            <h1>LIÊN KẾT WEBSITE</h1>
+                            <h1>
+                                <img src="/Design/lienket.png" class="block-heder-icon" alt="icon" />
+                                LIÊN KẾT WEBSITE
+
+                            </h1>
                         </div>
                     </div>
                     <div class="khoi-noi-dung">
                         <div class="web-link">
-                            <asp:DropDownList ID="drlLienKetWebsite" runat="server" CssClass="web-link-input" AutoPostBack="true" OnSelectedIndexChanged="drlLienKetWebsite_SelectedIndexChanged">
+                            <asp:dropdownlist id="drlLienKetWebsite" runat="server" cssclass="web-link-input">
                                 <%--<asp:ListItem Value="0" Text="Chọn liên kết"></asp:ListItem>--%>
-                            </asp:DropDownList>
+                            </asp:dropdownlist>
                         </div>
                     </div>
                 </div>

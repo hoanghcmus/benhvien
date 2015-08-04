@@ -43,7 +43,11 @@
                                 <tr>
                                     <td class="col col1"><%#Eval("TenThanhVienGui") %></td>
                                     <td class="col col3">
+<<<<<<< HEAD
                                         <asp:LinkButton ID="down" runat="server" CssClass="tit" Text="Tải về" OnClick="down_Click"></asp:LinkButton>
+=======
+                                        <asp:HyperLink ID="down" runat="server" CssClass="tit" Text="Tải về"></asp:HyperLink>
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
                                     </td>
                                     <td class="col col2"><%#Eval("MoTa") %></td>
                                     <td class="col col4"><%#Eval("NgayGui") %></td>

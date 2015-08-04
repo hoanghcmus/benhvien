@@ -11,7 +11,11 @@ public partial class View_VanBanChung : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
+<<<<<<< HEAD
         {           
+=======
+        {
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
 
         }
     }
@@ -60,8 +64,13 @@ public partial class View_VanBanChung : System.Web.UI.Page
             ListViewDataItem dataItem = (ListViewDataItem)e.Item;
 
             VanBan vb = (VanBan)dataItem.DataItem;
+<<<<<<< HEAD
             var lbt = e.Item.FindControl("down") as LinkButton;
             lbt.CommandArgument = vb.DuongDan;
+=======
+            var lbt = e.Item.FindControl("down") as HyperLink;
+            lbt.NavigateUrl = "/View/DownLoadFile.ashx?fileName=" + vb.DuongDan;
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
         }
     }
     protected void drlTheLoai_SelectedIndexChanged(object sender, EventArgs e)

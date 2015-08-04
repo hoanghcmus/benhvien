@@ -47,7 +47,11 @@
                                         <td class="col col2"><%#Eval("TenVanBan")%></td>
                                         <td class="col col3"><%#Convert.ToDateTime(Eval("NgayBanHanh")).ToShortDateString() %></td>
                                         <td class="col col4">
+<<<<<<< HEAD
                                             <asp:LinkButton ID="down" runat="server" CssClass="tit" Text="Tải về" OnClick="down_Click"></asp:LinkButton>
+=======
+                                             <asp:HyperLink ID="down" runat="server" CssClass="tit" Text="Tải về"></asp:HyperLink>
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
                                         </td>
                                     </tr>
 

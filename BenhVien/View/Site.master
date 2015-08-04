@@ -130,7 +130,10 @@
                             <div class="gach-ngang"></div>
                             <div class="nga-mau"></div>
                             <div class="tieu-de">
-                                <h1>CÁC KHOA, PHÒNG BAN</h1>
+                                <h1>
+                                    <img src="/Design/phongban.png" class="block-heder-icon" alt="icon" />
+                                    CÁC KHOA, PHÒNG BAN
+                                </h1>
                             </div>
                         </div>
                         <div class="khoi-noi-dung">
@@ -165,7 +168,11 @@
                             <div class="gach-ngang"></div>
                             <div class="nga-mau"></div>
                             <div class="tieu-de">
-                                <h1>HÌNH ẢNH HOẠT ĐỘNG</h1>
+                                <h1>
+                                    <img src="/Design/hinhanh.png" class="block-heder-icon" alt="icon" />
+                                    HÌNH ẢNH HOẠT ĐỘNG
+
+                                </h1>
                             </div>
                         </div>
                         <div class="khoi-noi-dung">
@@ -182,6 +189,40 @@
 
                         </div>
                     </div>
+
+
+                    <%-- Thống kê truy cập --%>
+
+                    <div class="khoi">
+                        <div class="khoi-tieu-de">
+                            <div class="gach-ngang"></div>
+                            <div class="nga-mau"></div>
+                            <div class="tieu-de">
+                                <h1>
+                                    <img src="/Design/thongke.png" class="block-heder-icon" alt="icon" />
+                                    <span>THỐNG KÊ TRUY CẬP</span>
+
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="khoi-noi-dung">
+                            <div class="khoi-noi-dung-wrap">
+
+                                <div class="khoi-thong-ke">
+                                    <div class="thong-ke bot10 ">
+                                        Đang trực tuyến: <b><%=Application["visitors_online"].ToString() %></b>
+                                    </div>
+                                    <div class="thong-ke bot10 ">
+                                        Lượt truy cập: <b><%=Application["SoLuotTruyCap"].ToString() %></b>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
 
                 </div>
 
@@ -201,50 +242,15 @@
                         <img src="/Design/logo_white.png" alt="Logo White" class="img" />
                     </div>
                 </div>
-                <div class="footer-block">
-                    <asp:Repeater ID="rptBaiVietGioiThieu" runat="server" OnItemDataBound="rptBaiVietGioiThieu_ItemDataBound">
-                        <ItemTemplate>
-                            <p class="sumary-art">
-                                <asp:Literal ID="ltBaiVietGioiThieu" runat="server"></asp:Literal>
-                            </p>
-                            <p class="sumary-art read-more">
-                                <%#ShowInfo(Container.DataItem, "xemthem") %>
-                            </p>
-                        </ItemTemplate>
-                    </asp:Repeater>
+
+                <div class="footer-sep">
+                    <img src="/Design/foot_sep.png" alt="SEP" class="img" />
                 </div>
-                <div class="footer-block">
-                    <div class="footer-info-left">
 
-                        <%-- Thông tin liên hệ --%>
-                        <asp:Literal ID="ltLienHe" runat="server">
+                <%-- Thông tin liên hệ --%>
+                <asp:Literal ID="ltLienHe" runat="server"></asp:Literal>
 
-                        </asp:Literal>
-                    </div>
-                    <div class="footer-info-right">
-                        <div class="footer-block align-left bot10 white">
-                            Đang trực tuyến: <b><%=Application["visitors_online"].ToString() %></b>
-                        </div>
-                        <div class="footer-block align-left bot10 white">
-                            Lượt truy cập: <b><%=Application["SoLuotTruyCap"].ToString() %></b>
-                        </div>
-                        <div class="footer-block">
-                            <div class="social-logo">
-                                <a href="https://www.facebook.com" target="_blank">
-                                    <img src="/Design/facebook.png" alt="Facebook Icon here" /></a>
-                            </div>
-                            <div class="social-logo">
-                                <a href="http://www.skype.com/" target="_blank">
-                                    <img src="/Design/twister.png" alt="Facebook Icon here" /></a>
-                            </div>
-                            <div class="social-logo">
-                                <a href="https://www.socialtwist.com/" target="_blank">
-                                    <img src="/Design/skype.png" alt="Facebook Icon here" /></a>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
             </div>
         </div>
 
@@ -328,7 +334,7 @@
                 if (windowpos > 113) {
                     menu.css("position", "fixed").css("top", "0").css("z-index", 10);
                 } else {
-                    menu.css("position", "relative").css("z-index", 0);
+                    menu.css("position", "static").css("z-index", 0);
                 }
 
             });

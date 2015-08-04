@@ -137,9 +137,9 @@ li
 {
     float: left;
     width: 50%;
-    height: 31.858%;
+    height: 59%;
     position: absolute;
-    top: 36%;
+    top: 23%;
     left: 9%;
 }
 
@@ -393,6 +393,20 @@ li.has-sub:hover > ul
 {
     float: left;
     width: 100%;
+    margin-bottom: 5px;
+}
+
+    .footer-block:last-child {
+        margin-bottom: 27px;
+    }
+
+.footer-sep {
+    float: left;
+    width: 80%;
+    height: 17px;
+    margin-left: 10%;
+    margin-top: 3px;
+    margin-bottom: 16px;
 }
 
 .sumary-art
@@ -452,9 +466,14 @@ li.has-sub:hover > ul
     padding-left: 2%;
 }
 
+<<<<<<< HEAD
 .align-right
 {
     text-align: right;
+=======
+.align-right {
+    text-align: center;
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
 }
 
 .align-left
@@ -851,9 +870,9 @@ li.has-sub:hover > ul
     {
         float: left;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 12px;
         font-family: Arial;
-        font-size: 1.2vw;
+        font-size: 1.1vw;
         font-weight: bold;
         text-align: center;
     }
@@ -869,7 +888,7 @@ li.has-sub:hover > ul
 .body-left
 {
     float: left;
-    width: 30%;
+    width: 27.5%;
     margin-right: 1.5%;
 }
 
@@ -883,7 +902,9 @@ li.has-sub:hover > ul
 .khoi-tieu-de
 {
     float: left;
-    width: 100%;
+    /*width: 100%;*/
+    width: 101%;
+    margin-left: -0.5%;
     height: 34px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -926,13 +947,57 @@ li.has-sub:hover > ul
         width: 100%;
         color: #FFF;
         font-family: Arial;
-        font-size: 1.2vw;
+        font-size: 1vw;
         font-weight: bold;
         text-align: center;
     }
 
+<<<<<<< HEAD
 .khoi-noi-dung
 {
+=======
+.block-heder-icon {
+    position: relative;
+    top: 5px;
+    padding-right: 4px;
+    margin-right: 5px;
+    border-right: 1px solid #FFF;
+}
+
+.khoi-thong-ke {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.thong-ke {
+    font-family: Arial;
+    font-size: 14px;
+    color: #4f4f4f;
+    /*text-align: center*/
+}
+
+.tieu-de-wrap {
+    float: left;
+    background-color: #148f4b;
+    width: auto;
+    height: 95%;
+    margin-top: 0.15%;
+    padding-right: 10px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.tieu-de-icon {
+    float: left;
+    height: 18px;
+    width: 18px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.khoi-noi-dung {
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
     float: left;
     width: 100%;
     outline: 1px solid #e1e2e2;
@@ -941,7 +1006,7 @@ li.has-sub:hover > ul
 .body-right
 {
     float: left;
-    width: 68.5%;
+    width: 71%;
     font-family: Arial;
     font-size: 13px;
     color: #4f4f4f;
@@ -989,8 +1054,8 @@ li.has-sub:hover > ul
         {
             float: left;
             width: 100%;
-            height: 29px;
             border-bottom: 1px solid #b2c9bd;
+            padding-bottom: 6px;
         }
 
             .hnav > ul > li:last-child
@@ -1010,8 +1075,8 @@ li.has-sub:hover > ul
                     margin-left: 3%;
                     margin-top: 9px;
                     font-family: Arial;
-                    font-size: 13px;
-                    /*font-size: 1vw;*/
+                    /*font-size: 13px;*/
+                    font-size: 1vw;
                 }
 
             .hactive, .hnav > ul > li:hover
@@ -1026,9 +1091,14 @@ li.has-sub:hover > ul
     margin-left: 3%;
 }
 
+<<<<<<< HEAD
 .h24
 {
     height: 24px;
+=======
+.h24 {
+    height: auto;
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
 }
 
 .w50p
@@ -1051,7 +1121,8 @@ li.has-sub:hover > ul
     float: left;
     margin-top: 3px;
     font-family: Arial;
-    font-size: 13px;
+    /*font-size: 13px;*/
+    font-size: 0.98vw;
     color: #5f5f5f;
 }
 
@@ -1065,8 +1136,12 @@ li.has-sub:hover > ul
     text-indent: 5px;
 }
 
+<<<<<<< HEAD
 .inputta
 {
+=======
+.inputta {
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
     float: right;
     width: 60%;
     height: 81px;
@@ -1074,6 +1149,42 @@ li.has-sub:hover > ul
     border: 1px solid #c8c8c8;
     margin-bottom: 5px;
     text-indent: 5px;
+<<<<<<< HEAD
+=======
+}
+
+.down {
+    float: right;
+    width: 100px;
+    height: 22px;
+    margin-left: 1.6%;
+    margin-bottom: 5px;
+    background-color: orange;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-family: Arial;
+    font-size: 13px;
+    color: #FFF;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.btnedit {
+    float: right;
+    width: 100px;
+    height: 26px;
+    margin-left: 1.6%;
+    margin-bottom: 5px;
+    background-color: #1079bb;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-family: Arial;
+    font-size: 13px;
+    color: #FFF;
+    text-align: center;
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
 }
 
 .down
@@ -1127,6 +1238,7 @@ li.has-sub:hover > ul
     text-align: center;
 }
 
+<<<<<<< HEAD
     .btn:hover
     {
         background-color: #4eb222;
@@ -1134,6 +1246,13 @@ li.has-sub:hover > ul
 
 .galery-block
 {
+=======
+    .btn:hover {
+        background-color: #4eb222;
+    }
+
+.galery-block {
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
     float: left;
     width: 99%;
     height: 290px;
@@ -1145,7 +1264,8 @@ li.has-sub:hover > ul
 {
     float: left;
     width: 100%;
-    height: 276px;
+    height: 261px;
+    margin-top: 13px;
     overflow: hidden;
 }
 
@@ -1169,7 +1289,7 @@ li.has-sub:hover > ul
     height: 78px;
     margin-left: 4%;
     padding: 0.5%;
-    margin-top: 4%;
+    margin-bottom: 4%;
     background-color: #FFF;
 }
 
@@ -1268,14 +1388,20 @@ li.has-sub:hover > ul
 {
     float: left;
     width: 100%;
-    height: 39%;
+    height: 41px;
     margin-top: 5px;
     padding-bottom: 5px;
     border-bottom: 1px solid #cecece;
+    overflow: hidden;
 }
 
+<<<<<<< HEAD
 .item-lien-quan-figure
 {
+=======
+
+.item-lien-quan-figure {
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
     float: left;
     width: 27.5%;
     height: 100%;
@@ -1292,6 +1418,7 @@ li.has-sub:hover > ul
     {
     }
 
+<<<<<<< HEAD
         .item-lien-quan-tieu-de h1 a
         {
             color: #148f4b;
@@ -1299,6 +1426,17 @@ li.has-sub:hover > ul
 
 .khoi1
 {
+=======
+        .item-lien-quan-tieu-de h1 a {
+            color: #4f4f4f;
+        }
+
+            .item-lien-quan-tieu-de h1 a:hover {
+                color: #148f4b;
+            }
+
+.khoi1 {
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
     float: left;
     width: 100%;
     margin-top: 15px;
@@ -1316,10 +1454,9 @@ li.has-sub:hover > ul
     .khoi1-tieu-de h1
     {
         float: left;
-        width: 90%;
-        margin-left: 10px;
+        margin-left: 5px;
         margin-top: 8px;
-        color: #148f4b;
+        color: #FFF;
         font-weight: bold;
     }
 
@@ -1425,8 +1562,16 @@ li.has-sub:hover > ul
                 color: #4f4f4f;
             }
 
+<<<<<<< HEAD
                 .qnav > ul > li > a > span:first-child
                 {
+=======
+                .qnav > ul > li > a:hover {
+                    color: #148f4b;
+                }
+
+                .qnav > ul > li > a > span:first-child {
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
                     float: left;
                     width: 6px;
                     margin-top: 4px;
@@ -1491,8 +1636,26 @@ li.has-sub:hover > ul
         width: 100%;
     }
 
+<<<<<<< HEAD
 .tin-lien-quan-ngang
 {
+=======
+.item-doc1 {
+    float: left;
+    width: 46.34%;
+    height: 270px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    margin-left: 2%;
+    margin-right: 1%;
+}
+
+    .item-doc:hover, .item-doc1:hover {
+        /*background-color: rgba(20,143,75,0.2);*/
+    }
+
+.tin-lien-quan-ngang {
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
     float: left;
     width: 100%;
 }
@@ -1554,24 +1717,36 @@ li.has-sub:hover > ul
     border-radius: 3px;
 }
 
+<<<<<<< HEAD
 .lbChose
 {
+=======
+.lbChose {
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
     float: left;
     width: 162px;
     height: 27px;
     margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
     .lbChose span
     {
+=======
+    .lbChose span {
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
         float: left;
         width: 100%;
         margin-top: 9px;
         font-weight: bold;
     }
 
+<<<<<<< HEAD
 .tlvb
 {
+=======
+.tlvb {
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
     float: left;
     width: 153px;
     height: 27px;
@@ -1581,8 +1756,12 @@ li.has-sub:hover > ul
     margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 .web-link-input
 {
+=======
+.web-link-input {
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
     float: left;
     width: 100%;
     height: 100%;
@@ -1761,7 +1940,7 @@ li.has-sub:hover > ul
 .item-bai-viet
 {
     float: left;
-    height: 63px;
+    height: 77px;
     width: 46.34%;
     margin-bottom: 15px;
     margin-left: 2%;
@@ -1769,9 +1948,9 @@ li.has-sub:hover > ul
     position: relative;
     border-radius: 2px;
     font-family: Arial;
-    -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+    /*-webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
-    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);*/
 }
 
     .item-bai-viet:hover
@@ -1783,14 +1962,14 @@ li.has-sub:hover > ul
 {
     float: left;
     height: 100%;
-    margin-right: 2.36%;
-    width: 24.06%;
+    margin-right: 2%;
+    width: 33%;
 }
 
 .tieu-de-bai-viet
 {
     float: left;
-    width: 71%;
+    width: 63%;
     height: 100%;
     overflow: hidden;
 }
@@ -1939,11 +2118,38 @@ li.has-sub:hover > ul
     width: 12%;
 }
 
+<<<<<<< HEAD
 .lnk
 {
+=======
+.lnk {
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
     float: left;
     width: 15px;
     height: 15px;
     border: 1px solid #338caa;
     padding: 2px 8px;
 }
+<<<<<<< HEAD
+=======
+
+.h180 {
+    height: 180px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.related-title {
+    float: left;
+    width: 96%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 2%;
+    padding-bottom: 3px;
+    font-weight: bold;
+    border-bottom: 1px solid #cecece;
+    color: #148f4b;
+}
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454

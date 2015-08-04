@@ -277,6 +277,30 @@ namespace DataAccess.Classes
             catch
             { return null; }
         }
+
+
+        public static List<BaiViet> LayTheoIDTheLoaiTop10_ExceptID(string idtheloai, string id)
+        {
+            try
+            {
+                return CBO.FillCollection<BaiViet>(DataProvider.Instance.ExecuteReader("BaiViet_LayTheoIDTheLoaiTop10_ExceptID", ConvertType.ToInt32(idtheloai), ConvertType.ToInt32(id)));
+            }
+            catch
+            { return null; }
+        }
+
+
+        public static List<BaiViet> LayTheoIDTheLoaiTopN_ExceptID(string idtheloai, string id, int top)
+        {
+            try
+            {
+                return CBO.FillCollection<BaiViet>(DataProvider.Instance.ExecuteReader("BaiViet_LayTheoIDTheLoaiTopN_ExceptID", ConvertType.ToInt32(idtheloai), ConvertType.ToInt32(id), top));
+            }
+            catch
+            { return null; }
+        }
+
+
         public static List<BaiViet> LayTheoIDTheLoaiTop20(string idtheloai)
         {
             try

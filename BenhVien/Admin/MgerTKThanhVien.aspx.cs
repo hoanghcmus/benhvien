@@ -17,7 +17,11 @@ public partial class Admin_MgerTKThanhVien : System.Web.UI.Page
         string[] str = chuoiQuyen.Split(',');
         foreach (var item in str)
         {
+<<<<<<< HEAD
             if (item.ToString() == "1" || item.ToString() == "2")
+=======
+            if (item.ToString() == "1" || item.ToString() == "2" || item.ToString() == "4")
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
                 kq = 1;
         }
         return kq;

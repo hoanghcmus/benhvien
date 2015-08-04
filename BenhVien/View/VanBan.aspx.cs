@@ -15,10 +15,17 @@ public partial class View_VanBan : System.Web.UI.Page
             //List<VanBan> listVB = VanBan.LayTheoModuleAll("14");
             //if (listVB != null && listVB.Count > 0)
             //{
+<<<<<<< HEAD
             //    rptVanBan.DataSource = listVB;
             //    rptVanBan.DataBind();
             //}
 
+=======
+            //    rptArticleList.DataSource = listVB;
+            //    rptArticleList.DataBind();
+            //}
+            //LoadTheLoai();
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
         }
     }
     private void LoadTheLoai()
@@ -34,6 +41,7 @@ public partial class View_VanBan : System.Web.UI.Page
         var btn = (LinkButton)(sender);
         string path = btn.CommandArgument;
         Response.Redirect("/View/DownLoadFile.ashx?fileName=" + path);
+<<<<<<< HEAD
     }
     protected void rptVanBan_ItemDataBound(object sender, RepeaterItemEventArgs e)
     {
@@ -42,6 +50,9 @@ public partial class View_VanBan : System.Web.UI.Page
         lbt.CommandArgument = vb.DuongDan;
     }
 
+=======
+    }  
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
 
     protected void ListPager_PreRender(object sender, EventArgs e)
     {
@@ -66,8 +77,13 @@ public partial class View_VanBan : System.Web.UI.Page
             ListViewDataItem dataItem = (ListViewDataItem)e.Item;
 
             VanBan vb = (VanBan)dataItem.DataItem;
+<<<<<<< HEAD
             var lbt = e.Item.FindControl("down") as LinkButton;
             lbt.CommandArgument = vb.DuongDan;
+=======
+            var lbt = e.Item.FindControl("down") as HyperLink;
+            lbt.NavigateUrl = "/View/DownLoadFile.ashx?fileName=" + vb.DuongDan;
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
         }
     }
     protected void drlTheLoai_SelectedIndexChanged(object sender, EventArgs e)

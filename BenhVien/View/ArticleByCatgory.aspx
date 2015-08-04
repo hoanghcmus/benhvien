@@ -19,37 +19,21 @@
             <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
                 <ContentTemplate>
 
-                    <asp:ListView ID="rptArticleList" runat="server" ItemPlaceholderID="ItemPlaceholderIDArticleList" OnDataBound="rptArticleList_DataBound">
+                    <asp:ListView ID="rptArticleList" runat="server" ItemPlaceholderID="ItemPlaceholderIDArticleList" OnDataBound="rptArticleList_DataBound" OnItemDataBound="rptArticleList_ItemDataBound">
                         <LayoutTemplate>
 
                             <asp:PlaceHolder runat="server" ID="ItemPlaceholderIDArticleList"></asp:PlaceHolder>
                         </LayoutTemplate>
                         <ItemTemplate>
 
-                            <div class="item-bai-viet">
-                                <div class="duong-dan-bai-viet">
-                                    <a href='<%#ShowArticleCat(Container.DataItem, "ArticleCatDuongDan") %>'>
-                                        <img src="<%#Eval("HinhAnh") %>" alt="Hình ảnh" class="img" />
-                                        </i></a>
-                                </div>
-                                <div class="tieu-de-bai-viet">
-                                    <a href='<%#ShowArticleCat(Container.DataItem, "ArticleCatDuongDan") %>'>
-                                        <%#ShowArticleCat(Container.DataItem, "ArticleCatTieuDe") %></a>
-                                    </h4>
-                                <p class="meta">
-                                    <%--<strong>Mô tả:</strong>--%>
-                                    <%#ShowArticleCat(Container.DataItem, "laytomtat") %>
-                                </p>
-
-                                </div>
-                            </div>
+                            <asp:Literal ID="ltrItemBV" runat="server"></asp:Literal>
 
 
                         </ItemTemplate>
                     </asp:ListView>
 
                     <div style="float: left; width: 100%;">
-                        <asp:DataPager ID="ListPager" PagedControlID="rptArticleList" runat="server" PageSize="30" OnPreRender="ListPager_PreRender" class="control-pager">
+                        <asp:DataPager ID="ListPager" PagedControlID="rptArticleList" runat="server" PageSize="20" OnPreRender="ListPager_PreRender" class="control-pager">
                             <Fields>
                                 <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="false" ShowPreviousPageButton="true" ShowNextPageButton="false" PreviousPageText="Trước" />
                                 <asp:NumericPagerField ButtonType="Link" />

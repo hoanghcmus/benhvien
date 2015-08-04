@@ -6,7 +6,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" runat="Server">
     <div class="product-wrapper">
 
+<<<<<<< HEAD
         <asp:updatepanel id="UpdatePanel1" runat="server" updatemode="Conditional">
+=======
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
             <ContentTemplate>
                 <div class="line-fix-parent-width">
                     <div class="lbChose">
@@ -18,7 +22,11 @@
                         </asp:DropDownList>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <table class="vbtable" cellspacing="0" id="dttb">
+=======
+                <table class="vbtable" cellspacing="0">
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
                     <thead>
                         <tr>
                             <td class="col col1"><span>Số hiệu</span></td>
@@ -41,7 +49,11 @@
                                     <td class="col col2"><%#Eval("TenVanBan")%></td>
                                     <td class="col col3"><%#Convert.ToDateTime(Eval("NgayBanHanh")).ToShortDateString() %></td>
                                     <td class="col col4">
+<<<<<<< HEAD
                                         <asp:LinkButton ID="down" runat="server" CssClass="tit" Text="Tải về" OnClick="down_Click"></asp:LinkButton>
+=======
+                                        <asp:HyperLink ID="down" runat="server" CssClass="tit" Text="Tải về"></asp:HyperLink>
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
                                     </td>
                                 </tr>
 
@@ -68,10 +80,14 @@
             <Triggers>
                 <asp:AsyncPostBackTrigger ControlID="ListPager" />
             </Triggers>
+<<<<<<< HEAD
         </asp:updatepanel>
 
 
 
+=======
+        </asp:UpdatePanel>
+>>>>>>> 642fe2eeb6d7f9e65a3bcdbd2ead2a9e4895a454
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="Server">
