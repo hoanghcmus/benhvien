@@ -13,18 +13,9 @@ public partial class View_Site : System.Web.UI.MasterPage
     {
         if (!IsPostBack)
         {
-            var dataBaiViet = BaiViet.LayTheoIDTheLoai("13");
+            var dataBaiViet = BaiViet.LayTheoID("12");
             ltLienHe.Text = HttpUtility.HtmlDecode(dataBaiViet.ChiTiet_Vn.ToString());
 
-
-            BaiViet baiviet = BaiViet.LayTheoID("14");
-            if (baiviet != null)
-            {
-                List<BaiViet> listBaiViet = new List<BaiViet>();
-                listBaiViet.Add(baiviet);
-                rptBaiVietGioiThieu.DataSource = listBaiViet;
-                rptBaiVietGioiThieu.DataBind();
-            }
 
             rptProduct.DataSource = TheLoai.LayTheoIDParent("23");
             rptProduct.DataBind();
@@ -34,6 +25,16 @@ public partial class View_Site : System.Web.UI.MasterPage
             List<TheLoai> listTL = TheLoai.LayTheoModule("9");
             rptBannerLienKet.DataSource = listTL;
             rptBannerLienKet.DataBind();
+
+            string page = Request.AppRelativeCurrentExecutionFilePath;
+            if (page.Contains("/edit-truyen-nhan-file"))
+            {
+                Session["ckfunc"] = "tv";
+            }
+            else
+            {
+                Session["ckfunc"] = "";
+            }
         }
     }
 

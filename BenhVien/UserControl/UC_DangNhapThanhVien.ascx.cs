@@ -30,11 +30,13 @@ public partial class UserControl_UC_DangNhapThanhVien : System.Web.UI.UserContro
     {
         string user = txtTenNguoiDung.Text.Trim();
         string pass = txtMatKhau.Text.Trim();
-        NguoiDung nd = NguoiDung.KiemTraDangNhapThanhVien(user, pass);
-        if (nd != null)
+        ThanhVien tv = ThanhVien.KiemTraDangNhap(user, pass);
+        if (tv != null)
         {
+            Session["idthanhvien"] = tv.IDNguoiDung;
             Session["thanhvien"] = 1;
-            Session["tenthanhvien"] = nd.TenNguoiDung;
+            Session["tenthanhvien"] = tv.TenNguoiDung;            
+            Session["uID"] = tv.IDNguoiDung;
             Response.Redirect("/thong-tin-chung.html");
         }
         else
@@ -44,8 +46,10 @@ public partial class UserControl_UC_DangNhapThanhVien : System.Web.UI.UserContro
     }
     protected void btnDangXuat_Click(object sender, EventArgs e)
     {
+        Session["idthanhvien"] = "";
         Session["thanhvien"] = 0;
         Session["tenthanhvien"] = "";
+        Session["uID"] = "";
         Response.Redirect("/trang-chu.html");
     }
     protected void SetVisibleForInOutButton(int th)

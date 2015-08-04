@@ -277,6 +277,30 @@ namespace DataAccess.Classes
             catch
             { return null; }
         }
+
+
+        public static List<BaiViet> LayTheoIDTheLoaiTop10_ExceptID(string idtheloai, string id)
+        {
+            try
+            {
+                return CBO.FillCollection<BaiViet>(DataProvider.Instance.ExecuteReader("BaiViet_LayTheoIDTheLoaiTop10_ExceptID", ConvertType.ToInt32(idtheloai), ConvertType.ToInt32(id)));
+            }
+            catch
+            { return null; }
+        }
+
+
+        public static List<BaiViet> LayTheoIDTheLoaiTopN_ExceptID(string idtheloai, string id, int top)
+        {
+            try
+            {
+                return CBO.FillCollection<BaiViet>(DataProvider.Instance.ExecuteReader("BaiViet_LayTheoIDTheLoaiTopN_ExceptID", ConvertType.ToInt32(idtheloai), ConvertType.ToInt32(id), top));
+            }
+            catch
+            { return null; }
+        }
+
+
         public static List<BaiViet> LayTheoIDTheLoaiTop20(string idtheloai)
         {
             try
@@ -562,6 +586,27 @@ namespace DataAccess.Classes
             {
                 int pageSize = GlobalConfiguration.PageSize;
                 reader = DataProvider.Instance.ExecuteReader("BaiViet_TimTheoModule", ConvertType.ToInt32(module), sreach, GlobalConfiguration.DescriptionLength, page, GlobalConfiguration.PageSize);
+                reader.Read();
+                howManyPages = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
+                reader.NextResult();
+                return CBO.FillCollection<BaiViet>(reader);
+            }
+            catch
+            {
+                if (reader != null && reader.IsClosed == false)
+                    reader.Close();
+                howManyPages = 0;
+                return new List<BaiViet>();
+            }
+        }
+
+        public static List<BaiViet> TimTheoModule_ExceptID(string module, string sreach, string page, out int howManyPages)
+        {
+            IDataReader reader = null;
+            try
+            {
+                int pageSize = GlobalConfiguration.PageSize;
+                reader = DataProvider.Instance.ExecuteReader("BaiViet_TimTheoModule_ExceptID", ConvertType.ToInt32(module), sreach, GlobalConfiguration.DescriptionLength, page, GlobalConfiguration.PageSize);
                 reader.Read();
                 howManyPages = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
                 reader.NextResult();

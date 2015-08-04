@@ -5,29 +5,39 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BenhVien", "BenhVien\", "{A
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
 		Debug.AspNetCompiler.VirtualPath = "/BenhVien"
-		Debug.AspNetCompiler.PhysicalPath = "G:\TinhThanh\Project Myself\BenhVienNamBinhThuan\BenhVien\"
+		Debug.AspNetCompiler.PhysicalPath = "BenhVien\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\BenhVien\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/BenhVien"
-		Release.AspNetCompiler.PhysicalPath = "G:\TinhThanh\Project Myself\BenhVienNamBinhThuan\BenhVien\"
+		Release.AspNetCompiler.PhysicalPath = "BenhVien\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\BenhVien\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "1391"
+		VWDVirtualPath = "/"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{9F93428E-045B-4D2D-989A-19AF3EB5B630}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{AFDB26CE-6F82-4C1D-B966-F1EC29B44A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AFDB26CE-6F82-4C1D-B966-F1EC29B44A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDB26CE-6F82-4C1D-B966-F1EC29B44A3A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDB26CE-6F82-4C1D-B966-F1EC29B44A3A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{9F93428E-045B-4D2D-989A-19AF3EB5B630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F93428E-045B-4D2D-989A-19AF3EB5B630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F93428E-045B-4D2D-989A-19AF3EB5B630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F93428E-045B-4D2D-989A-19AF3EB5B630}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

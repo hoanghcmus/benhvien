@@ -31,9 +31,7 @@
                 <div class="block">
                     <p class="block-heading">
                         <asp:Label ID="lbtitle" runat="server" Text="Edit Album" /></p>
-                    <div class="toolbar">
-                        <asp:ScriptManager ID="ScriptManager1" runat="server">
-                        </asp:ScriptManager>
+                    <div class="toolbar">                                               
                         <table class="Edit">
                             <tr>
                                 <td colspan="2">

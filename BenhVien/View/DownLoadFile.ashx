@@ -9,17 +9,23 @@ public class DownLoadFile : IHttpHandler
     public void ProcessRequest(HttpContext context)
     {
         System.Web.HttpRequest request = System.Web.HttpContext.Current.Request;
-        string fileName = request.QueryString["fileName"];
-
         System.Web.HttpResponse response = System.Web.HttpContext.Current.Response;
+
+        string fileName = request.QueryString["fileName"];
+        if (fileName.Equals(""))
+        {
+            string OldUrl = request.QueryString["returnURL"];
+            response.Redirect(OldUrl);
+        }
+
         response.ClearContent();
         response.Clear();
         response.ContentType = "text/plain";
         response.AddHeader("Content-Disposition", "attachment; filename=" + fileName + ";");
-        
+
         var server = HttpContext.Current.Server;
         response.TransmitFile(server.MapPath(fileName));
-        
+
         response.Flush();
         response.End();
     }

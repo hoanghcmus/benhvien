@@ -170,9 +170,10 @@ public partial class View_Default : System.Web.UI.Page
         drlLienKetWebsite.DataValueField = "DuongDan_Vn";
         drlLienKetWebsite.DataSource = listTL;
         drlLienKetWebsite.DataBind();
-        drlLienKetWebsite.Items.Insert(0, new ListItem("Chọn liên kết", "#"));
+        drlLienKetWebsite.Items.Insert(0, new ListItem("Chọn liên kết", "0"));
         //drlLienKetWebsite.Items[0].Attributes.Add("disabled", "disabled");     
-        
+        drlLienKetWebsite.Attributes.Add("onchange", "Redirect();");
+
     }
 
 
@@ -185,10 +186,5 @@ public partial class View_Default : System.Web.UI.Page
                 return String.Format("/{0}/bai-viet/{1}-{2}.html", bv.IDTheLoai, Helper.RejectMarks(bv.TieuDe_Vn), bv.ID);
             default: return "";
         }
-    }
-    protected void drlLienKetWebsite_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        string lienKet = drlLienKetWebsite.SelectedValue.Trim();      
-        Response.Redirect(lienKet);
-    }
+    }   
 }

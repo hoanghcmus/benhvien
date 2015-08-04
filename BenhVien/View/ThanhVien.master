@@ -9,10 +9,11 @@
         <div class="product-header">
             <div class="product-title">
                 <h4>
-                    <asp:literal id="ltrCtTitle" runat="server" text="TRANG THÀNH VIÊN"></asp:literal>
+                    <asp:Literal ID="ltrCtTitle" runat="server" Text="TRANG THÀNH VIÊN"></asp:Literal>
                 </h4>
             </div>
         </div>
+
         <div class="product-container">
             <div class="thanh-vien-wrap">
                 <div class="func-bar">
@@ -49,12 +50,13 @@
                 </div>
                 <div class="func-content">
                     <div class="func-content-wrap">
-                        <asp:contentplaceholder id="ContentPlaceHolderMain" runat="server">
-                        </asp:contentplaceholder>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+                        </asp:ContentPlaceHolder>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="Server">
@@ -66,7 +68,7 @@
         });
     </script>--%>
 
-    <asp:contentplaceholder id="footer" runat="server">
-     </asp:contentplaceholder>
+    <asp:ContentPlaceHolder ID="footer" runat="server">
+    </asp:ContentPlaceHolder>
 </asp:Content>
 

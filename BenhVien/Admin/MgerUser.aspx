@@ -25,9 +25,8 @@
                             <p class="block-heading">
                                 Thông tin thêm người dùng
                             </p>
-                            <div class="toolbar">
-                                <asp:ScriptManager ID="ScriptManager1" runat="server">
-                                </asp:ScriptManager>
+                            <div class="toolbar">                               
+                                
                                 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                                     <ContentTemplate>
                                         <table class="list">

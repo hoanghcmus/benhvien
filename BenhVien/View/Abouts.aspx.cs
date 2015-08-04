@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataAccess.Classes;
+using DataAccess.StringUtil;
+using DataAccess.Help;
 
 public partial class View_Abouts : System.Web.UI.Page
 {
@@ -18,6 +20,19 @@ public partial class View_Abouts : System.Web.UI.Page
         listBaiViet.Add(baiViet);
         rptBaiViet.DataSource = listBaiViet;
         rptBaiViet.DataBind();
+
+
+        List<BaiViet> listBV = BaiViet.LayTheoIDTheLoaiTop10_ExceptID(baiViet.IDTheLoai.ToString(), baiViet.ID.ToString());
+        if (listBV != null && listBV.Count != 0)
+        {
+            rptBaiVietLienQuan.DataSource = listBV;
+            rptBaiVietLienQuan.DataBind();
+            bvlq.Visible = true;
+        }
+        else
+        {
+            bvlq.Visible = false;
+        }
     }
 
 
@@ -29,17 +44,33 @@ public partial class View_Abouts : System.Web.UI.Page
         {
             ltChiTietBaiViet.Text = item.ChiTiet_Vn;
         }
+        if (e.Item.ItemIndex == 0)
+        {
+            ltrTieuDeLon.Text = item.TenTheLoai_Vn;
+        }
     }
 
-    protected string ShowInfo(object sender, string column)
+    protected string ShowArticleCat(object sender, string column)
     {
         BaiViet baiviet = sender as BaiViet;
+
         switch (column)
         {
-            case "tieudelon":
-                string idTheLoai = baiviet.IDTheLoai.ToString();
-                TheLoai theLoai = TheLoai.LayTheoID(idTheLoai);
-                return theLoai.TieuDe_Vn;
+            case "laytomtat":
+                if (baiviet.TomTat_Vn.Length > 100)
+                {
+                    return StringUltility.GetStringByLenght(baiviet.TomTat_Vn, 100) + "...";
+                }
+                else
+                {
+                    return baiviet.TomTat_Vn + "...";
+                }
+
+            case "ArticleCatDuongDan":
+                return "/" + baiviet.IDTheLoai + "/bai-viet/" + Helper.RejectMarks(baiviet.TieuDe_Vn) + "-" + baiviet.ID + ".html";
+            case "ArticleCatTieuDe":
+                return HttpUtility.HtmlEncode(Eval("TieuDe_Vn").ToString()); ;
+
             default: return "";
         }
     }

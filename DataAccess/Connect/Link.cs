@@ -237,9 +237,55 @@ namespace DataAccess.Connect
         {
             return MgerArticle(_TrangThai, "1");
         }
+
+
+        public static string MgerVanBan(string _TrangThai, string _Trang)
+        {
+            if (_Trang == "1")
+                return BuildAbsolute(String.Format("Admin/MgerVanBan.aspx?Status={0}", _TrangThai));
+            else
+                return BuildAbsolute(String.Format("Admin/MgerVanBan.aspx?Status={0}&Page={1}", _TrangThai, _Trang));
+        }
+        public static string MgerVanBan(string _TrangThai)
+        {
+            return MgerVanBan(_TrangThai, "1");
+        }
+
+
+        public static string MgerTKThanhVien(string _TrangThai, string _Trang)
+        {
+            if (_Trang == "1")
+                return BuildAbsolute(String.Format("Admin/MgerTKThanhVien.aspx?Status={0}", _TrangThai));
+            else
+                return BuildAbsolute(String.Format("Admin/MgerTKThanhVien.aspx?Status={0}&Page={1}", _TrangThai, _Trang));
+        }
+        public static string MgerTKThanhVien(string _TrangThai)
+        {
+            return MgerTKThanhVien(_TrangThai, "1");
+        }
+
+
+
+        public static string MgerTruyenNhanFile(string _TrangThai, string _Trang)
+        {
+            if (_Trang == "1")
+                return BuildAbsolute(String.Format("Admin/MgerTruyenNhanFile.aspx?Status={0}", _TrangThai));
+            else
+                return BuildAbsolute(String.Format("Admin/MgerTruyenNhanFile.aspx?Status={0}&Page={1}", _TrangThai, _Trang));
+        }
+        public static string MgerTruyenNhanFile(string _TrangThai)
+        {
+            return MgerTruyenNhanFile(_TrangThai, "1");
+        }
+
+
         public static string EditArticle(string id)
         {
             return BuildAbsolute(String.Format("Admin/EditArticle.aspx?ID={0}", id));
+        }
+        public static string EditArticle1(string id, string moduleID)
+        {
+            return BuildAbsolute(String.Format("Admin/EditArticleTV.aspx?ID={0}&moduleID={1}", id, moduleID));
         }
         public static string EditArticleToMenu(string _TheLoai, string _Trang)
         {
@@ -252,6 +298,37 @@ namespace DataAccess.Connect
         {
             return EditArticleToMenu(_TheLoai, "1");
         }
+
+
+
+
+        public static string EditVanBanToMenu(string _TheLoai, string _Trang)
+        {
+            if (_Trang == "1")
+                return BuildAbsolute(String.Format("Admin/MgerVanBan.aspx?ID={0}", _TheLoai));
+            else
+                return BuildAbsolute(String.Format("Admin/MgerVanBan.aspx?ID={0}&Page={1}", _TheLoai, _Trang));
+        }
+        public static string EditVanBanToMenu(string _TheLoai)
+        {
+            return EditVanBanToMenu(_TheLoai, "1");
+        }
+
+
+
+        public static string EditThanhVienToMenu(string _TheLoai, string _Trang)
+        {
+            if (_Trang == "1")
+                return BuildAbsolute(String.Format("Admin/MgerTKThanhVien.aspx?ID={0}", _TheLoai));
+            else
+                return BuildAbsolute(String.Format("Admin/MgerTKThanhVien.aspx?ID={0}&Page={1}", _TheLoai, _Trang));
+        }
+        public static string EditThanhVienToMenu(string _TheLoai)
+        {
+            return EditThanhVienToMenu(_TheLoai, "1");
+        }
+
+
         public static string EditArticleToSreach(string chuoiTimKiem, string _Trang)
         {
             if (_Trang == "1")
@@ -263,6 +340,50 @@ namespace DataAccess.Connect
         {
             return EditArticleToSreach(chuoiTimKiem, "1");
         }
+
+
+
+        public static string EditVanBanToSreach(string chuoiTimKiem, string _Trang)
+        {
+            if (_Trang == "1")
+                return BuildAbsolute(String.Format("Admin/MgerVanBan.aspx?Search={0}", chuoiTimKiem));
+            else
+                return BuildAbsolute(String.Format("Admin/MgerVanBan.aspx?Search={0}&Page={1}", chuoiTimKiem, _Trang));
+        }
+        public static string EditVanBanToSreach(string chuoiTimKiem)
+        {
+            return EditVanBanToSreach(chuoiTimKiem, "1");
+        }
+
+
+        public static string EditThanhVienToSreach(string chuoiTimKiem, string _Trang)
+        {
+            if (_Trang == "1")
+                return BuildAbsolute(String.Format("Admin/MgerTKThanhVien.aspx?Search={0}", chuoiTimKiem));
+            else
+                return BuildAbsolute(String.Format("Admin/MgerTKThanhVien.aspx?Search={0}&Page={1}", chuoiTimKiem, _Trang));
+        }
+        public static string EditThanhVienToSreach(string chuoiTimKiem)
+        {
+            return EditThanhVienToSreach(chuoiTimKiem, "1");
+        }
+
+
+
+
+        public static string EditTruyenNhanFileToSreach(string chuoiTimKiem, string _Trang)
+        {
+            if (_Trang == "1")
+                return BuildAbsolute(String.Format("Admin/MgerTruyenNhanFile.aspx?Search={0}", chuoiTimKiem));
+            else
+                return BuildAbsolute(String.Format("Admin/MgerTruyenNhanFile.aspx?Search={0}&Page={1}", chuoiTimKiem, _Trang));
+        }
+        public static string EditTruyenNhanFileToSreach(string chuoiTimKiem)
+        {
+            return EditTruyenNhanFileToSreach(chuoiTimKiem, "1");
+        }
+
+
         public static string MgerContact(string _TinhTrang, string _Trang)
         {
             if (_Trang == "1")
